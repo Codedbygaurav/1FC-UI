@@ -1,0 +1,547 @@
+import {
+  ArrowRight,
+  Calendar,
+  ShieldCheck,
+  Sparkles,
+  LayoutDashboard,
+} from "lucide-react";
+
+export default function FinalCTA() {
+  return (
+    <section className="cta-section">
+      <div className="cta-grid" />
+      <div className="cta-glow-left" />
+      <div className="cta-glow-right" />
+
+      <div className="cta-container">
+        <div className="cta-content">
+          <div className="cta-left">
+        <div className="cta-badge">
+          <span className="cta-badge-dot" />
+          Unified Financial Operating System
+        </div>
+
+        <h2 className="cta-title">
+  One intelligent platform
+  <br />
+  for your <span>financial ecosystem</span>
+</h2>
+
+        <p className="cta-description">
+          Investments, insurance, taxes,
+          loans, legal planning and AI-powered
+          monitoring — connected into one
+          seamless experience.
+        </p>
+
+        <div className="cta-actions">
+          <button className="cta-primary">
+            Get Started
+            <ArrowRight size={16} />
+          </button>
+
+          <button className="cta-secondary">
+            <Calendar size={16} />
+            Book Demo
+          </button>
+        </div>
+
+        <div className="trust-grid">
+          <div className="trust-item">
+            <ShieldCheck size={14} />
+            <span>Bank-grade security</span>
+          </div>
+
+          <div className="trust-item">
+            <Sparkles size={14} />
+            <span>AI-powered insights</span>
+          </div>
+
+          <div className="trust-item">
+            <ShieldCheck size={14} />
+            <span>Family-first access</span>
+          </div>
+
+          <div className="trust-item">
+            <LayoutDashboard size={14} />
+            <span>Unified dashboard</span>
+          </div>
+        </div>
+        </div>
+
+        <div className="cta-right">
+      <div className="hero-bg-circle" />
+      <div className="hero-bg-circle-small" />
+
+      <img
+        src="/productCTA.png"
+        alt="Financial Advisor"
+        className="hero-image"
+      />
+    </div>
+        </div>
+      </div>
+
+      <style>{`.cta-section {
+  position: relative;
+  overflow: hidden;
+
+  max-width: 1280px;
+  width: calc(100% - 48px);
+
+  margin: 40px auto;
+
+  padding: 48px 24px;
+
+  background: linear-gradient(
+    90deg,
+    #042b28 0%,
+    #063733 40%,
+    #0a4a43 100%
+  );
+
+  border-radius: 28px;
+}
+
+.cta-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+
+  background-size: 56px 56px;
+  pointer-events: none;
+}
+
+.cta-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  margin: 0 auto 0;
+  
+}
+
+.cta-content {
+  display: grid;
+  grid-template-columns: 64% 36%;
+  align-items: center;
+  min-height: 600px;
+  
+}
+
+.cta-left {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+.cta-badge {
+  width: fit-content;
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: rgba(255,255,255,0.92);
+
+  font-size: 12px;
+  font-weight: 700;
+
+  backdrop-filter: blur(12px);
+}
+
+.cta-badge-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background: #dceb63;
+}
+
+.cta-title {
+  margin: 0 auto 20px;
+
+  max-width: 900px;
+
+  color: #ffffff;
+
+  font-size: clamp(48px, 4.5vw, 68px);
+  font-weight: 850;
+
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.cta-title span {
+  color: #dceb63;
+
+  font-style: italic;
+  font-weight: 400;
+
+  font-family:
+    "DM Serif Display",
+    serif;
+}
+
+.cta-description {
+  max-width: 650px;
+
+  margin: 0 auto 24px;
+
+  color: rgba(255,255,255,0.78);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+
+  margin-bottom: 18px;
+}
+
+.cta-primary,
+.cta-secondary {
+  height: 52px;
+
+  padding: 0 30px;
+
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: all .25s ease;
+}
+
+.cta-primary {
+  background: #dceb63;
+  color: #06211e;
+}
+
+.cta-secondary {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: white;
+}
+
+.trust-grid {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+color: #dceb63;
+  padding: 10px 14px;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+  .trust-item svg {
+  stroke: currentColor;
+}
+
+
+.trust-item span {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+}
+
+.cta-right {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  min-height: 620px;
+}
+
+.hero-bg-circle {
+  position: absolute;
+
+  width: 580px;
+  height: 580px;
+
+  right: -40px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(220,235,99,0.18),
+      rgba(220,235,99,0.08),
+      transparent 72%
+    );
+}
+
+.hero-bg-circle-small {
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  right: 0;
+  bottom: 10px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(220,235,99,0.08),
+      transparent 72%
+    );
+}
+
+.hero-image {
+  position: relative;
+  z-index: 2;
+
+  height: 650px;
+  width: auto;
+
+  object-fit: contain;
+  display: block;
+
+  margin-right: -20px;
+  margin-bottom: -50px;
+}
+
+@media (max-width: 1024px) {
+
+  .cta-section {
+    padding: 64px 28px;
+    width: calc(100% - 12px);
+  }
+
+  .cta-content {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    min-height: auto;
+  }
+
+  .cta-left {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cta-title {
+    max-width: 100%;
+    font-size: clamp(52px, 6vw, 62px);
+    line-height: 0.98;
+  }
+
+  .cta-description {
+    max-width: 680px;
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .cta-right {
+    justify-content: center;
+    min-height: auto;
+  }
+
+  .hero-bg-circle {
+    width: 460px;
+    height: 460px;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-bg-circle-small {
+    display: none;
+  }
+
+  .hero-image {
+    height: 500px;
+    margin-right: 0;
+    margin-bottom: -35px;
+    bottom:-65px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .cta-section {
+    padding: 72px 20px;
+  }
+
+  .cta-badge {
+    font-size: 11px;
+    padding: 9px 14px;
+    margin-bottom: 16px;
+  }
+
+  .cta-title {
+    font-size: 44px;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
+  .cta-description {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    height: 54px;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .trust-item {
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .trust-item span {
+    font-size: 11px;
+  }
+
+  .hero-bg-circle {
+    width: 340px;
+    height: 340px;
+  }
+
+  .hero-image {
+    height: 360px;
+    margin-bottom: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .cta-section {
+    padding: 64px 16px;
+  }
+
+  .cta-badge {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
+
+  .cta-title {
+    font-size: 36px;
+  }
+
+  .cta-description {
+    font-size: 14px;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    height: 52px;
+    font-size: 13px;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-item {
+    justify-content: flex-start;
+  }
+
+  .trust-item span {
+    font-size: 11px;
+  }
+
+  .hero-bg-circle {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero-image {
+    height: 280px;
+    max-width: 280px;
+    margin-bottom: -12px;
+    bottom:-55px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .cta-section {
+    padding: 56px 12px;
+  }
+
+  .cta-title {
+    font-size: 30px;
+  }
+
+  .cta-description {
+    font-size: 13px;
+  }
+
+  .cta-badge {
+    font-size: 9px;
+  }
+
+  .trust-item {
+    padding: 10px;
+  }
+
+  .trust-item span {
+    font-size: 10px;
+  }
+
+  .hero-image {
+    height: 340px;
+    max-width: 240px;
+    bottom:-45px;
+  }
+}`}</style>
+    </section>
+  );
+}
