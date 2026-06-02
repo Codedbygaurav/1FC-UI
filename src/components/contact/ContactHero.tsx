@@ -103,8 +103,15 @@ export default function ContactHero() {
             <img
               src="/contactHero.png"
               alt="Mascot"
-              className="contactMascotCH"
+              className="contactMascotDesktopCH"
             />
+
+
+<img
+  src="/mascotHalf.png"
+  alt="Mascot"
+  className="contactMascotMobileCH"
+/>
           </div>
         </div>
       </section>
@@ -264,7 +271,7 @@ export default function ContactHero() {
           font-size: 13px;
         }
 
-        .contactMascotCH {
+        .contactMascotDesktopCH {
           position: absolute;
           right: -70px;
           bottom: -25px;
@@ -272,27 +279,93 @@ export default function ContactHero() {
           object-fit: contain;
           pointer-events: none;
         }
+        .contactMascotMobileCH{
+        display:none;
+        }
 
-        @media (max-width:768px) {
+     /* ---------- Tablet ---------- */
+
+@media(max-width:992px){
+
+  .contactContainerCH{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .contactContentCH{
+    max-width:600px;
+    margin:0 auto;
+    text-align:center;
+  }
+
+  .hero-label{
+    justify-content:center;
+  }
+
+  .contactActionsCH{
+    justify-content:center;
+  }
+
+  .contactFeaturesCH{
+    justify-content:center;
+  }
+
+  .contactCardCH{
+    padding:26px;
+  }
+
+  .contactMascotDesktopCH{
+    display:none;
+  }
+
+  .contactMascotMobileCH{
+    display:block;
+    position:relative;
+    top:15px;
+    width:100%;
+    max-width:150px;
+    margin:16px auto 0;
+  }
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px){
 
   .contactHeroCH{
-    padding:90px 16px 50px;
+    padding:100px 16px 50px;
   }
 
   .contactContainerCH{
     gap:20px;
   }
 
+  .contactContentCH{
+    max-width:420px;
+    margin:0 auto;
+    text-align:center;
+  }
+
+  .hero-label{
+    justify-content:center;
+    margin-bottom:12px;
+    font-size:10px;
+  }
+
   .contactTitleCH{
-    font-size:2.2rem;
-    line-height:0.95;
-    margin:12px 0;
+    font-size:2.5rem;
+    line-height:.9;
+    letter-spacing:-0.06em;
+    margin:0 0 14px;
+    text-align:center;
   }
 
   .contactDescriptionCH{
+    max-width:360px;
+    margin:0 auto 18px;
     font-size:14px;
     line-height:1.65;
-    margin-bottom:18px;
+    text-align:center;
   }
 
   .contactActionsCH{
@@ -304,33 +377,28 @@ export default function ContactHero() {
   .btn-primary,
   .btn-secondary{
     width:100%;
-    justify-content:center;
     height:48px;
+    justify-content:center;
   }
 
   .contactFeaturesCH{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px 16px;
   }
 
   .contactFeatureItemCH{
+    padding:0;
+    border:none;
+    background:none;
     font-size:12px;
-    padding:10px 12px;
-    background:#fff;
-    border:1px solid var(--color-border);
-    border-radius:12px;
+    justify-content:center;
   }
 
   .contactCardCH{
-    padding:18px;
+    padding:20px;
     border-radius:24px;
-    min-height:auto;
-  }
-
-  .contactCardLabelCH{
-    font-size:12px;
-    margin-bottom:8px;
   }
 
   .contactStatValueCH{
@@ -343,18 +411,15 @@ export default function ContactHero() {
   }
 
   .contactGridCH{
-    grid-template-columns:repeat(2,1fr);
     gap:10px;
   }
 
   .contactGridCardCH{
     padding:14px;
-    border-radius:14px;
   }
 
   .contactGridCardCH h4{
     font-size:18px;
-    margin-bottom:4px;
   }
 
   .contactGridCardCH p{
@@ -362,27 +427,38 @@ export default function ContactHero() {
   }
 
   .contactMascotCH{
-    height:160px;
+    height:170px;
     margin:12px auto 0;
   }
 }
 
-@media (max-width:480px){
+/* ---------- Small Mobile ---------- */
+
+@media(max-width:480px){
 
   .contactHeroCH{
-    padding:82px 12px 40px;
+    padding:130px 12px 40px;
+  }
+
+  .contactContentCH{
+    max-width:340px;
   }
 
   .contactTitleCH{
-    font-size:1.85rem;
+    font-size:2.15rem;
   }
 
   .contactDescriptionCH{
+    max-width:300px;
     font-size:13px;
   }
 
   .contactFeaturesCH{
-    grid-template-columns:1fr;
+    gap:10px 14px;
+  }
+
+  .contactFeatureItemCH{
+    font-size:11px;
   }
 
   .contactCardCH{
@@ -406,7 +482,7 @@ export default function ContactHero() {
   }
 
   .contactMascotCH{
-    height:130px;
+    height:140px;
   }
 
   .contact-grid{
