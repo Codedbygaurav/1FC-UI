@@ -35,6 +35,7 @@ export default function ProductHero() {
       <div className="ph-product-hero-container">
         <div className="ph-hero-left">
           <div className="hero-label">
+            <LayoutDashboard size={14}/>
             Unified Financial Operating System
           </div>
 
@@ -435,9 +436,7 @@ export default function ProductHero() {
     max-width: 100%;
   }
 
-  .hero-label {
-    margin-inline: auto;
-  }
+  
 
   .ph-hero-title {
     font-size: 46px;
@@ -519,9 +518,7 @@ export default function ProductHero() {
     font-size: 14px;
   }
 
-  .hero-label {
-    font-size: 10px;
-  }
+  
 
   .ph-hero-pills {
     gap: 6px;

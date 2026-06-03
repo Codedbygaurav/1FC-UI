@@ -1,7 +1,7 @@
 "use client";
 
 import GroupStructure from "./GroupStructure";
-import {Users,Crown,Briefcase} from "lucide-react"
+import {Users,Crown,Briefcase, Building2} from "lucide-react"
 
 type PersonAP = {
   name: string;
@@ -674,7 +674,11 @@ export default function AboutPage() {
           <div className="container-main aboutContainerAP">
             <div className="heroGridAP">
               <div className="heroContentAP">
-                <div className="hero-label">1FC Code / About Us</div>
+                <div className="hero-label">
+                  <Building2 size={14}/>
+                   About Us
+                   
+                   </div>
 
                 <h1 className="heroTitleAP">
                   Building financial clarity for modern Indian{" "}

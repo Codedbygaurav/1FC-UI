@@ -9,6 +9,7 @@ import {
   Landmark,
   Layers3,
   Wallet,
+  Layers,
 } from "lucide-react";
 
 export default function FeaturesHero() {
@@ -21,6 +22,7 @@ export default function FeaturesHero() {
         <div className="featuresHeroContentFB">
           <div className="featuresHeroLeftFB">
             <div className="hero-label">
+              <Layers size={14}/>
               FEATURES OVERVIEW
             </div>
 
@@ -478,9 +480,7 @@ export default function FeaturesHero() {
     max-width: 100%;
   }
 
-  .hero-label {
-    margin-inline: auto;
-  }
+  
 
   .featuresHeroTitleFB {
     font-size: 46px;

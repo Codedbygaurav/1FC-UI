@@ -18,6 +18,7 @@ export default function ToolsHero() {
       <div className="toolsHeroContainerTP">
         <div className="toolsHeroLeftTP">
           <div className="hero-label">
+            <Calculator size={14}/>
             FREE FINANCIAL TOOLS
           </div>
 
@@ -470,9 +471,7 @@ export default function ToolsHero() {
     max-width: 100%;
   }
 
-  .hero-label {
-    margin-inline: auto;
-  }
+  
 
   .toolsHeroTitleTP {
     font-size: 46px;

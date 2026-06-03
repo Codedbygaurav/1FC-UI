@@ -153,7 +153,7 @@ export default function ContactHero() {
   line-height: 0.92;
   font-weight: 900;
   letter-spacing: -0.06em;
-  margin: 18px 0;
+  margin: 22px 0;
         }
         .contactTitleCH span {
           font-family: "DM Serif Display", serif;
@@ -298,9 +298,7 @@ export default function ContactHero() {
     text-align:center;
   }
 
-  .hero-label{
-    justify-content:center;
-  }
+  
 
   .contactActionsCH{
     justify-content:center;
@@ -346,17 +344,13 @@ export default function ContactHero() {
     text-align:center;
   }
 
-  .hero-label{
-    justify-content:center;
-    margin-bottom:12px;
-    font-size:10px;
-  }
+  
 
   .contactTitleCH{
     font-size:2.5rem;
     line-height:.9;
     letter-spacing:-0.06em;
-    margin:0 0 14px;
+    
     text-align:center;
   }
 

@@ -1,4 +1,4 @@
-import React, {
+import {
   useEffect,
   useState,
 } from "react";
@@ -11,6 +11,7 @@ import {
 import {
   ArrowRight,
   X,
+  ChevronDown,
 } from "lucide-react";
 
 export default function Navbar() {
@@ -18,6 +19,13 @@ export default function Navbar() {
 
   const pathname =
     location.pathname;
+
+    const companyActive =
+  pathname === "/about" ||
+  pathname === "/contact" ||
+  pathname === "/legal";
+  const [companyOpen, setCompanyOpen] =
+  useState(false);
 
   const [menuOpen, setMenuOpen] =
     useState(false);
@@ -64,14 +72,7 @@ export default function Navbar() {
       label: "Features",
       href: "/Features",
     },
-    {
-      label: "About Us",
-      href: "/about",
-    },
-    {
-      label: "Contact Us",
-      href: "/contact",
-    },
+    
   ];
 
   return (
@@ -101,25 +102,52 @@ export default function Navbar() {
           {/* DESKTOP NAV */}
 
           <div className="nav-links">
-            {navItems.map((item) => {
-              const isActive =
-                pathname === item.href;
+  {navItems.map((item) => {
+    const isActive =
+      pathname === item.href;
 
-              return (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  className={
-                    isActive
-                      ? "active-link"
-                      : ""
-                  }
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
-          </div>
+    return (
+      <Link
+        key={item.href}
+        to={item.href}
+        className={
+          isActive
+            ? "active-link"
+            : ""
+        }
+      >
+        {item.label}
+      </Link>
+    );
+  })}
+
+  <div className="nav-dropdown">
+    <button
+  className={`dropdown-trigger ${
+    companyActive
+      ? "active-link"
+      : ""
+  }`}
+>
+  Company
+  <ChevronDown size={16} />
+</button>
+
+    <div className="dropdown-menu">
+      <Link to="/about">
+        About Us
+      </Link>
+
+      <Link to="/contact">
+        Contact Us
+      </Link>
+
+      <Link to="/legal">
+        Legal
+      </Link>
+    </div>
+  </div>
+</div>
 
           {/* ACTIONS */}
 
@@ -168,28 +196,77 @@ export default function Navbar() {
           }`}
         >
           {navItems.map((item) => {
-            const isActive =
-              pathname === item.href;
+  const isActive =
+    pathname === item.href;
 
-            return (
-              <Link
-                key={item.href}
-                to={item.href}
-                className={
-                  isActive
-                    ? "mobile-active"
-                    : ""
-                }
-                onClick={() =>
-                  setMenuOpen(
-                    false
-                  )
-                }
-              >
-                {item.label}
-              </Link>
-            );
-          })}
+  return (
+    <Link
+      key={item.href}
+      to={item.href}
+      className={
+        isActive
+          ? "mobile-active"
+          : ""
+      }
+      onClick={() =>
+        setMenuOpen(false)
+      }
+    >
+      {item.label}
+    </Link>
+  );
+})}
+
+<div className="mobile-company">
+  <button
+    className="mobile-company-trigger"
+    onClick={() =>
+      setCompanyOpen(!companyOpen)
+    }
+  >
+    <span>Company</span>
+
+    <ChevronDown
+      size={16}
+      className={
+        companyOpen
+          ? "mobile-chevron-open"
+          : ""
+      }
+    />
+  </button>
+
+  {companyOpen && (
+    <div className="mobile-company-links">
+      <Link
+        to="/about"
+        onClick={() =>
+          setMenuOpen(false)
+        }
+      >
+        About Us
+      </Link>
+
+      <Link
+        to="/contact"
+        onClick={() =>
+          setMenuOpen(false)
+        }
+      >
+        Contact Us
+      </Link>
+
+      <Link
+        to="/legal"
+        onClick={() =>
+          setMenuOpen(false)
+        }
+      >
+        Legal
+      </Link>
+    </div>
+  )}
+</div>
 
           <div className="mobile-actions">
             <button className="mobile-login">
@@ -223,52 +300,42 @@ export default function Navbar() {
           flex-direction: column;
           align-items: center;
 
-          pointer-events: none;
+          pointer-events: auto;
         }
 
         .navbar {
-          position: relative;
+  position: relative;
 
-          width: calc(100% - 40px);
+  width: calc(100% - 40px);
+  max-width: 1180px;
 
-          max-width: 1180px;
+  height: 82px;
 
-          height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+  padding: 0 26px;
 
-          padding: 0 26px;
+  border-radius: 28px;
 
-          border-radius: 28px;
+  background: rgba(255,255,255,.92);
 
-          background: rgba(
-            255,
-            255,
-            255,
-            0.92
-          );
+  border: 1px solid rgba(11,59,54,.05);
 
-          border: 1px solid
-            rgba(
-              11,
-              59,
-              54,
-              0.04
-            );
+  box-shadow:
+    0 8px 30px rgba(0,0,0,.04);
 
-          transition:
-            background 0.35s ease,
-            box-shadow 0.35s ease,
-            backdrop-filter 0.35s ease,
-            border 0.35s ease,
-            transform 0.3s ease;
+  transition:
+    background .35s ease,
+    box-shadow .35s ease,
+    backdrop-filter .35s ease;
 
-          overflow: hidden;
+  overflow: visible;
 
-          pointer-events: auto;
-        }
+}
+
+        
 
         .navbar-scrolled {
           background: rgba(
@@ -359,69 +426,59 @@ export default function Navbar() {
         /* NAV LINKS */
 
         .nav-links {
-          position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 
-          left: 45%;
-          transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+}
 
-          display: flex;
-          align-items: center;
+        .nav-links a,
+.dropdown-trigger {
+  position: relative;
 
-          gap: 14px;
-        }
+  display: flex;
+  align-items: center;
+  gap: 6px;
 
-        .nav-links a {
-          position: relative;
+  text-decoration: none;
 
-          text-decoration: none;
+  padding: 12px 18px;
 
-          padding: 12px 18px;
+  border-radius: 14px;
 
-          border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
 
-          font-size: 15px;
+  color: rgba(17,17,17,.72);
 
-          font-weight: 600;
+  background: transparent;
+  border: none;
 
-          letter-spacing: -0.02em;
+  cursor: pointer;
 
-          color: rgba(
-            17,
-            17,
-            17,
-            0.68
-          );
+  transition: all .25s ease;
+}
 
-          transition: all 0.3s ease;
-        }
-
-        .nav-links a:hover {
-          background: rgba(
-            11,
-            59,
-            54,
-            0.05
-          );
-
-          color: #111;
-        }
+.nav-links a:hover,
+.dropdown-trigger:hover {
+  background: rgba(11,59,54,.05);
+  color: #111;
+}
 
         /* ACTIVE */
 
-        .nav-links a.active-link {
-          background: rgba(
-            11,
-            59,
-            54,
-            0.08
-          );
+        .active-link {
+  background: rgba(11,59,54,.08) !important;
 
-          color: #0b3b36;
+  color: #0B3B36 !important;
 
-          font-weight: 700;
-        }
+  font-weight: 700 !important;
+}
 
-        .nav-links a.active-link::after {
+        .nav-links a.active-link::after,
+.dropdown-trigger.active-link::after {
           content: "";
 
           position: absolute;
@@ -448,7 +505,174 @@ export default function Navbar() {
           gap: 14px;
         }
 
-        .login-btn {
+            /* DROPDOWN */
+
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+
+  top: calc(100% + 6px);
+  left: 50%;
+
+  min-width: 240px;
+
+  transform:
+    translateX(-50%)
+    translateY(12px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    .98
+  );
+
+  backdrop-filter: blur(24px);
+
+  border-radius: 20px;
+
+  padding: 10px;
+
+  border: 1px solid
+    rgba(
+      11,
+      59,
+      54,
+      .08
+    );
+
+  box-shadow:
+    0 24px 60px
+      rgba(
+        0,
+        0,
+        0,
+        .10
+      );
+
+  transition:
+    opacity .22s ease,
+    transform .22s ease,
+    visibility .22s ease;
+
+  z-index: 200;
+}
+.nav-dropdown:hover .dropdown-trigger svg {
+  transform: rotate(180deg);
+}
+
+.dropdown-trigger svg {
+  transition: transform .25s ease;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+}
+
+.dropdown-menu a {
+  display: block;
+
+  padding: 14px 16px;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #111;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(
+    11,
+    59,
+    54,
+    .05
+  );
+
+  color: #0B3B36;
+}
+
+/* MOBILE COMPANY */
+
+.mobile-company {
+  margin-top: 6px;
+}
+
+.mobile-company-trigger {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 16px;
+
+  background: transparent;
+
+  border: none;
+
+  border-radius: 14px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  color: rgba(17,17,17,.72);
+
+  cursor: pointer;
+}
+
+.mobile-company-trigger:hover {
+  background: rgba(
+    11,
+    59,
+    54,
+    .05
+  );
+}
+
+.mobile-company-links {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+
+  padding-left: 14px;
+
+  margin-top: 8px;
+}
+
+.mobile-company-links a {
+  padding: 12px 14px !important;
+
+  border-radius: 12px;
+
+  background: rgba(
+    11,
+    59,
+    54,
+    .03
+  );
+}
+
+.mobile-chevron-open {
+  transform: rotate(180deg);
+}
+
+.login-btn {
           border: none;
 
           background: transparent;
@@ -478,13 +702,13 @@ export default function Navbar() {
         }
 
         .cta-btn {
-          height: 54px;
+          height: 44px;
 
-          padding: 0 24px;
+          padding: 10px 15px;
 
           border: none;
 
-          border-radius: 18px;
+          border-radius: 14px;
 
           background: linear-gradient(
             135deg,
@@ -499,7 +723,7 @@ export default function Navbar() {
 
           gap: 10px;
 
-          font-size: 15px;
+          font-size: 13px;
 
           font-weight: 700;
 
@@ -578,49 +802,43 @@ export default function Navbar() {
 
         /* MOBILE NAV */
 
-        .mobile-nav {
-          width: calc(100% - 32px);
+       .mobile-nav {
+  width: calc(100% - 24px);
+  display: none;
+  flex-direction: column;
 
-          margin-top: 12px;
+  margin-top: 12px;
 
-          padding: 18px;
+  padding: 18px;
 
-          border-radius: 24px;
+  border-radius: 24px;
 
-          background: rgba(
-            255,
-            255,
-            255,
-            0.82
-          );
+  background: rgba(
+    255,
+    255,
+    255,
+    .90
+  );
 
-          border: 1px solid
-            rgba(
-              11,
-              59,
-              54,
-              0.06
-            );
+  backdrop-filter: blur(24px);
 
-          box-shadow:
-            0 14px 40px
-              rgba(
-                0,
-                0,
-                0,
-                0.05
-              );
+  border: 1px solid
+    rgba(
+      11,
+      59,
+      54,
+      .06
+    );
 
-          backdrop-filter: blur(18px);
-
-          display: none;
-
-          flex-direction: column;
-
-          gap: 10px;
-
-          pointer-events: auto;
-        }
+  box-shadow:
+    0 20px 50px
+      rgba(
+        0,
+        0,
+        0,
+        .08
+      );
+}
 
         .mobile-nav-open {
           display: flex;

@@ -1,14 +1,30 @@
-import React from "react";
+import { useState } from "react";
 import {
   MapPin,
   Phone,
   Mail,
   Clock3,
   ArrowRight,
+  SendHorizonal,
+  ChevronDown,
 } from "lucide-react";
 
 
 export default function ContactFormSection() {
+  const [productOpen, setProductOpen] =
+  useState(false);
+
+const [selectedProduct, setSelectedProduct] =
+  useState("Select a product");
+
+  const products = [
+  "Personal Loan",
+  "Home Loan",
+  "Business Loan",
+  "Loan Against Property",
+  "Credit Card",
+  "Insurance",
+];
   return (
     <>
       <section className="contactFormCF">
@@ -56,15 +72,44 @@ export default function ContactFormSection() {
   <div className="fieldCF">
     <label>Product Interested In</label>
 
-    <select className="selectFieldCF">
-      <option>Select a product</option>
-      <option>Personal Loan</option>
-      <option>Home Loan</option>
-      <option>Business Loan</option>
-      <option>Loan Against Property</option>
-      <option>Credit Card</option>
-      <option>Insurance</option>
-    </select>
+    <div className="SelectCF">
+  <button
+    type="button"
+    className="selectTriggerCF"
+    onClick={() =>
+      setProductOpen(!productOpen)
+    }
+  >
+    <span>{selectedProduct}</span>
+
+    <ChevronDown
+      size={18}
+      className={
+        productOpen
+          ? "selectChevronOpenCF"
+          : ""
+      }
+    />
+  </button>
+
+  {productOpen && (
+    <div className="selectDropdownCF">
+      {products.map((product) => (
+        <button
+          key={product}
+          type="button"
+          className="selectOptionCF"
+          onClick={() => {
+            setSelectedProduct(product);
+            setProductOpen(false);
+          }}
+        >
+          {product}
+        </button>
+      ))}
+    </div>
+  )}
+</div>
   </div>
 </div>
 
@@ -82,7 +127,7 @@ export default function ContactFormSection() {
                 className="contactSubmitBtnCF"
               >
                 Send Message
-                <ArrowRight size={18} />
+                <SendHorizonal size={18} />
               </button>
             </form>
           </div>
@@ -155,6 +200,7 @@ export default function ContactFormSection() {
 .contactFormCF{
   background:var(--color-bg-ivory);
   padding:0 24px 60px;
+  margin:48px 0;
 }
 
 .contactFormContainerCF{
@@ -225,8 +271,7 @@ export default function ContactFormSection() {
 }
 
 .fieldCF input,
-.fieldCF textarea,
-.selectFieldCF{
+.fieldCF textarea{
   width:100%;
   border:1px solid var(--color-border);
   background:var(--color-soft-neutral);
@@ -237,8 +282,8 @@ export default function ContactFormSection() {
   font-family:var(--font-main);
 }
 
-.fieldCF input,
-.selectFieldCF{
+.fieldCF input
+{
   height:56px;
   padding:0 16px;
 }
@@ -250,20 +295,132 @@ export default function ContactFormSection() {
 }
 
 .fieldCF input:focus,
-.fieldCF textarea:focus,
-.selectFieldCF:focus{
+.fieldCF textarea:focus
+{
   border-color:var(--color-secondary-green);
   box-shadow:0 0 0 3px rgba(23,76,69,.08);
 }
 
-.selectFieldCF{
-  cursor:pointer;
-  appearance:none;
-  -webkit-appearance:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%230B3B36' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;
-  background-position:right 16px center;
-  padding-right:42px;
+.SelectCF {
+  position: relative;
+}
+
+.selectTriggerCF {
+  width: 100%;
+
+  height: 56px;
+
+  border: 1px solid
+    var(--color-border);
+
+  background:
+    var(--color-soft-neutral);
+
+  border-radius: 14px;
+
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  color: #111;
+
+  transition: .25s;
+
+  font-family: inherit;
+}
+
+.selectTriggerCF:hover {
+  border-color:
+    rgba(11,59,54,.18);
+}
+
+.selectTriggerCF:focus {
+  outline: none;
+}
+
+.selectChevronOpenCF {
+  transform: rotate(180deg);
+}
+
+.selectTriggerCF svg {
+  transition: .25s;
+}
+
+.selectDropdownCF {
+  position: absolute;
+
+  top: calc(100% + 8px);
+
+  left: 0;
+  right: 0;
+
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 8px;
+
+  border: 1px solid
+    rgba(11,59,54,.08);
+
+  box-shadow:
+    0 20px 50px
+    rgba(0,0,0,.08);
+
+  z-index: 20;
+
+  animation:
+    dropdownIn .18s ease;
+}
+
+.selectOptionCF {
+  width: 100%;
+
+  border: none;
+
+  background: transparent;
+
+  padding: 14px 16px;
+
+  text-align: left;
+
+  border-radius: 12px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.selectOptionCF:hover {
+  background:
+    rgba(11,59,54,.05);
+
+  color:
+    var(--color-dark-green);
+}
+
+@keyframes dropdownIn {
+  from {
+    opacity: 0;
+    transform:
+      translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      translateY(0);
+  }
 }
 
 .contactSubmitBtnCF{
@@ -437,7 +594,7 @@ export default function ContactFormSection() {
   }
 
   .fieldCF input,
-  .selectFieldCF{
+  {
     height:48px;
     font-size:14px;
   }
@@ -517,7 +674,7 @@ export default function ContactFormSection() {
   }
 
   .fieldCF input,
-  .selectFieldCF{
+  {
     height:46px;
   }
 

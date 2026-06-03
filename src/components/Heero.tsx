@@ -34,7 +34,8 @@ export default function Hero() {
 
       <div className="hero-container">
         <div className="hero-content">
-          <div className="hero-badge">
+          <div className="hero-label">
+            <ShieldCheck size={14}/>
             India's #1 Financial Operating System
           </div>
 
@@ -219,7 +220,7 @@ export default function Hero() {
           letter-spacing: -0.06em;
           font-weight: 850;
           color: #111111;
-          margin-bottom: 22px;
+          margin: 22px 0;
           max-width: 650px;
         }
 
