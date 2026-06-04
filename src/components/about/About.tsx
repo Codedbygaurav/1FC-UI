@@ -111,35 +111,7 @@ export default function AboutPage() {
           margin-bottom: 20px;
         }
 
-        .heroTitleAP {
-          font-size:
-            clamp(52px,5vw,78px);
-
-          line-height: 0.95;
-          letter-spacing: -0.06em;
-          font-weight: 900;
-          color: #0F0F0F;
-
-          margin: 18px 0 24px;
-        }
-
-        .heroTitleAP span {
-          font-family:
-            "DM Serif Display",
-            serif;
-
-          font-style: italic;
-          font-weight: 400;
-          color: #0B544B;
-        }
-
-        .heroTitleDescAP {
-          max-width: 520px;
-          font-size: 16px;
-          line-height: 1.8;
-          color: #5F6764;
-          margin-bottom: 28px;
-        }
+        
 
         
 
@@ -189,28 +161,9 @@ export default function AboutPage() {
           color: var(--color-dark-green);
         }
 
-        .sectionTitleAP {
-          margin: 0;
-        }
+        
 
-        .AboutHeading {
-          font-size:
-            clamp(42px, 5vw, 64px);
-          line-height: 0.95;
-          letter-spacing: -0.06em;
-          font-weight: 850;
-          color: #111111;
-          margin-bottom: 18px;
-        }
-
-        .AboutHeading span {
-          font-style: italic;
-          font-family:
-            "DM Serif Display",
-            serif;
-          font-weight: 400;
-          color: #0B3B36;
-        }
+        
 
         
 
@@ -680,14 +633,14 @@ export default function AboutPage() {
                    
                    </div>
 
-                <h1 className="heroTitleAP">
+                <h1 className="hero-title">
                   Building financial clarity for modern Indian{" "}
                   <span>
                     families.
                   </span>
                 </h1>
 
-                <p className="heroTitleDesc">
+                <p className="hero-subtext">
                   1FC brings together financial literacy, disciplined planning
                   and trusted leadership to help families and businesses make
                   clearer long-term decisions.
@@ -731,7 +684,7 @@ export default function AboutPage() {
     Leadership Team
   </div>
 
-  <h2 className="AboutHeading">
+  <h2 className="section-title">
     People driving the
     <span>
      {" "} vision.
@@ -819,7 +772,7 @@ export default function AboutPage() {
     Extended Team
   </div>
 
-  <h2 className="AboutHeading">
+  <h2 className="section-title">
     Specialists supporting the
     <span>
       {" "}ecosystem

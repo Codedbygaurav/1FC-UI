@@ -21,6 +21,10 @@ import GSTCalculator from "./components/calculators/GSTCalculator";
 import GratuityCalculator from "./components/calculators/GratuityCalculator";
 import RentReceipt from "./components/calculators/RentReceipt";
 import ContactUsPage from "./pages/ContactUsPage";
+import LegalPage from "./pages/LegalPage";
+import ReferPage from "./pages/ReferPage";
+import TermsPage from "./pages/TermsPage";
+import FDTermsPage from "./pages/FDTermsPage";
 
 
 export default function App() {
@@ -65,6 +69,22 @@ export default function App() {
         <Route
           path="/privacy-policy"
           element= {<PrivacyPolicy/>}
+        />
+        <Route
+          path="/refer-and-earn-terms"
+          element= {<ReferPage/>}
+          />
+        <Route
+          path="/terms-and-conditions"
+          element= {<TermsPage/>}
+        />
+        <Route
+          path="/fd-terms"
+          element= {<FDTermsPage/>}
+        />
+        <Route
+          path="/legal"
+          element= {<LegalPage/>}
         />
         <Route
           path="/tools/sip-calculator"

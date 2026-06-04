@@ -1,3 +1,6 @@
+import LegalCTA from "@/components/legal/LegalCTA";
+import PrivacyHero from "@/components/privacy/PrivacyHero";
+import PrivacyHighlights from "@/components/privacy/PrivacyHighlights";
 import {
   Database,
   Eye,
@@ -924,76 +927,9 @@ export default function PrivacyPolicy() {
 }
  `}</style>
 
-      <section className="privacyHeroPVC">
-        <div className="privacyContainerPVC">
-          <div className="privacyHeroGridPVC">
-            <div>
-              <div className="hero-label">
-  <span>Privacy Policy</span></div>
+      <PrivacyHero/>
 
-              <h1 className="PVC-hero-title">
-                Privacy built on <br />
-                <span>trust</span>, clarity and control.
-              </h1>
-
-              <p className="privacyIntroPVC">
-                At 1FC, we respect your privacy and handle your personal and
-                financial information with care, responsibility, and
-                transparency.
-              </p>
-
-              <div className="privacyMetaRowPVC">
-                <div className="privacyMetaPVC">Last updated: 2026</div>
-                <div className="privacyMetaPVC">
-                  Applies to 1FC website users
-                </div>
-              </div>
-            </div>
-
-            <div className="privacyHeroCardPVC">
-              <div className="privacyCardLabelPVC">Data responsibility</div>
-              <div className="privacyHeroContentPVC">
-                <div className="privacyBigNumberPVC">100%</div>
-
-                <h2 className="privacyHeroCardTitlePVC">
-                  Your information deserves serious protection.
-                </h2>
-
-                <p className="privacyHeroCardTextPVC">
-                  We only collect information needed to support your financial
-                  journey and communicate with you responsibly.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="privacySummaryPVC">
-        <div className="privacyContainerPVC">
-          <div className="privacySummaryGridPVC">
-            {summaryCards.map((card) => {
-  const Icon = card.icon;
-
-  return (
-    <div className="privacySummaryCardPVC" key={card.number}>
-      <div className="privacySummaryIconPVC">
-        <Icon size={18} strokeWidth={2.2} />
-      </div>
-
-      <h3 className="privacySummaryTitlePVC">
-        {card.title}
-      </h3>
-
-      <p className="privacySummaryTextPVC">
-        {card.text}
-      </p>
-    </div>
-  );
-})}
-          </div>
-        </div>
-      </section>
+      <PrivacyHighlights/>
 
       <section className="privacyContentPVC">
         <div className="privacyContainerPVC">
@@ -1061,27 +997,7 @@ export default function PrivacyPolicy() {
         </div>
       </section>
 
-      <section className="privacyCtaPVC">
-        <div className="privacyContainerPVC">
-          <div className="privacyCtaBoxPVC">
-            <div>
-              <div className="privacyCtaLabelPVC">Need help?</div>
-              <h2 className="privacyCtaTitlePVC">
-                Your financial privacy matters.
-              </h2>
-              <p className="privacyCtaTextPVC">
-                If you have questions about how 1FC handles your information,
-                contact us and we’ll help you clearly.
-              </p>
-            </div>
-
-            <button className="privacyCtaButtonPVC">
-  <Mail size={18} />
-  Contact 1FC
-</button>
-          </div>
-        </div>
-      </section>
+      <LegalCTA/>
     </main>
   );
 }
