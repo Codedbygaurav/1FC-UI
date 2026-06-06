@@ -127,7 +127,7 @@ export default function App() {
 
       <Footer />
 
-      {/* <AdvisorWidget /> */}
+      <AdvisorWidget />
     </>
   );
 }

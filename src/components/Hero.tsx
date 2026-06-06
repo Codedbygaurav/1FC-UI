@@ -1,3 +1,14 @@
+import {
+  TrendingUp,
+  ShieldCheck,
+  Landmark,
+  Receipt,
+  Scale,
+  Bot,
+  ArrowRight,
+  CalendarDays,
+} from "lucide-react";
+
 export default function Hero() {
   const cards = [
     {
@@ -23,7 +34,8 @@ export default function Hero() {
 
       <div className="hero-container">
         <div className="hero-content">
-          <div className="hero-badge">
+          <div className="hero-label">
+            <ShieldCheck size={14}/>
             India's #1 Financial Operating System
           </div>
 
@@ -36,32 +48,20 @@ export default function Hero() {
           </h1>
 
           <p className="hero-description">
-            Investments, insurance, taxes, loans, legal planning and
-            AI-powered monitoring — unified into one intelligent financial
-            operating system for individuals and families.
+            Investments, insurance, taxes, loans, legal planning and AI-powered
+            monitoring — unified into one intelligent financial operating system
+            for individuals and families.
           </p>
 
           <div className="hero-actions">
             <button className="btn-primary hero-btn-primary">
               Explore Products
+              <ArrowRight size={18} strokeWidth={2.2} />
             </button>
             <button className="btn-secondary hero-btn-secondary">
+              <CalendarDays size={18} strokeWidth={2.2} />
               Book Demo
             </button>
-          </div>
-
-          <div className="hero-stats">
-            {[
-              ["6", "Core Products"],
-              ["360°", "Financial View"],
-              ["24/7", "AI Monitoring"],
-            ].map(([value, label]) => (
-              <div key={label} className="hero-stat-card">
-                <div className="hero-stat-accent" />
-                <div className="hero-stat-number">{value}</div>
-                <div className="hero-stat-label">{label}</div>
-              </div>
-            ))}
           </div>
 
           <div className="hero-trust">
@@ -78,13 +78,43 @@ export default function Hero() {
         <div className="hero-visual">
           <div className="hero-main-glow" />
           <div className="hero-gradient-blob" />
+          <div className="ecosystem-orbit">
+            <div className="orbit orbit-1" />
+            <div className="orbit orbit-2" />
+
+            <div className="orbit-node node-invest">
+              <TrendingUp size={18} />
+              <span>Investments</span>
+            </div>
+
+            <div className="orbit-node node-insurance">
+              <ShieldCheck size={18} />
+              <span>Insurance</span>
+            </div>
+
+            <div className="orbit-node node-loans">
+              <Landmark size={18} />
+              <span>Loans</span>
+            </div>
+
+            <div className="orbit-node node-tax">
+              <Receipt size={18} />
+              <span>Tax</span>
+            </div>
+
+            <div className="orbit-node node-legal">
+              <Scale size={18} />
+              <span>Legal</span>
+            </div>
+
+            <div className="orbit-node node-ai">
+              <Bot size={18} />
+              <span>AI Monitor</span>
+            </div>
+          </div>
 
           <div className="hero-mascot-wrap">
-            <img
-              src="/MainMascotFull.png"
-              alt="Mascot"
-              className="hero-mascot animate-float"
-            />
+            <img src="/homeHero.png" alt="Mascot" className="hero-mascot" />
           </div>
 
           {cards.map((card, index) => (
@@ -140,7 +170,7 @@ export default function Hero() {
         .hero-section {
           position: relative;
           overflow: hidden;
-          padding: 118px 24px 25px;
+          padding: 108px 24px 0;
           background: #F8F7F2;
         }
 
@@ -155,15 +185,15 @@ export default function Hero() {
         }
 
         .hero-container {
-          max-width: 1280px;
-          margin: 0 auto;
-          display: grid;
-          grid-template-columns: 1.04fr 0.96fr;
-          gap: 12px;
-          align-items: center;
-          position: relative;
-          z-index: 2;
-        }
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.04fr 0.96fr;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
 
         .hero-content {
           position: relative;
@@ -190,7 +220,7 @@ export default function Hero() {
           letter-spacing: -0.06em;
           font-weight: 850;
           color: #111111;
-          margin-bottom: 22px;
+          margin: 22px 0;
           max-width: 650px;
         }
 
@@ -232,6 +262,10 @@ export default function Hero() {
         .hero-btn-secondary {
           height: 52px;
           padding: 0 26px;
+          display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
           border-radius: 15px;
           font-weight: 700;
         }
@@ -250,7 +284,7 @@ export default function Hero() {
           display: flex;
           gap: 14px;
           flex-wrap: wrap;
-          margin-bottom: 22px;
+          margin-bottom: 2px;
         }
 
         .hero-stat-card {
@@ -302,20 +336,28 @@ export default function Hero() {
 
         .hero-visual {
           position: relative;
-          min-height: 535px;
+          min-height: auto;
           display: flex;
           align-items: center;
           justify-content: center;
         }
 
         .hero-main-glow {
-          position: absolute;
-          width: 380px;
-          height: 380px;
-          border-radius: 999px;
-          background: radial-gradient(circle, rgba(11,59,54,0.13), transparent 72%);
-          filter: blur(30px);
-        }
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(11,59,54,.18) 0%,
+      rgba(220,235,99,.08) 35%,
+      rgba(220,235,99,.03) 55%,
+      transparent 75%
+    );
+  filter: blur(35px);
+  z-index: 0;
+}
 
         .hero-gradient-blob {
           position: absolute;
@@ -327,17 +369,121 @@ export default function Hero() {
         }
 
         .hero-mascot-wrap {
-          position: relative;
-          z-index: 2;
-          transform: translateX(26px) translateY(38px);
-        }
+  position: relative;
+  z-index: 5;
+  transform: translateX(-150px) translateY(10px);
+}
 
         .hero-mascot {
-          height: 565px;
-          object-fit: contain;
-          object-position: bottom;
-          filter: drop-shadow(0 26px 56px rgba(0,0,0,0.17));
-        }
+  height: 620px;
+  object-fit: contain;
+  object-position: bottom;
+  filter: drop-shadow(
+    0 28px 60px rgba(0,0,0,.18)
+  );
+}
+
+   .ecosystem-orbit {
+  position: absolute;
+   width: 560px;
+  height: 560px;
+  left: -55px;
+  top: 30px;
+  transform: translateX(-60px);
+  
+}
+
+.orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed rgba(11,59,54,.10);
+}
+  .orbit-label {
+  background: rgba(255,255,255,.92);
+  border-radius: 999px;
+  padding: 6px 10px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.05);
+}
+
+.orbit-1 {
+  inset: 23px;
+}
+
+.orbit-2 {
+  inset: 0;
+}
+
+.orbit-node {
+  position: absolute;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+  .orbit-node span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0B3B36;
+}
+
+.orbit-node svg {
+  width: 38px;
+  height: 38px;
+  padding: 10px;
+  background: rgba(255,255,255,.92);
+  border-radius: 50%;
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.06),
+    0 1px 0 rgba(255,255,255,.9);
+    color:#0B3B36;
+}
+
+.node-invest {
+  top: 40px;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.node-insurance {
+  top: 210px;
+  left: -25px;
+}
+
+.node-loans {
+  top: 70px;
+  right: 55px;
+}
+
+.node-tax {
+  bottom: 115px;
+  left: 5px;
+}
+
+.node-legal {
+  bottom: -15px;
+  right: 345px;
+}
+
+.node-ai {
+  bottom: 100px;
+  left: 90%;
+  transform: translateX(-50%);
+}
+  
+
+.system-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
+}
+
+.system-subtitle {
+  font-size: 14px;
+  font-weight: 800;
+  color: #0B3B36;
+}
 
         .hero-floating-card {
           position: absolute;
@@ -363,21 +509,21 @@ export default function Hero() {
           width: 162px;
         }
 
-        .card-0 {
-          top: 13%;
-          right: 5%;
-        }
+     .card-0 {
+  top: 10%;
+  right: -2%;
+}
 
-        .card-1 {
-          bottom: 5%;
-          left: 1%;
-          z-index: 5;
-        }
+.card-1 {
+  top: 40%;
+  right: -4%;
+  left: auto;
+}
 
-        .card-2 {
-          bottom: 12%;
-          right: 2%;
-        }
+.card-2 {
+  bottom: 5%;
+  right: -1%;
+}
 
         .hero-card-label {
           font-size: 11px;
@@ -464,188 +610,328 @@ export default function Hero() {
           filter: blur(25px);
         }
 
-        @media (max-width: 1024px) {
-          .hero-container {
-            grid-template-columns: 1fr;
-            gap: 30px;
-          }
+    @media (max-width: 1024px) {
 
-          .hero-content {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
+  .hero-section {
+    padding: 90px 28px 0;
+  }
 
-          .hero-description {
-            max-width: 680px;
-          }
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
 
-          .hero-actions,
-          .hero-stats,
-          .hero-trust {
-            justify-content: center;
-          }
+  .hero-content {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 
-          .hero-visual {
-            min-height: 420px;
-          }
+  .hero-title {
+    max-width: 780px;
+    font-size: clamp(52px, 7vw, 64px);
+  }
 
-          .hero-mascot-wrap {
-            transform: translateX(10px) translateY(24px);
-          }
+  .hero-description {
+    max-width: 680px;
+    font-size: 17px;
+  }
 
-          .hero-mascot {
-            height: 420px;
-          }
+  .hero-actions,
+  .hero-stats,
+  .hero-trust {
+    justify-content: center;
+  }
 
-          .card-0 {
-            right: 14%;
-          }
+  .hero-visual {
+    min-height: 620px;
+    margin-top: 0;
+  }
 
-          .card-1 {
-            left: 12%;
-            bottom: 2%;
-          }
+  .hero-mascot-wrap {
+    transform: translateX(-40px);
+  }
 
-          .card-2 {
-            right: 12%;
-          }
-        }
+  .hero-mascot {
+    height: 560px;
+  }
 
-        @media (max-width: 768px) {
-          .hero-section {
-            padding: 112px 20px 56px;
-          }
+  .ecosystem-orbit {
+    width: 520px;
+    height: 520px;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-58%);
+  }
 
-          .hero-title {
-            font-size: clamp(38px, 10vw, 54px);
-            line-height: 0.96;
-          }
+  .orbit-node svg {
+    width: 44px;
+    height: 44px;
+  }
 
-          .hero-description {
-            font-size: 14px;
-            line-height: 1.7;
-            margin-bottom: 26px;
-          }
+  .orbit-node span {
+    font-size: 11px;
+  }
 
-          .hero-actions {
-            width: 100%;
-            flex-direction: column;
-            gap: 14px;
-          }
+  .node-invest {
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-          .hero-actions button {
-            width: 100%;
-          }
+  .node-insurance {
+    top: 110px;
+    left: -5px;
+  }
 
-          .hero-stats {
-            width: 100%;
-            justify-content: center;
-          }
+  .node-loans {
+    top: 110px;
+    right: -5px;
+  }
 
-          .hero-stat-card {
-            min-width: 100px;
-            padding: 0 14px 14px;
-          }
+  .node-tax {
+    bottom: 110px;
+    left: -5px;
+  }
 
-          .hero-stat-number {
-            font-size: 22px;
-          }
+  .node-legal {
+    bottom: 110px;
+    right: -5px;
+  }
 
-          .hero-trust {
-            justify-content: center;
-            font-size: 11px;
-          }
+  .node-ai {
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-          .hero-visual {
-            min-height: 305px;
-            margin-top: 8px;
-          }
+  .hero-floating-card.networth {
+    width: 170px;
+  }
 
-          .hero-mascot-wrap {
-            transform: translateX(8px) translateY(28px);
-          }
+  .hero-floating-card.portfolio {
+    width: 190px;
+  }
 
-          .hero-mascot {
-            height: 260px;
-          }
+  .card-0 {
+    top: 20px;
+    right: 5%;
+  }
 
-          .hero-floating-card {
-            padding: 10px;
-            border-radius: 14px;
-          }
+  .card-1 {
+    top: 255px;
+    right: 3%;
+  }
 
-          .hero-floating-card.networth {
-            width: 112px;
-          }
+  .card-2 {
+    bottom: 25px;
+    right: 8%;
+  }
+}
 
-          .hero-floating-card.portfolio {
-            width: 138px;
-          }
+@media (max-width: 768px) {
 
-          .hero-floating-card.advisor {
-            display: none;
-          }
+  .hero-section {
+    padding: 110px 20px 0;
+  }
 
-          .hero-card-label {
-            font-size: 8px;
-            margin-bottom: 4px;
-          }
+  .hero-badge {
+    margin-bottom: 20px;
+  }
 
-          .hero-card-value {
-            font-size: 16px;
-          }
+  .hero-title {
+    font-size: 46px;
+    line-height: 0.98;
+    max-width: 100%;
+    text-align: center;
+  }
 
-          .hero-card-sub {
-            font-size: 8px;
-            margin-top: 5px;
-          }
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.75;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 26px;
+  }
 
-          .portfolio-row {
-            font-size: 8px;
-          }
+  .hero-actions {
+    width: 100%;
+    max-width: 520px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
 
-          .portfolio-bar {
-            height: 4px;
-          }
+  .hero-actions button {
+    width: 100%;
+  }
 
-          .card-0 {
-            top: 0%;
-            right: 2%;
-          }
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    height: 54px;
+    font-size: 15px;
+  }
 
-          .card-1 {
-            bottom: 4%;
-            left: -2%;
-          }
-        }
+  .hero-stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
 
-        @media (max-width: 560px) {
-          .hero-section {
-            padding: 108px 16px 52px;
-          }
+  .hero-stat-card {
+    min-width: 0;
+    padding: 0 14px 14px;
+  }
 
-          .hero-title {
-            font-size: 36px;
-          }
+  .hero-stat-number {
+    font-size: 24px;
+  }
 
-          .hero-description {
-            font-size: 13px;
-          }
+  .hero-stat-label {
+    font-size: 12px;
+  }
 
-          .hero-stat-card {
-            flex: 1;
-          }
+  .hero-trust {
+    justify-content: center;
+    row-gap: 8px;
+  }
 
-          .hero-visual {
-            min-height: 275px;
-          }
+  .hero-visual {
+    min-height: 420px;
+    justify-content: center;
+    margin-top: 0;
+  }
 
-          .hero-mascot {
-            height: 380px;
-          }
-        }
+  .ecosystem-orbit,
+  .orbit,
+  .orbit-node {
+    display: none;
+  }
+
+  .hero-main-glow {
+    width: 360px;
+    height: 360px;
+  }
+
+  .hero-gradient-blob {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-mascot-wrap {
+    transform: translateX(-25px);
+  }
+
+  .hero-mascot {
+    height: 360px;
+  }
+
+  .hero-floating-card.portfolio,
+  .hero-floating-card.advisor {
+    display: none;
+  }
+
+  .hero-floating-card.networth {
+    width: 130px;
+    padding: 12px;
+  }
+
+  .card-0 {
+    top: 20px;
+    right: 12px;
+  }
+
+  .hero-card-value {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-section {
+    padding: 125px 16px 0;
+  }
+
+  .hero-title {
+    font-size: 38px;
+    letter-spacing: -0.05em;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    height: 52px;
+  }
+
+  .hero-stats {
+    gap: 10px;
+  }
+
+  .hero-stat-card {
+    padding: 0 10px 12px;
+    border-radius: 14px;
+  }
+
+  .hero-stat-number {
+    font-size: 20px;
+  }
+
+  .hero-stat-label {
+    font-size: 11px;
+  }
+
+  .hero-trust {
+    font-size: 11px;
+    gap: 7px;
+  }
+
+  .hero-visual {
+    min-height: 360px;
+  }
+
+  .hero-mascot-wrap {
+    transform: translateX(-30px);
+  }
+
+  .hero-mascot {
+    height: 360px;
+  }
+
+  .hero-floating-card.networth {
+    width: 118px;
+    padding: 10px;
+  }
+
+  .card-0 {
+    top: 8px;
+    right: 0;
+  }
+
+  .hero-card-label {
+    font-size: 9px;
+  }
+
+  .hero-card-value {
+    font-size: 17px;
+  }
+
+  .hero-card-sub {
+    font-size: 10px;
+  }
+}
       `}</style>
     </section>
   );

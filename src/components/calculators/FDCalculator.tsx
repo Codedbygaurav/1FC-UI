@@ -47,84 +47,132 @@ export default function FDCalculator() {
     </div>
 
     <div className="CalculatorCard">
-            <div className="Inputs">
-              <div className="FormulaCard">
-                <span>COMPOUND INTEREST FORMULA</span>
-                <strong>A = P × (1 + r/n)nt</strong>
-              </div>
 
-              <div className="InputGroup">
-                <div className="InputTop">
-                  <span>Deposit Amount</span>
-                  <strong>₹{formatCurrency(deposit)}</strong>
-                </div>
-                <input
-                  type="range"
-                  min={10000}
-                  max={5000000}
-                  step={10000}
-                  value={deposit}
-                  onChange={(e) => setDeposit(Number(e.target.value))}
-                />
-              </div>
+  <div className="CalculatorInputs">
 
-              <div className="InputGroup">
-                <div className="InputTop">
-                  <span>Interest Rate</span>
-                  <strong>{interest}%</strong>
-                </div>
-                <input
-                  type="range"
-                  min={1}
-                  max={15}
-                  step={0.1}
-                  value={interest}
-                  onChange={(e) => setInterest(Number(e.target.value))}
-                />
-              </div>
+    <div className="FormulaCard">
+      <span>COMPOUND INTEREST FORMULA</span>
+      <strong>
+        A = P × (1 + r/n)nt
+      </strong>
+    </div>
 
-              <div className="InputGroup">
-                <div className="InputTop">
-                  <span>Duration</span>
-                  <strong>{years} Years</strong>
-                </div>
-                <input
-                  type="range"
-                  min={1}
-                  max={30}
-                  step={1}
-                  value={years}
-                  onChange={(e) => setYears(Number(e.target.value))}
-                />
-              </div>
-            </div>
+    <div className="InputGroup">
+      <div className="InputTop">
+        <span>Deposit Amount</span>
+        <strong>
+          ₹{formatCurrency(deposit)}
+        </strong>
+      </div>
 
-            <div className="ResultCard">
-              <div className="ResultLabel">Estimated Maturity Value</div>
-              <h2>₹{formatCurrency(maturityAmount)}</h2>
+      <input
+        type="range"
+        min={10000}
+        max={5000000}
+        step={10000}
+        value={deposit}
+        onChange={(e) =>
+          setDeposit(
+            Number(e.target.value)
+          )
+        }
+      />
+    </div>
 
-              <div className="Growth">
-                + ₹{formatCurrency(interestEarned)} earned
-              </div>
+    <div className="InputGroup">
+      <div className="InputTop">
+        <span>Interest Rate</span>
+        <strong>
+          {interest}%
+        </strong>
+      </div>
 
-              <div className="Divider" />
+      <input
+        type="range"
+        min={1}
+        max={15}
+        step={0.1}
+        value={interest}
+        onChange={(e) =>
+          setInterest(
+            Number(e.target.value)
+          )
+        }
+      />
+    </div>
 
-              <div className="StatRow">
-                <span>Investment</span>
-                <strong>₹{formatCurrency(deposit)}</strong>
-              </div>
+    <div className="InputGroup">
+      <div className="InputTop">
+        <span>Duration</span>
+        <strong>
+          {years} Years
+        </strong>
+      </div>
 
-              <div className="StatRow">
-                <span>Interest Earned</span>
-                <strong>₹{formatCurrency(interestEarned)}</strong>
-              </div>
+      <input
+        type="range"
+        min={1}
+        max={30}
+        step={1}
+        value={years}
+        onChange={(e) =>
+          setYears(
+            Number(e.target.value)
+          )
+        }
+      />
+    </div>
 
-              <div className="StatRow">
-                <span>Growth</span>
-                <strong>{growth}%</strong>
-              </div>
-            </div>
-          </div>
+  </div>
+
+  <div className="CalculatorResults">
+
+    <div className="ResultLabel">
+      Estimated Maturity Value
+    </div>
+
+    <h2>
+      ₹{formatCurrency(maturityAmount)}
+    </h2>
+
+    <div className="Growth">
+      + ₹{formatCurrency(interestEarned)}
+      {" "}earned
+    </div>
+
+    <div className="Divider" />
+
+    <div className="StatRow">
+      <span>Investment</span>
+      <strong>
+        ₹{formatCurrency(deposit)}
+      </strong>
+    </div>
+
+    <div className="StatRow">
+      <span>Interest Earned</span>
+      <strong>
+        ₹{formatCurrency(interestEarned)}
+      </strong>
+    </div>
+
+    <div className="StatRow">
+      <span>Growth</span>
+      <strong>
+        {growth}%
+      </strong>
+    </div>
+
+    <div className="StatRow">
+      <span>Duration</span>
+      <strong>
+        {years} Years
+      </strong>
+    </div>
+
+  </div>
+
+</div>
           <div className="vaultCard">
   <div className="vaultGlow" />
 

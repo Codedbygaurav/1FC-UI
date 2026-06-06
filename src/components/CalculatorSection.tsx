@@ -125,7 +125,7 @@ export default function CalculatorSection() {
            
 
           <div>
-            <div className="section-label reveal">
+            <div className="calc-label reveal">
               <div className="label-line" />
 
               <span>Tools</span>
@@ -165,7 +165,7 @@ export default function CalculatorSection() {
            
 
           <div>
-            <div className="section-label reveal">
+            <div className="calc-label reveal">
               <div className="label-line" />
 
               <span>Platform</span>
@@ -269,35 +269,29 @@ export default function CalculatorSection() {
 
          
 
-        .section-label {
-          display: inline-flex;
-          align-items: center;
-
-          gap: 10px;
-
-          margin-bottom: 16px;
-        }
+        .calc-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
 
         .label-line {
           width: 30px;
           height: 1px;
-
           background: #0b3b36;
 
           opacity: 0.2;
         }
 
-        .section-label span {
-          font-size: 10px;
-
-          font-weight: 700;
-
-          letter-spacing: 0.14em;
-
-          text-transform: uppercase;
-
-          color: #666;
-        }
+        .calc-label span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #666;
+  white-space: nowrap;
+}
 
          
 
@@ -630,7 +624,7 @@ export default function CalculatorSection() {
     padding: 68px 20px 72px;
   }
 
-  .section-label {
+  .calc-label {
     margin-bottom: 12px;
   }
 
@@ -707,7 +701,7 @@ export default function CalculatorSection() {
     width: 22px;
   }
 
-  .section-label span {
+  .calc-label span {
     font-size: 10px;
   }
 

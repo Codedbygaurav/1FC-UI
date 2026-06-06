@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function RentReceipt() {
@@ -51,317 +51,439 @@ export default function RentReceipt() {
 
         </div>
 
-        <div className="sipCard">
+        <div className="receiptBuilder">
 
-          <div className="sipFormGrid">
+  <div className="receiptForm">
 
-            <div className="sipField">
+    <div className="sipFormGrid">
 
-              <label>
-                Tenant Name
-              </label>
+      <div className="sipField">
+        <label>Tenant Name</label>
+        <input
+          type="text"
+          value={tenantName}
+          onChange={(e) =>
+            setTenantName(e.target.value)
+          }
+        />
+      </div>
 
-              <input
-                type="text"
-                value={tenantName}
-                onChange={(e) =>
-                  setTenantName(
-                    e.target.value
-                  )
-                }
-              />
+      <div className="sipField">
+        <label>Landlord Name</label>
+        <input
+          type="text"
+          value={landlordName}
+          onChange={(e) =>
+            setLandlordName(e.target.value)
+          }
+        />
+      </div>
 
-            </div>
+      <div className="sipField">
+        <label>Monthly Rent</label>
+        <input
+          type="number"
+          value={rent}
+          onChange={(e) =>
+            setRent(e.target.value)
+          }
+        />
+      </div>
 
-            <div className="sipField">
+      <div className="sipField">
+        <label>Receipt Month</label>
+        <input
+          type="text"
+          value={month}
+          onChange={(e) =>
+            setMonth(e.target.value)
+          }
+        />
+      </div>
 
-              <label>
-                Landlord Name
-              </label>
+    </div>
 
-              <input
-                type="text"
-                value={landlordName}
-                onChange={(e) =>
-                  setLandlordName(
-                    e.target.value
-                  )
-                }
-              />
+    <div className="sipField full">
+      <label>Property Address</label>
+      <textarea
+        value={address}
+        onChange={(e) =>
+          setAddress(e.target.value)
+        }
+      />
+    </div>
 
-            </div>
+    <button className="receiptButton">
+      Download PDF <FileText/>
+    </button>
 
-            <div className="sipField">
+  </div>
 
-              <label>
-                Monthly Rent
-              </label>
+  <div className="receiptPreviewCard">
 
-              <input
-                type="number"
-                value={rent}
-                onChange={(e) =>
-                  setRent(
-                    e.target.value
-                  )
-                }
-              />
+    <div className="receiptPreviewHeader">
 
-            </div>
+      <div className="receiptSectionLabel">
+        LIVE PREVIEW
+      </div>
 
-            <div className="sipField">
+      <div className="previewBadge">
+        HRA READY
+      </div>
 
-              <label>
-                Receipt Month
-              </label>
+    </div>
 
-              <input
-                type="text"
-                value={month}
-                onChange={(e) =>
-                  setMonth(
-                    e.target.value
-                  )
-                }
-              />
+    <h3 className="receiptTitle">
+      Rent Receipt
+    </h3>
 
-            </div>
+    <div className="previewBlock">
 
-          </div>
+      <p>
+        Received ₹{rent} from
+        <strong> {tenantName+" "}</strong>
+        towards rent payment for
+        <strong> {month}</strong>.
+      </p>
 
-          <div className="sipField full">
+      <div className="previewDivider" />
 
-            <label>
-              Property Address
-            </label>
+      <p>
+        Landlord:
+        <strong> {landlordName}</strong>
+      </p>
 
-            <textarea
-              value={address}
-              onChange={(e) =>
-                setAddress(
-                  e.target.value
-                )
-              }
-            />
+      <p>
+        Property:
+        <strong> {address}</strong>
+      </p>
 
-          </div>
+      <div className="previewSignature">
+        <span>Signature of Landlord</span>
+        <strong>{landlordName}</strong>
+      </div>
 
-          <button
-            className="receiptButton"
-          >
-            Generate Receipt
-          </button>
+    </div>
 
-          <div className="sipDivider" />
+  </div>
 
-          <div className="receiptPreview">
-
-            <div className="previewLabel">
-              Receipt Preview
-            </div>
-
-            <h3>
-              RENT RECEIPT
-            </h3>
-
-            <p>
-              Received ₹{rent} from{" "}
-              <strong>
-                {tenantName}
-              </strong>{" "}
-              towards rent payment for{" "}
-              <strong>
-                {month}
-              </strong>.
-            </p>
-
-            <p>
-              Landlord:
-              <strong>
-                {" "}
-                {landlordName}
-              </strong>
-            </p>
-
-            <p>
-              Property:
-              <strong>
-                {" "}
-                {address}
-              </strong>
-            </p>
-
-          </div>
-
-        </div>
+</div>
 
       </div>
 
-      <style>{`
+      <style>{`.sipPage{
+  min-height:100vh;
+  background:#FAFAF7;
+  padding:120px 20px 40px;
+}
 
-      .sipPage{
-        min-height:100vh;
-        background:#FAFAF7;
-        padding:120px 20px 40px;
-      }
+.sipWrapper{
+  max-width:1280px;
+  margin:0 auto;
+}
 
-      .sipWrapper{
-        max-width:820px;
-        margin:0 auto;
-      }
+.sipBack{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  text-decoration:none;
+  color:#0B3B36;
+  font-size:14px;
+  font-weight:600;
+  margin-bottom:28px;
+}
 
-      .sipBack{
-        display:inline-flex;
-        align-items:center;
-        gap:8px;
-        text-decoration:none;
-        color:#0B3B36;
-        font-size:14px;
-        font-weight:600;
-        margin-bottom:28px;
-      }
+.sipHeader{
+  margin-bottom:28px;
+}
 
-      .sipHeader{
-        margin-bottom:28px;
-      }
+.sipBadge{
+  display:inline-flex;
+  padding:8px 14px;
+  border-radius:999px;
+  background:#F1F3EE;
+  color:#0B3B36;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
 
-      .sipBadge{
-        display:inline-flex;
-        padding:8px 14px;
-        border-radius:999px;
-        background:#F1F3EE;
-        color:#0B3B36;
-        font-size:10px;
-        font-weight:700;
-        letter-spacing:.12em;
-        text-transform:uppercase;
-        margin-bottom:18px;
-      }
+.sipTitle{
+  font-size:clamp(42px,5vw,64px);
+  line-height:.95;
+  letter-spacing:-0.05em;
+  font-weight:850;
+  color:#111;
+  margin-bottom:16px;
+}
 
-      .sipTitle{
-        font-size:clamp(42px,5vw,64px);
-        line-height:.95;
-        letter-spacing:-0.05em;
-        font-weight:850;
-        color:#111;
-        margin-bottom:16px;
-      }
+.sipDescription{
+  max-width:620px;
+  font-size:15px;
+  line-height:1.8;
+  color:#5E5E5E;
+}
 
-      .sipDescription{
-        font-size:15px;
-        line-height:1.8;
-        color:#5E5E5E;
-      }
+/* =========================
+   RECEIPT BUILDER
+========================= */
 
-      .sipCard{
-        background:#FFF;
-        border-radius:32px;
-        border:1px solid rgba(0,0,0,.06);
-        padding:28px;
-      }
+.receiptBuilder{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+  margin-top:32px;
+}
 
-      .sipFormGrid{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:16px;
-      }
+.receiptForm{
+  background:#fff;
+  border:1px solid rgba(0,0,0,.06);
+  border-radius:32px;
+  padding:28px;
+  box-shadow:0 20px 60px rgba(11,59,54,.06);
+}
 
-      .sipField{
-        display:flex;
-        flex-direction:column;
-      }
+.receiptPreviewCard{
+  background:
+    linear-gradient(
+      180deg,
+      #0B3B36,
+      #082D29
+    );
 
-      .sipField label{
-        font-size:13px;
-        font-weight:600;
-        margin-bottom:8px;
-        color:#5E5E5E;
-      }
+  color:#FAFAF7;
+  border-radius:32px;
+  padding:28px;
+  position:sticky;
+  top:100px;
+  align-self:start;
+}
 
-      .sipField input,
-      .sipField textarea{
-        border:1px solid rgba(0,0,0,.08);
-        background:#F8F9F5;
-        border-radius:16px;
-        padding:14px;
-        font-size:14px;
-        outline:none;
-      }
+.receiptSectionLabel{
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#DCEB63;
+}
 
-      .sipField textarea{
-        resize:none;
-        height:100px;
-      }
+.previewBadge{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;
+  padding:8px 12px;
+  font-size:11px;
+  font-weight:700;
+}
 
-      .full{
-        margin-top:16px;
-      }
+/* =========================
+   FORM
+========================= */
 
-      .receiptButton{
-        width:100%;
-        margin-top:20px;
-        border:none;
-        border-radius:18px;
-        padding:16px;
-        background:#0B3B36;
-        color:#FAFAF7;
-        font-weight:700;
-        cursor:pointer;
-      }
+.sipFormGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
 
-      .sipDivider{
-        height:1px;
-        background:rgba(0,0,0,.06);
-        margin:28px 0;
-      }
+.sipField{
+  display:flex;
+  flex-direction:column;
+}
 
-      .receiptPreview{
-        background:#F6F7F3;
-        border-radius:22px;
-        padding:24px;
-      }
+.sipField label{
+  font-size:13px;
+  font-weight:600;
+  margin-bottom:8px;
+  color:#5E5E5E;
+}
 
-      .previewLabel{
-        font-size:11px;
-        font-weight:700;
-        letter-spacing:.12em;
-        color:#0B3B36;
-        margin-bottom:12px;
-      }
+.sipField input,
+.sipField textarea{
+  width:100%;
+  box-sizing:border-box;
+  border:none;
+  background:#F6F7F3;
+  border-radius:18px;
+  padding:14px 16px;
+  font-size:14px;
+  outline:none;
+  transition:.2s;
+}
 
-      .receiptPreview h3{
-        margin-bottom:18px;
-        color:#111;
-      }
+.sipField input:focus,
+.sipField textarea:focus{
+  box-shadow:
+    0 0 0 2px rgba(11,59,54,.12);
+}
 
-      .receiptPreview p{
-        line-height:1.8;
-        color:#5E5E5E;
-        margin-bottom:10px;
-      }
+.sipField textarea{
+  resize:none;
+  min-height:120px;
+}
 
-      @media(max-width:768px){
+.full{
+  margin-top:18px;
+}
 
-        .sipPage{
-          padding:110px 16px 30px;
-        }
+.receiptButton{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+  width:100%;
+  margin-top:24px;
+  border:none;
+  border-radius:18px;
+  padding:16px;
+  background:
+    linear-gradient(
+      135deg,
+      #0B3B36,
+      #174C45
+    );
 
-        .sipCard{
-          padding:20px;
-          border-radius:24px;
-        }
+  color:#FAFAF7;
+  font-weight:700;
+  font-size:15px;
+  cursor:pointer;
+  transition:.25s;
+}
 
-        .sipFormGrid{
-          grid-template-columns:1fr;
-        }
+.receiptButton:hover{
+  transform:translateY(-2px);
+}
 
-        .sipTitle{
-          font-size:44px;
-        }
+/* =========================
+   PREVIEW
+========================= */
 
-      }
+.receiptPreviewHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:24px;
+}
 
-      `}</style>
+.receiptTitle{
+  font-size:2rem;
+  font-weight:800;
+  letter-spacing:-.04em;
+  margin-bottom:24px;
+}
+
+.previewBlock{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:20px;
+  padding:22px;
+}
+
+.previewBlock p{
+  line-height:1.8;
+  color:rgba(255,255,255,.82);
+  margin-bottom:14px;
+}
+
+.previewBlock strong{
+  color:#fff;
+}
+
+.previewDivider{
+  height:1px;
+  background:rgba(255,255,255,.08);
+  margin:20px 0;
+}
+
+.previewSignature{
+  margin-top:40px;
+}
+
+.previewSignature span{
+  display:block;
+  opacity:.7;
+  margin-bottom:10px;
+  font-size:13px;
+}
+
+.previewSignature strong{
+  font-size:1rem;
+  font-weight:700;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:1024px){
+
+  .receiptBuilder{
+    grid-template-columns:1fr;
+  }
+
+  .receiptPreviewCard{
+    position:static;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  .sipPage{
+    padding:110px 16px 30px;
+  }
+
+  .sipTitle{
+    font-size:44px;
+  }
+
+  .receiptBuilder{
+    gap:18px;
+  }
+
+  .sipFormGrid{
+    grid-template-columns:1fr;
+  }
+
+  .receiptForm,
+  .receiptPreviewCard{
+    padding:20px;
+    border-radius:24px;
+  }
+
+  .receiptTitle{
+    font-size:1.7rem;
+  }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width:480px){
+
+  .receiptForm,
+  .receiptPreviewCard{
+    padding:16px;
+    border-radius:20px;
+  }
+
+  .receiptTitle{
+    font-size:1.5rem;
+  }
+
+  .receiptButton{
+    padding:14px;
+  }
+
+}`}</style>
 
     </div>
   );

@@ -50,25 +50,19 @@ export default function SIPCalculator() {
     </p>
   </div>
 
-  <div className="sipCard">
+  <div className="CalculatorCard">
 
-    <div className="sipFormulaBlock">
+  <div className="CalculatorInputs">
 
-      <div className="sipFormulaLabel">
-        Future Value Formula
-      </div>
-
-      <div className="sipFormula">
-        M = P × [((1 + r)^n − 1) / r] × (1 + r)
-      </div>
-
+    <div className="FormulaCard">
+      <span>FUTURE VALUE FORMULA</span>
+      <strong>
+        M = P × [((1 + r)n − 1) / r] × (1 + r)
+      </strong>
     </div>
 
-    {/* Inputs */}
-
-    <div className="sipInputGroup">
-
-      <div className="sipInputTop">
+    <div className="InputGroup">
+      <div className="InputTop">
         <span>Monthly SIP</span>
         <strong>
           ₹{formatCurrency(monthlyInvestment)}
@@ -87,14 +81,14 @@ export default function SIPCalculator() {
           )
         }
       />
-
     </div>
 
-    <div className="sipInputGroup">
-
-      <div className="sipInputTop">
+    <div className="InputGroup">
+      <div className="InputTop">
         <span>Expected Return</span>
-        <strong>{annualReturn}%</strong>
+        <strong>
+          {annualReturn}%
+        </strong>
       </div>
 
       <input
@@ -109,14 +103,14 @@ export default function SIPCalculator() {
           )
         }
       />
-
     </div>
 
-    <div className="sipInputGroup">
-
-      <div className="sipInputTop">
+    <div className="InputGroup">
+      <div className="InputTop">
         <span>Time Period</span>
-        <strong>{years} Years</strong>
+        <strong>
+          {years} Years
+        </strong>
       </div>
 
       <input
@@ -131,54 +125,58 @@ export default function SIPCalculator() {
           )
         }
       />
-
-    </div>
-
-    <div className="sipDivider" />
-
-    <div className="sipResults">
-
-      <span className="sipResultLabel">
-        Future Value
-      </span>
-
-      <h2 className="sipResultValue">
-        ₹{formatCurrency(futureValue)}
-      </h2>
-
-      <div className="sipStats">
-
-        <div className="sipStat">
-
-          <span>
-            Invested Amount
-          </span>
-
-          <strong>
-            ₹{formatCurrency(investedAmount)}
-          </strong>
-
-        </div>
-
-        <div className="sipStat">
-
-          <span>
-            Estimated Returns
-          </span>
-
-          <strong>
-            ₹{formatCurrency(
-              estimatedReturns
-            )}
-          </strong>
-
-        </div>
-
-      </div>
-
     </div>
 
   </div>
+
+  <div className="CalculatorResults">
+
+    <div className="ResultLabel">
+      Estimated Future Value
+    </div>
+
+    <h2>
+      ₹{formatCurrency(futureValue)}
+    </h2>
+
+    <div className="Growth">
+      + ₹{formatCurrency(estimatedReturns)}
+      {" "}returns generated
+    </div>
+
+    <div className="Divider" />
+
+    <div className="StatRow">
+      <span>Invested Amount</span>
+      <strong>
+        ₹{formatCurrency(investedAmount)}
+      </strong>
+    </div>
+
+    <div className="StatRow">
+      <span>Estimated Returns</span>
+      <strong>
+        ₹{formatCurrency(estimatedReturns)}
+      </strong>
+    </div>
+
+    <div className="StatRow">
+      <span>Total Value</span>
+      <strong>
+        ₹{formatCurrency(futureValue)}
+      </strong>
+    </div>
+
+    <div className="StatRow">
+      <span>Investment Period</span>
+      <strong>
+        {years} Years
+      </strong>
+    </div>
+
+  </div>
+
+</div>
 </div>
 
       <style>{`.sipPage{
@@ -188,7 +186,7 @@ export default function SIPCalculator() {
 }
 
 .sipWrapper{
-  max-width:820px;
+  max-width:1280px;
   margin:0 auto;
 }
 

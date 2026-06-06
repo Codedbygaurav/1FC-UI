@@ -3,33 +3,21 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function EMICalculator() {
-    const [loanAmount, setLoanAmount] = useState(2500000);
+  const [loanAmount, setLoanAmount] = useState(2500000);
 const [interestRate, setInterestRate] = useState(8.5);
 const [years, setYears] = useState(20);
 
-const monthlyRate =
-  interestRate / 12 / 100;
-
-const months =
-  years * 12;
+const monthlyRate = interestRate / 12 / 100;
+const months = years * 12;
 
 const emi =
   (loanAmount *
     monthlyRate *
-    Math.pow(
-      1 + monthlyRate,
-      months
-    )) /
-  (Math.pow(
-    1 + monthlyRate,
-    months
-  ) - 1);
+    Math.pow(1 + monthlyRate, months)) /
+  (Math.pow(1 + monthlyRate, months) - 1);
 
-const totalPayment =
-  emi * months;
-
-const totalInterest =
-  totalPayment - loanAmount;
+const totalPayment = emi * months;
+const totalInterest = totalPayment - loanAmount;
 
 const formatCurrency = (value: number) =>
   new Intl.NumberFormat("en-IN", {
@@ -65,174 +53,133 @@ const formatCurrency = (value: number) =>
 
     </div>
 
-    <div className="sipCard">
+    <div className="CalculatorCard">
 
-      <div className="sipFormulaBlock">
+  <div className="CalculatorInputs">
 
-        <div className="sipFormulaLabel">
-          Loan EMI Formula
-        </div>
-
-        <div className="sipFormula">
-          EMI = [P × R × (1+R)<sup>N</sup>]
-          /
-          [(1+R)<sup>N</sup> − 1]
-        </div>
-
-      </div>
-
-      <div className="sipInputGroup">
-
-        <div className="sipInputTop">
-
-          <span>
-            Loan Amount
-          </span>
-
-          <strong>
-            ₹{formatCurrency(loanAmount)}
-          </strong>
-
-        </div>
-
-        <input
-          type="range"
-          min={100000}
-          max={50000000}
-          step={50000}
-          value={loanAmount}
-          onChange={(e) =>
-            setLoanAmount(
-              Number(e.target.value)
-            )
-          }
-        />
-
-      </div>
-
-      <div className="sipInputGroup">
-
-        <div className="sipInputTop">
-
-          <span>
-            Interest Rate
-          </span>
-
-          <strong>
-            {interestRate}%
-          </strong>
-
-        </div>
-
-        <input
-          type="range"
-          min={1}
-          max={20}
-          step={0.1}
-          value={interestRate}
-          onChange={(e) =>
-            setInterestRate(
-              Number(e.target.value)
-            )
-          }
-        />
-
-      </div>
-
-      <div className="sipInputGroup">
-
-        <div className="sipInputTop">
-
-          <span>
-            Loan Tenure
-          </span>
-
-          <strong>
-            {years} Years
-          </strong>
-
-        </div>
-
-        <input
-          type="range"
-          min={1}
-          max={35}
-          step={1}
-          value={years}
-          onChange={(e) =>
-            setYears(
-              Number(e.target.value)
-            )
-          }
-        />
-
-      </div>
-
-      <div className="sipDivider" />
-
-      <div className="sipResults">
-
-        <span className="sipResultLabel">
-          Monthly EMI
-        </span>
-
-        <h2 className="sipResultValue">
-          ₹
-          {formatCurrency(emi)}
-        </h2>
-
-        <div className="sipStats emiStats">
-
-          <div className="sipStat">
-
-            <span>
-              Principal Amount
-            </span>
-
-            <strong>
-              ₹
-              {formatCurrency(
-                loanAmount
-              )}
-            </strong>
-
-          </div>
-
-          <div className="sipStat">
-
-            <span>
-              Interest Payable
-            </span>
-
-            <strong>
-              ₹
-              {formatCurrency(
-                totalInterest
-              )}
-            </strong>
-
-          </div>
-
-          <div className="sipStat">
-
-            <span>
-              Total Payment
-            </span>
-
-            <strong>
-              ₹
-              {formatCurrency(
-                totalPayment
-              )}
-            </strong>
-
-          </div>
-
-        </div>
-
-      </div>
-
+    <div className="FormulaCard">
+      <span>LOAN EMI FORMULA</span>
+      <strong>
+        EMI = [P × R × (1+R)N] / [(1+R)N − 1]
+      </strong>
     </div>
+
+    <div className="InputGroup">
+      <div className="InputTop">
+        <span>Loan Amount</span>
+        <strong>
+          ₹{formatCurrency(loanAmount)}
+        </strong>
+      </div>
+
+      <input
+        type="range"
+        min={100000}
+        max={50000000}
+        step={50000}
+        value={loanAmount}
+        onChange={(e) =>
+          setLoanAmount(
+            Number(e.target.value)
+          )
+        }
+      />
+    </div>
+
+    <div className="InputGroup">
+      <div className="InputTop">
+        <span>Interest Rate</span>
+        <strong>
+          {interestRate}%
+        </strong>
+      </div>
+
+      <input
+        type="range"
+        min={1}
+        max={20}
+        step={0.1}
+        value={interestRate}
+        onChange={(e) =>
+          setInterestRate(
+            Number(e.target.value)
+          )
+        }
+      />
+    </div>
+
+    <div className="InputGroup">
+      <div className="InputTop">
+        <span>Loan Tenure</span>
+        <strong>
+          {years} Years
+        </strong>
+      </div>
+
+      <input
+        type="range"
+        min={1}
+        max={35}
+        step={1}
+        value={years}
+        onChange={(e) =>
+          setYears(
+            Number(e.target.value)
+          )
+        }
+      />
+    </div>
+
+  </div>
+
+  <div className="CalculatorResults">
+
+    <div className="ResultLabel">
+      Monthly EMI
+    </div>
+
+    <h2>
+      ₹{formatCurrency(emi)}
+    </h2>
+
+    <div className="Growth">
+      ₹{formatCurrency(totalInterest)}
+      {" "}interest payable
+    </div>
+
+    <div className="Divider" />
+
+    <div className="StatRow">
+      <span>Principal Amount</span>
+      <strong>
+        ₹{formatCurrency(loanAmount)}
+      </strong>
+    </div>
+
+    <div className="StatRow">
+      <span>Interest Payable</span>
+      <strong>
+        ₹{formatCurrency(totalInterest)}
+      </strong>
+    </div>
+
+    <div className="StatRow">
+      <span>Total Payment</span>
+      <strong>
+        ₹{formatCurrency(totalPayment)}
+      </strong>
+    </div>
+
+    <div className="StatRow">
+      <span>Loan Tenure</span>
+      <strong>
+        {years} Years
+      </strong>
+    </div>
+
+  </div>
+
+</div>
 
   </div>
   <style>{`.sipPage{
@@ -242,7 +189,7 @@ const formatCurrency = (value: number) =>
 }
 
 .sipWrapper{
-  max-width:820px;
+  max-width:1280px;
   margin:0 auto;
 }
 
