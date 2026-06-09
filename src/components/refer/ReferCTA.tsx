@@ -1,35 +1,35 @@
 import {
   Gift,
-  ArrowRight,
   Users,
-  Clock3,
+  ArrowRight,
+  Bell,
 } from "lucide-react";
 
-export default function ReferEarnCTA() {
+export default function ReferCTA() {
   return (
     <>
-      <section className="referCTA">
+      <section className="referCta">
 
-        <div className="referCTAContent">
+        <div className="referCtaContent">
 
-          <div className="referCTALabel">
+          <div className="referBadge">
             REFER & EARN
           </div>
 
-          <h2 className="referCTATitle">
-            Start earning
+          <h2 className="referTitle">
+            Invite friends.
             <br />
-            by sharing.
+            Earn rewards.
           </h2>
 
-          <p className="referCTAText">
-            Invite friends and family to
-            1FC and earn rewards when
-            they begin their financial
-            journey.
+          <p className="referDescription">
+            Share your referral link and earn
+            rewards when friends and family
+            start their financial journey with
+            1FC.
           </p>
 
-          <div className="referCTAButtons">
+          <div className="referButtons">
 
             <button className="referPrimaryBtn">
               <Gift size={18} />
@@ -37,25 +37,22 @@ export default function ReferEarnCTA() {
             </button>
 
             <button className="referSecondaryBtn">
-              Learn More
+              Terms & Conditions
             </button>
 
           </div>
 
-          <div className="referStats">
+          <div className="referPills">
 
-            <div>
-              <Users size={16} />
-              ₹500+ Rewards
+            <div className="referPill">
+              ₹500 Reward
             </div>
 
-            <div>
-              <Clock3 size={16} />
-              24h Tracking
+            <div className="referPill">
+              Live Tracking
             </div>
 
-            <div>
-              <ArrowRight size={16} />
+            <div className="referPill">
               Instant Updates
             </div>
 
@@ -63,101 +60,143 @@ export default function ReferEarnCTA() {
 
         </div>
 
-        <img
-          src="/mascotFull.png"
-          alt="1FC Mascot"
-          className="referMascot"
-        />
+        <div className="referVisual">
+
+          <div className="floatingCard cardOne">
+
+            <Users size={18} />
+
+            <div>
+              <span>Referrals</span>
+              <strong>3 Joined</strong>
+            </div>
+
+          </div>
+
+          <div className="floatingCard cardTwo">
+
+            <Gift size={18} />
+
+            <div>
+              <span>Reward</span>
+              <strong>₹500 Earned</strong>
+            </div>
+
+          </div>
+
+          <div className="floatingCard cardThree">
+
+            <Bell size={18} />
+
+            <div>
+              <span>Status</span>
+              <strong>Reward Added</strong>
+            </div>
+
+          </div>
+
+          <img
+            src="/mascotHalf.png"
+            alt="1FC Mascot"
+            className="referMascot"
+          />
+
+        </div>
 
       </section>
-      <style>{`.referCTA{
+    <style>{`.referCta{
   max-width:1280px;
   margin:48px auto;
 
   background:
-  linear-gradient(
-    135deg,
-    #0B3B36 0%,
-    #0D4B43 100%
-  );
+    linear-gradient(
+      135deg,
+      #0B3B36,
+      #0D4B43
+    );
 
-  border-radius:32px;
+  border-radius:36px;
 
-  padding:60px;
+  padding:70px 70px 0;
 
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+  display:grid;
+  grid-template-columns:1fr 500px;
 
   gap:40px;
 
-  color:white;
-
   overflow:hidden;
+
+  position:relative;
 }
 
-.referCTAContent{
-  max-width:620px;
+.referCtaContent{
+  padding-bottom:70px;
 }
 
-.referCTALabel{
-  color:
-  var(--color-accent-lime);
+.referBadge{
+  color:var(--color-accent-lime);
 
   font-size:11px;
   font-weight:800;
 
   letter-spacing:.14em;
+  text-transform:uppercase;
 
-  margin-bottom:16px;
+  margin-bottom:18px;
 }
 
-.referCTATitle{
-  font-size:64px;
-  line-height:.95;
+.referTitle{
+  color:white;
+
+  font-size:clamp(54px,6vw,82px);
+
+  line-height:.9;
+
+  letter-spacing:-.07em;
+
+  margin:0 0 24px;
 
   font-weight:900;
-
-  letter-spacing:-.06em;
-
-  margin:0 0 18px;
 }
 
-.referCTAText{
+.referDescription{
+  max-width:540px;
+
   color:
   rgba(255,255,255,.72);
 
-  line-height:1.9;
+  font-size:18px;
 
-  max-width:520px;
+  line-height:1.8;
 
   margin-bottom:32px;
 }
 
-.referCTAButtons{
+.referButtons{
   display:flex;
   gap:14px;
-  margin-bottom:30px;
+
+  margin-bottom:32px;
 }
 
 .referPrimaryBtn{
-  height:56px;
+  height:58px;
 
   border:none;
 
-  padding:0 22px;
-
   border-radius:16px;
+
+  padding:0 24px;
 
   display:flex;
   align-items:center;
-  gap:8px;
+  gap:10px;
 
   background:
-  var(--color-accent-lime);
+    var(--color-accent-lime);
 
   color:
-  var(--color-dark-green);
+    var(--color-dark-green);
 
   font-weight:800;
 
@@ -165,17 +204,17 @@ export default function ReferEarnCTA() {
 }
 
 .referSecondaryBtn{
-  height:56px;
+  height:58px;
 
-  padding:0 22px;
+  padding:0 24px;
 
   border-radius:16px;
 
   background:
-  rgba(255,255,255,.08);
+    rgba(255,255,255,.08);
 
   border:
-  1px solid rgba(255,255,255,.12);
+    1px solid rgba(255,255,255,.12);
 
   color:white;
 
@@ -184,41 +223,137 @@ export default function ReferEarnCTA() {
   cursor:pointer;
 }
 
-.referStats{
+.referPills{
   display:flex;
-  gap:24px;
   flex-wrap:wrap;
+  gap:12px;
 }
 
-.referStats div{
+.referPill{
+  height:42px;
+
+  padding:0 16px;
+
+  border-radius:999px;
+
   display:flex;
   align-items:center;
-  gap:8px;
+
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid rgba(255,255,255,.08);
 
   color:
-  rgba(255,255,255,.75);
+    rgba(255,255,255,.9);
 
-  font-size:14px;
+  font-size:13px;
+  font-weight:700;
+}
+
+.referVisual{
+  position:relative;
+  min-height:520px;
 }
 
 .referMascot{
-  height:450px;
-  object-fit:cover;
+  position:absolute;
+  bottom:0;
+  right:20px;
+
+  height:560px;
+
+  object-fit:contain;
 }
 
-@media(max-width:900px){
+.floatingCard{
+  position:absolute;
 
-  .referCTA{
-    padding:32px 24px;
-    flex-direction:column;
-    text-align:center;
+  background:white;
+
+  border-radius:18px;
+
+  padding:16px;
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.15);
+
+  min-width:190px;
+}
+
+.floatingCard span{
+  display:block;
+
+  color:#667085;
+
+  font-size:12px;
+}
+
+.floatingCard strong{
+  color:#111;
+
+  font-size:15px;
+}
+
+.cardOne{
+  top:70px;
+  right:240px;
+  z-index:999;
+}
+
+.cardTwo{
+  top:220px;
+  left:10px;
+  z-index:999;
+}
+
+.cardThree{
+  bottom:120px;
+  right:260px;
+  z-index:999;
+}
+
+@media(max-width:1100px){
+
+  .referCta{
+    grid-template-columns:1fr;
+    padding:48px 30px 0;
   }
 
-  .referCTATitle{
-    font-size:44px;
+  .referVisual{
+    min-height:420px;
   }
 
-  .referCTAButtons{
+  .referMascot{
+    height:420px;
+    right:50%;
+    transform:translateX(50%);
+  }
+
+}
+
+@media(max-width:768px){
+
+  .referCta{
+    border-radius:24px;
+    padding:48px 24px 0;
+   width:95%;
+  }
+
+  .referTitle{
+    font-size:48px;
+  }
+
+  .referDescription{
+    font-size:15px;
+  }
+
+  .referButtons{
     flex-direction:column;
   }
 
@@ -228,16 +363,18 @@ export default function ReferEarnCTA() {
     justify-content:center;
   }
 
-  .referStats{
-    justify-content:center;
+  .referVisual{
+    min-height:300px;
   }
 
   .referMascot{
-    height:280px;
+    height:300px;
+  }
+
+  .floatingCard{
+    display:none;
   }
 
 }`}</style>
-      
-    </>
-  );
-}
+</>
+)}
