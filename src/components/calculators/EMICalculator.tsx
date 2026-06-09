@@ -5,6 +5,29 @@ import { Link } from "react-router-dom";
 export default function EMICalculator() {
   const [loanAmount, setLoanAmount] = useState(2500000);
 const [interestRate, setInterestRate] = useState(8.5);
+
+const [loanType, setLoanType] =
+  useState("Home Loan");
+  const loanConfigs = {
+  "Home Loan": {
+    rate: 8.5,
+    years: 20,
+    minAmount: 500000,
+    maxAmount: 50000000,
+  },
+  "Personal Loan": {
+    rate: 12.5,
+    years: 5,
+    minAmount: 50000,
+    maxAmount: 5000000,
+  },
+  "Car Loan": {
+    rate: 9.25,
+    years: 7,
+    minAmount: 100000,
+    maxAmount: 2000000,
+  },
+};
 const [years, setYears] = useState(20);
 
 const monthlyRate = interestRate / 12 / 100;
@@ -24,28 +47,28 @@ const formatCurrency = (value: number) =>
     maximumFractionDigits: 0,
   }).format(value);
   return (
-    <div className="sipPage">
-  <div className="sipWrapper">
+    <div className="emiPage">
+  <div className="emiWrapper">
 
     <Link
       to="/tools"
-      className="sipBack"
+      className="emiBack"
     >
       <ArrowLeft size={16} />
       Back to Tools
     </Link>
 
-    <div className="sipHeader">
+    <div className="emiHeader">
 
-      <div className="sipBadge">
+      <div className="emiBadge">
         LOAN CALCULATOR
       </div>
 
-      <h1 className="sipTitle">
+      <h1 className="emiTitle">
         EMI Calculator
       </h1>
 
-      <p className="sipDescription">
+      <p className="emiDescription">
         Calculate monthly loan repayments,
         total interest payable and overall
         repayment amount instantly.
@@ -56,11 +79,45 @@ const formatCurrency = (value: number) =>
     <div className="CalculatorCard">
 
   <div className="CalculatorInputs">
+    <div className="LoanTypeSelector">
+
+  {Object.keys(loanConfigs).map(
+    (type) => (
+      <button
+        key={type}
+        className={`LoanTypeBtn ${
+          loanType === type
+            ? "active"
+            : ""
+        }`}
+        onClick={() => {
+          setLoanType(type);
+
+          setInterestRate(
+            loanConfigs[
+              type as keyof typeof loanConfigs
+            ].rate
+          );
+
+          setYears(
+            loanConfigs[
+              type as keyof typeof loanConfigs
+            ].years
+          );
+        }}
+      >
+        {type}
+      </button>
+    )
+  )}
+
+</div>
 
     <div className="FormulaCard">
       <span>LOAN EMI FORMULA</span>
       <strong>
-        EMI = [P × R × (1+R)N] / [(1+R)N − 1]
+        {loanType.toUpperCase()}
+        {" "}EMI = [P × R × (1+R)^N] / [(1+R)^N − 1]
       </strong>
     </div>
 
@@ -74,8 +131,17 @@ const formatCurrency = (value: number) =>
 
       <input
         type="range"
-        min={100000}
-        max={50000000}
+        min={
+  loanConfigs[
+    loanType as keyof typeof loanConfigs
+  ].minAmount
+}
+
+max={
+  loanConfigs[
+    loanType as keyof typeof loanConfigs
+  ].maxAmount
+}
         step={50000}
         value={loanAmount}
         onChange={(e) =>
@@ -182,18 +248,18 @@ const formatCurrency = (value: number) =>
 </div>
 
   </div>
-  <style>{`.sipPage{
+  <style>{`.emiPage{
   min-height:100vh;
   background:#FAFAF7;
   padding:120px 20px 40px;
 }
 
-.sipWrapper{
+.emiWrapper{
   max-width:1280px;
   margin:0 auto;
 }
 
-.sipBack{
+.emiBack{
   display:inline-flex;
   align-items:center;
   gap:8px;
@@ -204,11 +270,11 @@ const formatCurrency = (value: number) =>
   margin-bottom:28px;
 }
 
-.sipHeader{
+.emiHeader{
   margin-bottom:28px;
 }
 
-.sipBadge{
+.emiBadge{
   display:inline-flex;
   padding:8px 14px;
   border-radius:999px;
@@ -221,7 +287,7 @@ const formatCurrency = (value: number) =>
   margin-bottom:18px;
 }
 
-.sipTitle{
+.emiTitle{
   font-size:clamp(42px,5vw,64px);
   line-height:.95;
   letter-spacing:-0.05em;
@@ -230,21 +296,62 @@ const formatCurrency = (value: number) =>
   margin-bottom:16px;
 }
 
-.sipDescription{
+.emiDescription{
   max-width:620px;
   font-size:15px;
   line-height:1.8;
   color:#5E5E5E;
 }
 
-.sipCard{
+.emiCard{
   background:#FFFFFF;
   border-radius:32px;
   border:1px solid rgba(0,0,0,.06);
   padding:28px;
 }
 
-.sipFormulaBlock{
+.LoanTypeSelector{
+  display:flex;
+  gap:12px;
+  margin-bottom:24px;
+  flex-wrap:wrap;
+}
+
+.LoanTypeBtn{
+  height:46px;
+  padding:0 18px;
+
+  border-radius:14px;
+
+  border:1px solid #E5E7EB;
+  background:#fff;
+
+  color:#344054;
+  font-size:14px;
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:.25s ease;
+}
+
+.LoanTypeBtn:hover{
+  border-color:
+  var(--color-accent-lime);
+}
+
+.LoanTypeBtn.active{
+  background:
+  var(--color-dark-green);
+
+  border-color:
+  var(--color-dark-green);
+
+  color:white;
+}
+
+
+.emiFormulaBlock{
   background:
     linear-gradient(
       180deg,
@@ -257,7 +364,7 @@ const formatCurrency = (value: number) =>
   margin-bottom:28px;
 }
 
-.sipFormulaLabel{
+.emiFormulaLabel{
   font-size:11px;
   font-weight:700;
   letter-spacing:.12em;
@@ -266,36 +373,36 @@ const formatCurrency = (value: number) =>
   margin-bottom:10px;
 }
 
-.sipFormula{
+.emiFormula{
   color:#FAFAF7;
   font-size:18px;
   font-weight:700;
   line-height:1.6;
 }
 
-.sipInputGroup{
+.emiInputGroup{
   margin-bottom:28px;
 }
 
-.sipInputTop{
+.emiInputTop{
   display:flex;
   justify-content:space-between;
   align-items:center;
   margin-bottom:14px;
 }
 
-.sipInputTop span{
+.emiInputTop span{
   font-size:14px;
   color:#5E5E5E;
 }
 
-.sipInputTop strong{
+.emiInputTop strong{
   font-size:16px;
   font-weight:700;
   color:#111;
 }
 
-.sipInputGroup input{
+.emiInputGroup input{
   width:100%;
   appearance:none;
   height:6px;
@@ -303,7 +410,7 @@ const formatCurrency = (value: number) =>
   background:#E7EAE4;
 }
 
-.sipInputGroup input::-webkit-slider-thumb{
+.emiInputGroup input::-webkit-slider-thumb{
   appearance:none;
   width:18px;
   height:18px;
@@ -312,19 +419,19 @@ const formatCurrency = (value: number) =>
   cursor:pointer;
 }
 
-.sipDivider{
+.emiDivider{
   height:1px;
   background:rgba(0,0,0,.06);
   margin:8px 0 28px;
 }
 
-.sipResultLabel{
+.emiResultLabel{
   display:block;
   color:#5E5E5E;
   margin-bottom:10px;
 }
 
-.sipResultValue{
+.emiResultValue{
   font-size:clamp(42px,6vw,68px);
   line-height:.95;
   letter-spacing:-0.05em;
@@ -333,27 +440,27 @@ const formatCurrency = (value: number) =>
   font-weight:700;
 }
 
-.sipStats{
+.emiStats{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:14px;
 }
   
 
-.sipStat{
+.emiStat{
   background:#F6F7F3;
   border-radius:18px;
   padding:18px;
 }
 
-.sipStat span{
+.emiStat span{
   display:block;
   font-size:12px;
   color:#5E5E5E;
   margin-bottom:8px;
 }
 
-.sipStat strong{
+.emiStat strong{
   font-size:18px;
   color:#111;
 }
@@ -366,24 +473,33 @@ const formatCurrency = (value: number) =>
 
 @media(max-width:768px){
 
-  .sipPage{
+  .emiPage{
     padding:110px 16px 30px;
   }
 
-  .sipCard{
+  .emiCard{
     padding:20px;
     border-radius:24px;
   }
 
-  .sipStats{
+  .emiStats{
     grid-template-columns:1fr;
   }
 
-  .sipResultValue{
+  .emiResultValue{
     font-size:44px;
   }
     .emiStats{
     grid-template-columns:1fr;
+  }
+
+  .LoanTypeSelector{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  .LoanTypeBtn{
+    width:100%;
   }
 }`}</style>
 </div>

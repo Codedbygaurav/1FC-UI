@@ -25,6 +25,10 @@ import LegalPage from "./pages/LegalPage";
 import ReferPage from "./pages/ReferPage";
 import TermsPage from "./pages/TermsPage";
 import FDTermsPage from "./pages/FDTermsPage";
+import BlogPage from "./pages/BlogPage";
+import BlogDetailsPage from "./pages/BlogDetailsPage";
+import GoldRatePage from "./pages/GoldRatePage";
+import ReferTermsPage from "./pages/ReferTermsPage";
 
 
 export default function App() {
@@ -51,7 +55,22 @@ export default function App() {
           element={<FeaturesPage />}
         />
 
-        {/* TOOLS */}
+        <Route
+          path="/blog"
+          element={<BlogPage/>}
+        />
+        <Route
+          path="/blog-details"
+          element={<BlogDetailsPage/>}
+        />
+
+        <Route
+          path="/gold-rates"
+          element={<GoldRatePage/>}
+        />
+
+
+       
 
         <Route
           path="/tools"
@@ -71,8 +90,12 @@ export default function App() {
           element= {<PrivacyPolicy/>}
         />
         <Route
-          path="/refer-and-earn-terms"
+          path="/refer-and-earn"
           element= {<ReferPage/>}
+          />
+        <Route
+          path="/refer-and-earn-terms"
+          element= {<ReferTermsPage/>}
           />
         <Route
           path="/terms-and-conditions"
@@ -99,7 +122,7 @@ export default function App() {
           element= {<PPFCalculator/>}
         />
         <Route
-          path="/tools/emi-calculator"
+          path="/tools/loan-calculator"
           element= {<EMICalculator/>}
         />
         <Route

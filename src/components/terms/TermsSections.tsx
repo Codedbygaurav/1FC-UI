@@ -175,7 +175,7 @@ export default function TermsSections() {
 
         font-size:18px;
         font-weight:600;
-        color:#0B3B36;
+        color:var(--color-dark-green);
       }
 
       .TermsAccordionContent{

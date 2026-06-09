@@ -119,18 +119,20 @@ export default function GroupStructure() {
         }
 
         .groupStructureTopGS {
-          max-width: 760px;
+          max-width: 100%;
           margin-bottom: 48px;
         }
 
         .groupStructureBadgeGS {
           color: var(--color-accent-lime);
           margin-bottom: 16px;
+          text-align:center;
         }
 
         .groupStructureTitleGS {
           color: #f5fff8;
           margin: 0;
+          text-align:center;
         }
 
         .groupStructureTitleGS span {
@@ -272,6 +274,7 @@ export default function GroupStructure() {
   .groupStructureTitleGS {
     font-size: clamp(52px, 6vw, 62px);
     line-height: 0.98;
+    text-align:center;
   }
 
   .parentCardGS {
