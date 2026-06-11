@@ -127,7 +127,7 @@ export default function FinalCTA() {
   display: grid;
   grid-template-columns: 64% 36%;
   align-items: center;
-  min-height: 600px;
+  min-height: 500px;
   
 }
 
@@ -135,7 +135,7 @@ export default function FinalCTA() {
   text-align: center;
   max-width: 1000px;
   margin: 0 auto;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .cta-badge {
@@ -282,7 +282,7 @@ color: #dceb63;
   justify-content: flex-end;
   align-items: flex-end;
 
-  min-height: 620px;
+  min-height: 500px;
 }
 
 .hero-bg-circle {
@@ -291,7 +291,7 @@ color: #dceb63;
   width: 580px;
   height: 580px;
 
-  right: -40px;
+  right: -70px;
   top: 50%;
 
   transform: translateY(-50%);
@@ -330,13 +330,13 @@ color: #dceb63;
   position: relative;
   z-index: 2;
 
-  height: 650px;
+  height: 520px;
   width: auto;
 
   object-fit: contain;
   display: block;
 
-  margin-right: -20px;
+  margin-right: 50px;
   margin-bottom: -50px;
 }
 

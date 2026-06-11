@@ -90,14 +90,7 @@ const handleNavigate = () => {
 
   return (
     <>
-    {menuOpen && (
-  <div
-    className="mobile-overlay"
-    onClick={() =>
-      setMenuOpen(false)
-    }
-  />
-)}
+   
       <header className="navbar-wrap">
         
         <nav
@@ -386,169 +379,284 @@ const handleNavigate = () => {
     menuOpen
       ? "mobile-nav-open"
       : ""
-  }`}
+  } lg:hidden`}
 >
   <div className="mobile-grid">
-    <button
-      className={`mobile-nav-card ${
-  openSection === "platform"
-    ? "active"
-    : ""
-}`}
-      onClick={() =>
-  toggleSection(
-    "platform"
-  )
-}
-      
-    >
-      Platform
-    </button>
+    <div
+  className={`mobile-nav-card ${
+    openSection === "platform"
+      ? "active expanded"
+      : ""
+  }`}
+>
+  <button
+    className="mobile-nav-header"
+    onClick={() =>
+      toggleSection("platform")
+    }
+  >
+    <div className="mobile-nav-content">
+      <span>Platform</span>
+      <small>2 sections</small>
+    </div>
 
-    <button
-      className={`mobile-nav-card ${
-  openSection === "Tools"
-    ? "active"
-    : ""
-}`}
-      onClick={() =>
-  toggleSection(
-    "Tools"
-  )
-}
-    >
-      Tools
-    </button>
-
-    <button
-      className={`mobile-nav-card ${
-  openSection === "resources"
-    ? "active"
-    : ""
-}`}
-      onClick={() =>
-  toggleSection(
-    "resources"
-  )
-}
-    >
-      Resources
-    </button>
-
-    <button
-      className={`mobile-nav-card ${
-  openSection === "company"
-    ? "active"
-    : ""
-}`}
-      onClick={() =>
-  toggleSection(
-    "company"
-  )
-}
-    >
-      Company
-    </button>
-
-  </div>
+    <ChevronDown
+      size={18}
+      className={`mobile-chevron ${
+        openSection === "platform"
+          ? "rotated"
+          : ""
+      }`}
+    />
+  </button>
 
   {openSection === "platform" && (
-  <div className="mobile-submenu">
+    <div className="mobile-card-submenu">
+      <Link
+        to="/products"
+        onClick={handleNavigate}
+      >
+        <span>Products Overview</span>
+        <ArrowRight size={14} />
+      </Link>
 
-    <Link
-      to="/products"
-      onClick={handleNavigate}
-    >
-      Products Overview
-    </Link>
-
-    <Link
-      to="/features"
-      onClick={handleNavigate}
-    >
-      Features Overview
-    </Link>
-
-  </div>
-)}
-
-  {openSection ===
-  "Tools" && (
-    <div className="mobile-submenu">
-      <Link to="/tools/sip-calculator" onClick={handleNavigate}>
-        SIP Calculator
-      </Link>
-      <Link to="/tools/fd-calculator" onClick={handleNavigate}>
-        FD Calculator
-      </Link>
-      <Link to="/tools/ppf-calculator" onClick={handleNavigate}>
-        PPF Calculator
-      </Link>
-      <Link to="/tools/loan-calculator" onClick={handleNavigate}>
-        Loan Calculator
-      </Link>
-      <Link to="/tools/net-worth-calculator" onClick={handleNavigate}>
-        Net Worth
-      </Link>
-      <Link to="/tools" onClick={handleNavigate}>
-        All Calculators
+      <Link
+        to="/features"
+        onClick={handleNavigate}
+      >
+        <span>Features Overview</span>
+        <ArrowRight size={14} />
       </Link>
     </div>
   )}
+</div>
 
-  {openSection ===
-  "resources" && (
-    <div className="mobile-submenu">
-      <Link to="/blog" onClick={handleNavigate}>Blog</Link>
-      <Link to="/gold-rates" onClick={handleNavigate}>
-        Gold Rates
+    <div
+  className={`mobile-nav-card ${
+    openSection === "tools"
+      ? "active expanded"
+      : ""
+  }`}
+>
+  <button
+    className="mobile-nav-header"
+    onClick={() => toggleSection("tools")}
+  >
+    <div className="mobile-nav-content">
+      <span>Tools</span>
+      <small>6 sections</small>
+    </div>
+
+    <ChevronDown
+      size={18}
+      className={`mobile-chevron ${
+        openSection === "tools"
+          ? "rotated"
+          : ""
+      }`}
+    />
+  </button>
+
+  {openSection === "tools" && (
+    <div className="mobile-card-submenu">
+      <Link
+        to="/tools/emi-calculator"
+        onClick={handleNavigate}
+      >
+        <span>EMI Calculator</span>
+        <ArrowRight size={14} />
+      </Link>
+
+      <Link
+        to="/tools/sip-calculator"
+        onClick={handleNavigate}
+      >
+        <span>SIP Calculator</span>
+        <ArrowRight size={14} />
+      </Link>
+
+      <Link
+        to="/tools/ppf-calculator"
+        onClick={handleNavigate}
+      >
+        <span>PPF Calculator</span>
+        <ArrowRight size={14} />
+      </Link>
+
+      <Link
+        to="/tools/fd-calculator"
+        onClick={handleNavigate}
+      >
+        <span>FD Calculator</span>
+        <ArrowRight size={14} />
+      </Link>
+
+      <Link
+        to="/tools/net-worth-calculator"
+        onClick={handleNavigate}
+      >
+        <span>Net Worth Calculator</span>
+        <ArrowRight size={14} />
       </Link>
       <Link
-  to="#"
-  onClick={handleNavigate}
+        to="/tools//tools/sukanya-yojana"
+        onClick={handleNavigate}
+      >
+        <span>Sukanya Samriddhi Calculator</span>
+        <ArrowRight size={14} />
+      </Link>
+
+      <Link
+        to="/tools/loan-calculator"
+        onClick={handleNavigate}
+      >
+        <span>Loan Calculator</span>
+        <ArrowRight size={14} />
+      </Link>
+    </div>
+  )}
+</div>
+
+    <div
+  className={`mobile-nav-card ${
+    openSection === "resources"
+      ? "active expanded"
+      : ""
+  }`}
 >
+  <button
+    className="mobile-nav-header"
+    onClick={() => toggleSection("resources")}
+  >
+    <div className="mobile-nav-content">
+      <span>Resources</span>
+      <small>Blogs & rates</small>
+    </div>
+
+    <ChevronDown
+      size={18}
+      className={`mobile-chevron ${
+        openSection === "resources"
+          ? "rotated"
+          : ""
+      }`}
+    />
+  </button>
+
+  {openSection === "resources" && (
+    <div className="mobile-card-submenu">
+      <Link
+        to="/blog"
+        onClick={handleNavigate}
+      >
+        <span>Blog</span>
+        <ArrowRight size={14} />
+      </Link>
+
+      <Link
+        to="/gold-rates"
+        onClick={handleNavigate}
+      >
+        <span>Gold Rates</span>
+        <ArrowRight size={14} />
+      </Link>
+
+      
+      <Link
+        to="#"
+        onClick={handleNavigate}
+      >
+
   Credit Cards
   <span className="mobile-soon-badge">
     Soon
   </span>
-</Link>
+        <ArrowRight size={14} />
+      </Link>
+      <Link
+        to="#"
+        onClick={handleNavigate}
+      >
 
-<Link
-  to="#"
-  onClick={handleNavigate}
->
-  Lounges
+   Lounges
   <span className="mobile-soon-badge">
     Soon
   </span>
-</Link>
+        <ArrowRight size={14} />
+      </Link>
+      <Link
+        to="#"
+        onClick={handleNavigate}
+      >
 
-<Link
-  to="#"
-  onClick={handleNavigate}
->
-  Guides
+   Guides
   <span className="mobile-soon-badge">
     Soon
   </span>
-</Link>
+        <ArrowRight size={14} />
+      </Link>
     </div>
   )}
+</div>
 
-  {openSection ===
-  "company" && (
-    <div className="mobile-submenu">
-      <Link to="/about" onClick={handleNavigate}>
-        About Us
+    <div
+  className={`mobile-nav-card ${
+    openSection === "company"
+      ? "active expanded"
+      : ""
+  }`}
+>
+  <button
+    className="mobile-nav-header"
+    onClick={() => toggleSection("company")}
+  >
+    <div className="mobile-nav-content">
+      <span>Company</span>
+      <small>3 sections</small>
+    </div>
+
+    <ChevronDown
+      size={18}
+      className={`mobile-chevron ${
+        openSection === "company"
+          ? "rotated"
+          : ""
+      }`}
+    />
+  </button>
+
+  {openSection === "company" && (
+    <div className="mobile-card-submenu">
+      <Link
+        to="/about"
+        onClick={handleNavigate}
+      >
+        <span>About Us</span>
+        <ArrowRight size={14} />
       </Link>
-      <Link to="/contact" onClick={handleNavigate}>
-        Contact Us
+
+      <Link
+        to="/contact"
+        onClick={handleNavigate}
+      >
+        <span>Contact Us</span>
+        <ArrowRight size={14} />
       </Link>
-      <Link to="/legal" onClick={handleNavigate}>
-        Legal
+
+      <Link
+        to="/legal"
+        onClick={handleNavigate}
+      >
+        <span>Legal</span>
+        <ArrowRight size={14} />
       </Link>
     </div>
   )}
+</div>
+
+  </div>
+
+
 
   <div className="mobile-secondary">
   <Link
@@ -1079,6 +1187,10 @@ const handleNavigate = () => {
 .mobile-nav-card {
   min-height: 72px;
 
+   display:flex;
+  align-items:center;
+  justify-content:space-around;
+
   background: white;
 
   border: 1px solid rgba(11,59,54,.08);
@@ -1095,14 +1207,51 @@ const handleNavigate = () => {
     0 4px 12px rgba(0,0,0,.03);
 }
 
-.mobile-nav-card.active {
-  background:
-    rgba(11,59,54,.08);
+.mobile-chevron{
+  transition:.25s ease;
+  opacity:.65;
+}
 
-  border-color:
-    rgba(11,59,54,.18);
+.mobile-chevron.rotated{
+  transform:rotate(180deg);
+}
+
+.mobile-nav-card.active {
+
+border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+  background:#f8fafb;
+  border-color:#d9e4e2;
 
   color:#0B3B36;
+}
+
+.mobile-nav-content{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.mobile-nav-content small{
+  font-size:11px;
+  opacity:.6;
+  margin-top:2px;
+}
+  .mobile-nav-card.expanded {
+  display: block;
+  grid-column: 1 / -1;
+}
+
+.mobile-nav-header{
+  width:100%;
+  background:none;
+  border:none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding:16px;
 }
 
     .mobile-submenu-label{
@@ -1110,7 +1259,8 @@ const handleNavigate = () => {
 
   margin-top:6px;
 
-  padding:0 4px;
+  padding-left:16px;
+  border-left:2px solid #e5eceb;
 
   font-size:11px;
 
@@ -1124,7 +1274,8 @@ const handleNavigate = () => {
 }
 
 .mobile-submenu {
-  margin-top: 12px;
+  margin-top:-8px;
+  border-top:1px solid rgba(0,0,0,.06);
 
   display: grid;
 
@@ -1135,33 +1286,26 @@ const handleNavigate = () => {
 }
   
 
-.mobile-submenu a {
-  position:relative;
-
+.mobile-card-submenu a{
   display:flex;
   align-items:center;
-  justify-content:center;
+  justify-content:space-between;
 
-  min-height:44px;
+  padding:14px 16px;
 
-  padding:10px 12px;
-
-  border-radius:12px;
+   background: transparent;
+  border: none;
+  border-radius: 0;
 
   text-decoration:none;
+  color:inherit;
 
-  color:#666;
-
-  font-size:12px;
-
+  font-size:14px;
   font-weight:500;
+}
 
-  background:
-    rgba(11,59,54,.025);
-
-  border:
-    1px solid
-    rgba(11,59,54,.04);
+.mobile-card-submenu a:not(:last-child) {
+  border-bottom: 1px solid #ececec;
 }
 
 .mobile-soon-badge{
@@ -1237,6 +1381,12 @@ const handleNavigate = () => {
 .mobile-secondary-link:hover {
   background:
     rgba(11,59,54,.04);
+}
+
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {

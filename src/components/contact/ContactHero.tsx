@@ -273,9 +273,9 @@ export default function ContactHero() {
 
         .contactMascotDesktopCH {
           position: absolute;
-          right: -70px;
+          right: -130px;
           bottom: -25px;
-          height: 430px;
+          height: 450px;
           object-fit: contain;
           pointer-events: none;
         }

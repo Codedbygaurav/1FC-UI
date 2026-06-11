@@ -78,7 +78,7 @@ export default function FeaturesHero() {
 
           <div className="featuresHeroMascotCenterFB">
             <img
-              src="/mascotCoin1.png"
+              src="/mascotCoin.png"
               alt="Mascot"
               className="featuresHeroMascotFB"
             />

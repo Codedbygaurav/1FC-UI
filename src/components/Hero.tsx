@@ -114,7 +114,7 @@ export default function Hero() {
           </div>
 
           <div className="hero-mascot-wrap">
-            <img src="/homeHero.png" alt="Mascot" className="hero-mascot" />
+            <img src="/mascotCoin.png" alt="Mascot" className="hero-mascot" />
           </div>
 
           {cards.map((card, index) => (
@@ -371,7 +371,7 @@ export default function Hero() {
         .hero-mascot-wrap {
   position: relative;
   z-index: 5;
-  transform: translateX(-150px) translateY(10px);
+  transform: translateX(-110px) translateY(10px);
 }
 
         .hero-mascot {

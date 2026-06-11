@@ -249,13 +249,15 @@ export default function ProductHero() {
 
 .ph-hero-mascot{
   position:absolute;
-  right:-20px;
-  bottom:210px;
+  right:-170px;
+  bottom:110px;
 
-  width:100px;
-  height:100px;
+  width:300px;
+  height:300px;
   pointer-events:none;
   z-index:3;
+
+  
 }
 
 .ph-hero-mascot img{
