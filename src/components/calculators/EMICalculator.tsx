@@ -260,6 +260,8 @@ max={
 }
 
 .emiBack{
+font-family: "Geist-Bold";
+  letter-spacing: 1px;
   display:inline-flex;
   align-items:center;
   gap:8px;
@@ -275,6 +277,8 @@ max={
 }
 
 .emiBadge{
+font-family: "Geist-SemiBold";
+  letter-spacing: 1px;
   display:inline-flex;
   padding:8px 14px;
   border-radius:999px;
@@ -318,6 +322,8 @@ max={
 }
 
 .LoanTypeBtn{
+font-family: "Geist-Bold";
+  letter-spacing: 1px;
   height:46px;
   padding:0 18px;
 

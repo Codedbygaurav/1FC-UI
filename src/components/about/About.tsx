@@ -219,6 +219,7 @@ export default function AboutPage() {
         }
 
         .founderRoleAP {
+        font-family:"Geist-SemiBold";
           margin: 12px 0 0;
           color: var(--color-secondary-green);
           font-weight: 700;
@@ -237,11 +238,13 @@ export default function AboutPage() {
         }
 
         .founderEmailAP {
+        font-family:"Geist-Bold"
           display: inline-flex;
           margin-top: 18px;
           font-size: 13px;
         }
           .directorEmailAP {
+          font-family:"Geist-Bold"
   display: inline-flex;
   margin-top: 14px;
   color: var(--color-dark-green);
@@ -292,6 +295,7 @@ export default function AboutPage() {
         }
 
         .directorRoleAP {
+        font-family:"Geist-SemiBold";
           margin: 6px 0 0;
           color: var(--color-secondary-green);
           font-size: 15px;
@@ -453,7 +457,7 @@ export default function AboutPage() {
   }
     .founderNameAP{
     line-height:1;
-    font-size:31px;
+    font-size:25px;
     margin-top:4px;
     }
 
@@ -462,12 +466,13 @@ export default function AboutPage() {
   }
 
   .founderRoleAP {
-    font-size: 14px;
+    font-size: 10px;
+    
   }
 
   .founderDescAP {
-    font-size: 16px;
-    line-height: 1.75;
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   .directorGridAP {
@@ -484,10 +489,13 @@ export default function AboutPage() {
     width: 60px;
     height: 60px;
   }
+    .directorNameAP{
+    font-size:17px;
+    }
 
   .directorDescAP {
-    font-size: 15px;
-    line-height: 1.75;
+    font-size: 13px;
+    line-height: 1.6;
   }
 
   .directorEmailAP{
@@ -503,7 +511,7 @@ export default function AboutPage() {
   }
 
   .supportGridAP {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 12px;
   }
 

@@ -444,7 +444,7 @@ const handleNavigate = () => {
   >
     <div className="mobile-nav-content">
       <span>Tools</span>
-      <small>6 sections</small>
+      <small>9 calculators</small>
     </div>
 
     <ChevronDown
@@ -1404,7 +1404,7 @@ font-family:"Geist-SemiBold";
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .nav-links,
   .refer-pill,
   .nav-actions {

@@ -191,6 +191,8 @@ export default function SIPCalculator() {
 }
 
 .sipBack{
+font-family: "Geist-Bold";
+  letter-spacing: 1px;
   display:inline-flex;
   align-items:center;
   gap:8px;
@@ -206,6 +208,8 @@ export default function SIPCalculator() {
 }
 
 .sipBadge{
+font-family: "Geist-SemiBold";
+  letter-spacing: 1px;
   display:inline-flex;
   padding:8px 14px;
   border-radius:999px;

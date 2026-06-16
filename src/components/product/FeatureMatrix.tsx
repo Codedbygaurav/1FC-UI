@@ -81,12 +81,12 @@ export default function FeatureMatrix() {
             SHARED INTELLIGENCE
           </div>
 
-          <h2 className="matrix-title">
+          <h2 className="section-title">
             Every product,
             fully <span>connected</span>
           </h2>
 
-          <p className="matrix-subtitle">
+          <p className="section-subtitle">
             All modules operate on the same intelligent foundation —
             unified data, AI insights, live sync and family-first
             infrastructure.
@@ -199,6 +199,7 @@ export default function FeatureMatrix() {
         }
 
         .capability-grid {
+        
           display: grid;
           grid-template-columns:
             repeat(2, minmax(0, 1fr));
@@ -266,6 +267,8 @@ export default function FeatureMatrix() {
         }
 
         .capability-index {
+        font-family:"Geist-SemiBold";
+letter-spacing: 1px;
           font-size: 12px;
           font-weight: 700;
           color: rgba(0,0,0,0.28);
@@ -277,9 +280,11 @@ export default function FeatureMatrix() {
         }
 
         .capability-card h3 {
+        font-family:"Geist-Bold";
+letter-spacing: 1px;
           font-size: 26px;
           line-height: 1.05;
-          letter-spacing: -0.04em;
+          
           font-weight: 800;
           margin-bottom: 14px;
           color: #111111;
@@ -302,6 +307,8 @@ export default function FeatureMatrix() {
         }
 
         .product-pills {
+        font-family:"Geist-SemiBold";
+letter-spacing: 1px;
           display: flex;
           gap: 10px;
           flex-wrap: wrap;

@@ -43,11 +43,11 @@ export default function FeaturesIntelligenceSectionFIS() {
     <section className="featuresIntelSectionFIS">
       <div className="featuresIntelContainerFIS">
         <div className="featuresIntelLeftFIS">
-          <div className="section-label">
+          <div className="section-label-left">
             FINANCIAL INTELLIGENCE
           </div>
 
-          <h2 className="section-title">
+          <h2 className="featuresIntelTitleFIS">
             One intelligent
             <br />
             system <span>watching everything.</span>
@@ -184,21 +184,21 @@ export default function FeaturesIntelligenceSectionFIS() {
         .featuresIntelTitleFIS {
         font-family: "Geist-Bold";
           letter-spacing:1px;
-          font-size: clamp(44px, 4.2vw, 58px);
+          font-size: 50px;
           line-height: 0.95;
           font-weight: 900;
+          
           color: #111;
-          margin: 18px 0 0;
+          margin: 18px 0 12px;
         }
         .mobile-hiddenFIS{
         display:block;
         }
 
         .featuresIntelTitleFIS span {
-          font-family: "DM Serif Display", serif;
           font-style: italic;
           font-weight: 400;
-          color: #0B5A4F;
+          color: var(--color-dark-green);
         }
 
         .featuresIntelDescFIS {

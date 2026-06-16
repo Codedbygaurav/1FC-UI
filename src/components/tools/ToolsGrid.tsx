@@ -13,7 +13,7 @@ export default function ToolsGrid() {
             LIVE TOOLS
           </div>
 
-          <h2 className="toolsGridTitleTG">
+          <h2 className="section-title">
             Financial tools built<br className="mobile-only"/>
             <span> for real life.</span>
           </h2>
@@ -101,12 +101,12 @@ export default function ToolsGrid() {
         }
 
         .toolsGridTitleTG {
-          font-size:
-            clamp(42px,4vw,58px);
+        font-family:"Geist-Bold";
+letter-spacing: 1px;
+          font-size: 40px;
 
           line-height: 0.95;
 
-          letter-spacing: -0.07em;
 
           font-weight: 900;
 
@@ -126,6 +126,7 @@ export default function ToolsGrid() {
         }
 
         .toolsGridWrapTG {
+        
           display: grid;
 
           grid-template-columns:
@@ -255,6 +256,8 @@ export default function ToolsGrid() {
         }
 
         .toolsGridInputsTG {
+        font-family:"Geist-SemiBold";
+letter-spacing: 1px;
           display: flex;
 
           flex-direction: column;

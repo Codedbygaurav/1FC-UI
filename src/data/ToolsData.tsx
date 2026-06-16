@@ -139,7 +139,7 @@ export const toolsData = [
   },
 
   {
-    slug: "emi-calculator",
+    slug: "loan-calculator",
     icon: <Home size={22} strokeWidth={2.2} />,
     title: "Loan EMI",
     description:

@@ -202,11 +202,12 @@ export default function FeaturesInvestmentsSection() {
         }
 
         .featuresInvestAmountFB {
+        font-family:"Geist-Bold";
+          letter-spacing:1px;
           font-size:
             clamp(38px, 4vw, 58px);
 
           line-height: 1;
-          letter-spacing: -0.06em;
           font-weight: 900;
           color: white;
           margin-bottom: 16px;
@@ -287,6 +288,7 @@ export default function FeaturesInvestmentsSection() {
         }
 
         .featuresInvestFeatureCardFB {
+        
           position: relative;
 
           overflow: hidden;
@@ -311,6 +313,8 @@ export default function FeaturesInvestmentsSection() {
         }
 
         .featuresInvestFeatureCardFB span {
+        font-family:"Geist-SemiBold";
+          letter-spacing:1px;  
           display: block;
 
           font-size: 12px;
@@ -321,6 +325,8 @@ export default function FeaturesInvestmentsSection() {
         }
 
         .featuresInvestFeatureCardFB strong {
+        font-family:"Geist-Bold";
+          letter-spacing:1px;
           font-size: 20px;
 
           line-height: 1.2;
@@ -331,6 +337,8 @@ export default function FeaturesInvestmentsSection() {
         }
 
         .featuresInvestRailFB {
+        font-family:"Geist-SemiBold";
+          letter-spacing:1px;
           display: flex;
           flex-wrap: wrap;
           gap: 12px;

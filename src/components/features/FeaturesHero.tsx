@@ -336,6 +336,8 @@ export default function FeaturesHero() {
 }
 
         .featuresHeroStatCardFB {
+        
+
           position: relative;
           overflow: hidden;
 
@@ -365,11 +367,14 @@ export default function FeaturesHero() {
           align-items: center;
           justify-content: space-between;
           margin-bottom: 12px;
+          font-family:"Geist-Bold";
+          letter-spacing:1px;
         }
 
         .featuresHeroStatBadgeFB {
           width: 38px;
           height: 38px;
+          
 
           border-radius: 50%;
 
@@ -389,6 +394,7 @@ export default function FeaturesHero() {
         }
 
         .featuresHeroStatValueFB {
+        
           font-size: 54px;
           line-height: 1;
           letter-spacing: -0.07em;
@@ -397,6 +403,8 @@ export default function FeaturesHero() {
         }
 
         .featuresHeroStatValueSmallFB {
+        font-family:"Geist-Bold";
+          letter-spacing:1px;
           font-size: 38px;
           line-height: 1;
           letter-spacing: -0.06em;

@@ -141,6 +141,7 @@ export default function FeaturesProtectionSectionFPS() {
 
       <style>{`
         .featuresProtectSectionFPS {
+        
           padding: 56px 22px;
           background: #F7F6F1;
         }
@@ -158,6 +159,7 @@ export default function FeaturesProtectionSectionFPS() {
         }
 
         .featuresProtectCardFPS {
+        
           position: relative;
 
           overflow: hidden;
@@ -205,6 +207,7 @@ export default function FeaturesProtectionSectionFPS() {
 
         .featuresProtectCardFPS.darkFPS h3,
         .featuresProtectCardFPS.darkFPS strong {
+        
           color: white;
         }
 
@@ -213,6 +216,8 @@ export default function FeaturesProtectionSectionFPS() {
         .featuresProtectMiniFPS,
         .featuresProtectCardFPS.darkFPS
         .featuresProtectStatsFPS span {
+        font-family:"Geist-SemiBold";
+          letter-spacing:1px;
           color:
             rgba(255,255,255,0.72);
         }
@@ -271,6 +276,8 @@ export default function FeaturesProtectionSectionFPS() {
         }
 
         .featuresProtectCardFPS h3 {
+        font-family:"Geist-Bold";
+          letter-spacing:1px;
           font-size: 17px;
 
           line-height: 1.22;
@@ -303,6 +310,8 @@ export default function FeaturesProtectionSectionFPS() {
 
         .featuresProtectBottomFPS span {
           display: inline-flex;
+          font-family:"Geist-Bold";
+          letter-spacing:1px;
 
           align-items: center;
           justify-content: center;
@@ -336,6 +345,8 @@ export default function FeaturesProtectionSectionFPS() {
           display: flex;
           gap: 24px;
           margin-top: 16px;
+          font-family:"Geist-SemiBold";
+          letter-spacing:1px;
         }
 
         .featuresProtectStatsFPS span {

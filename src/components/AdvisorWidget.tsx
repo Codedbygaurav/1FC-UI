@@ -308,7 +308,7 @@ export default function AdvisorWidget() {
           }
 
           .advisor-title {
-            font-size: 11px;
+            font-size: 9px;
 
             font-weight: 600;
 
@@ -318,7 +318,7 @@ export default function AdvisorWidget() {
           }
 
           .advisor-btn {
-            font-size: 10px;
+            font-size: 8px;
 
             line-height: 1;
           }

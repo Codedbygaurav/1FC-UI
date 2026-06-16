@@ -43,13 +43,13 @@ export default function HowItWorks() {
             PROCESS
           </div>
 
-          <h2 className="how-title">
+          <h2 className="section-title">
             One connected workflow.
             <br />
             Four intelligent <span>steps.</span>
           </h2>
 
-          <p className="how-subtitle">
+          <p className="section-subtitle">
             Four intelligent steps to transform scattered finances into one
             connected operating system.
           </p>

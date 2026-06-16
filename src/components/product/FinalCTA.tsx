@@ -172,28 +172,28 @@ export default function FinalCTA() {
 }
 
 .cta-title {
+font-family:"Geist-Bold";
+letter-spacing: 1px;
+
   margin: 0 auto 20px;
 
-  max-width: 900px;
+  max-width: 1000px;
 
   color: #ffffff;
 
-  font-size: clamp(48px, 4.5vw, 68px);
+  font-size: 50px;
   font-weight: 850;
 
   line-height: 0.95;
-  letter-spacing: -0.06em;
 }
 
 .cta-title span {
-  color: #EAE26A;
+  color: var(--color-accent-lime);
 
   font-style: italic;
   font-weight: 400;
 
-  font-family:
-    "DM Serif Display",
-    serif;
+  
 }
 
 .cta-description {
@@ -237,11 +237,16 @@ export default function FinalCTA() {
 }
 
 .cta-primary {
+font-family:"Geist-Bold";
+letter-spacing: 1px;
+
   background: #EAE26A;
   color: #06211e;
 }
 
 .cta-secondary {
+font-family:"Geist-Bold";
+letter-spacing: 1px;
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.08);
   color: white;
@@ -410,20 +415,20 @@ gap: 16px;
   }
 
   .cta-badge {
-    font-size: 11px;
+    font-size: 9px;
     padding: 9px 14px;
     margin-bottom: 16px;
   }
 
   .cta-title {
-    font-size: 44px;
+    font-size: 30px;
     line-height: 1;
     margin-bottom: 14px;
   }
 
   .cta-description {
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 1.6;
     margin-bottom: 24px;
   }
 
@@ -435,6 +440,7 @@ gap: 16px;
 
   .cta-primary,
   .cta-secondary {
+  
     width: 100%;
     height: 54px;
     justify-content: center;
@@ -448,8 +454,8 @@ gap: 16px;
   }
 
   .trust-item {
-    justify-content: center;
-    padding: 12px;
+    j
+    padding: 9px;
   }
 
   .trust-item span {

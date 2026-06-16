@@ -287,6 +287,8 @@ export default function ProductShowcase() {
 
 
 .product-tabs {
+font-family:"Geist-SemiBold";
+letter-spacing: 1px;
   display: flex;
   gap: 10px;
 
@@ -347,6 +349,8 @@ export default function ProductShowcase() {
 }
 
 .showcase-badge {
+font-family:"Geist-Bold";
+letter-spacing: 1px;
   width: fit-content;
 
   padding: 8px 13px;
@@ -378,7 +382,8 @@ export default function ProductShowcase() {
 
   line-height: 0.94;
 
-  letter-spacing: -0.06em;
+
+letter-spacing: 1px;
 
   font-weight: 850;
 
@@ -448,6 +453,10 @@ export default function ProductShowcase() {
 
 .stats-row {
   display: flex;
+  justify-content:center;
+  align-items:center;
+  
+
   gap: 12px;
 
   margin-bottom: 18px;
@@ -471,6 +480,9 @@ export default function ProductShowcase() {
 }
 
 .stat-value {
+font-family:"Geist-Bold";
+letter-spacing: 1px;
+text-align:center;
   font-size: 22px;
 
   font-weight: 850;
@@ -483,6 +495,9 @@ export default function ProductShowcase() {
 }
 
 .stat-label {
+text-align:center;
+font-family:"Geist-SemiBold";
+letter-spacing: 1px;
   font-size: 10px;
 
   line-height: 1.4;
@@ -502,8 +517,12 @@ export default function ProductShowcase() {
 }
 
 .benefit-item {
+
+  font-family:"Geist-SemiBold";
+letter-spacing: 1px;
   display: flex;
   gap: 9px;
+  margin-bottom:10px;
 
   align-items: flex-start;
 
@@ -541,6 +560,8 @@ export default function ProductShowcase() {
 
 
 .audience-row {
+font-family:"Geist-Bold";
+letter-spacing: 1px;
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
@@ -566,6 +587,8 @@ export default function ProductShowcase() {
 
 
 .explore-btn {
+font-family:"Geist-Bold";
+letter-spacing: 1px;
   width: fit-content;
   display:flex;
   justify-content:center;
@@ -659,6 +682,8 @@ export default function ProductShowcase() {
 }
 
 .dashboard-label {
+font-family:"Geist-SemiBold";
+letter-spacing: 1px;
   font-size: 10px;
 
   color: rgba(255,255,255,0.55);
@@ -667,11 +692,11 @@ export default function ProductShowcase() {
 }
 
 .dashboard-title {
+font-family:"Geist-Bold";
+letter-spacing: 1px;
   font-size: 19px;
 
   font-weight: 800;
-
-  letter-spacing: -0.04em;
 
   color: white;
 }
@@ -685,7 +710,7 @@ export default function ProductShowcase() {
 .dashboard-live span {
   font-size: 10px;
   font-weight: 700;
-  color: #EAE26A;
+  color: var(--color-accent-lime);
 }
 
 .live-dot {
@@ -694,7 +719,7 @@ export default function ProductShowcase() {
 
   border-radius: 50%;
 
-  background: #EAE26A;
+  background: var(--color-accent-lime);
 
   box-shadow:
     0 0 8px rgba(220,235,99,0.4);
@@ -703,6 +728,7 @@ export default function ProductShowcase() {
 
 
 .dashboard-main-card {
+
   position: relative;
   z-index: 2;
 
@@ -721,6 +747,8 @@ export default function ProductShowcase() {
 }
 
 .dashboard-main-top {
+font-family:"Geist-Bold";
+letter-spacing: 1px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -749,13 +777,14 @@ export default function ProductShowcase() {
 }
 
 .dashboard-chip {
+
   padding: 7px 10px;
 
   border-radius: 999px;
 
   background: rgba(220,235,99,0.14);
 
-  color: #EAE26A;
+  color: var(--color-accent-lime);
 
   font-size: 9px;
   font-weight: 700;
@@ -780,11 +809,7 @@ export default function ProductShowcase() {
   border-radius: 999px;
 
   background:
-    linear-gradient(
-      90deg,
-      #EAE26A,
-      #95AC39
-    );
+    var(--color-accent-lime)
 }
 
 .dashboard-main-desc {
@@ -809,6 +834,7 @@ export default function ProductShowcase() {
 }
 
 .dashboard-card {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -831,6 +857,8 @@ export default function ProductShowcase() {
 }
 
 .dashboard-card-label {
+font-family:"Geist-SemiBold";
+letter-spacing: 1px;
   font-size: 10px;
 
   color: rgba(255,255,255,0.55);
@@ -839,13 +867,14 @@ export default function ProductShowcase() {
 }
 
 .dashboard-card-value {
+font-family:"Geist-Bold";
+letter-spacing: 1px;
   font-size: 18px;
 
   font-weight: 800;
 
   line-height: 1.25;
-
-  letter-spacing: -0.04em;
+text-align:center;
 
   color: white;
 
@@ -855,6 +884,7 @@ export default function ProductShowcase() {
 
 
 .dashboard-bottom {
+
   position: relative;
   z-index: 2;
 margin-top:12px;
@@ -868,6 +898,8 @@ margin-top:12px;
 }
 
 .dashboard-bottom-label {
+font-family:"Geist-SemiBold";
+letter-spacing: 1px;
   font-size: 9px;
 
   color: rgba(255,255,255,0.5);
@@ -876,6 +908,8 @@ margin-top:12px;
 }
 
 .dashboard-bottom-title {
+font-family:"Geist-Bold";
+letter-spacing: 1px;
   font-size: 14px;
 
   font-weight: 700;
@@ -1008,11 +1042,16 @@ margin-top:12px;
   .showcase-subtitle {
     font-size: 15px;
     margin-bottom: 10px;
+    line-height:1.6;
+    text-align:center;
   }
 
   .showcase-description {
+
     font-size: 14px;
     margin-bottom: 20px;
+    line-height:1.6;
+    text-align:center;
   }
 
   .showcase-mainContainer {
@@ -1022,8 +1061,9 @@ margin-top:12px;
   }
 
   .stats-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content:center;
+  align-items:center;
+  
     gap: 10px;
     margin-bottom: 0;
   }
@@ -1035,11 +1075,14 @@ margin-top:12px;
   }
 
   .stat-value {
+  
     font-size: 22px;
   }
 
   .stat-label {
-    font-size: 10px;
+  font-family:"Geist-SemiBold";
+letter-spacing: 1px;
+    font-size: 9px;
   }
 
   .benefits-grid {
@@ -1048,6 +1091,7 @@ margin-top:12px;
   }
 
   .benefit-item {
+  margin-bottom:5px;
     font-size: 12px;
   }
 
@@ -1099,134 +1143,7 @@ margin-top:12px;
   }
 }
 
-@media (max-width: 480px) {
 
-  .showcase-section {
-    padding: 64px 16px;
-  }
-
-  .mobile-title {
-    font-size: 22px;
-  }
-
-  .mobile-navPS-btn {
-    width: 38px;
-    height: 38px;
-  }
-
-  .showcase-subtitle {
-    font-size: 14px;
-  }
-
-  .showcase-description {
-    font-size: 13px;
-  }
-
-  .stats-row {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .stat-card {
-    padding: 16px;
-  }
-
-  .stat-value {
-    font-size: 24px;
-  }
-
-  .stat-label {
-    font-size: 11px;
-  }
-
-  .benefits-grid {
-    margin-top:10px;
-    
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .benefit-item {
-    font-size: 13px;
-  }
-
-  .audience-pill {
-    font-size: 9px;
-  }
-
-  .dashboard-shell {
-    border-radius: 20px;
-  }
-
-  .dashboard-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .dashboard-title {
-    font-size: 17px;
-  }
-
-  .dashboard-main-top {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .dashboard-main-value {
-    font-size: 26px;
-  }
-
-  .dashboard-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .dashboard-card {
-    min-height: 74px;
-  }
-
-  .dashboard-card-value {
-    font-size: 15px;
-  }
-
-  .dashboard-bottom-title {
-    font-size: 14px;
-  }
-
-  .dashboard-bottom-desc {
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 360px) {
-
-  .showcase-section {
-    padding: 56px 12px;
-  }
-
-  .mobile-title {
-    font-size: 18px;
-  }
-
-  .showcase-subtitle {
-    font-size: 13px;
-  }
-
-  .showcase-description {
-    font-size: 12px;
-  }
-
-  .benefit-item {
-    font-size: 12px;
-  }
-
-  .dashboard-main-value {
-    font-size: 22px;
-  }
-
-  .dashboard-card-value {
-    font-size: 13px;
-  }
-}
 `}</style>
     </section>
   );

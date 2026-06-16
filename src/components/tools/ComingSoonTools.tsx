@@ -295,72 +295,7 @@ export default function ComingSoonTools() {
   }
 }
 
-@media (max-width: 480px) {
 
-  .comingSoonSectionCS {
-    padding: 64px 16px;
-  }
-
-  .comingSoonTitleCS {
-    font-size: 36px;
-  }
-
-  .comingSoonWrapCS {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .comingSoonCardCS {
-    padding: 18px;
-    border-radius: 20px;
-  }
-
-  .comingSoonIconCS {
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
-    margin-bottom: 12px;
-  }
-
-  .comingSoonIconCS svg {
-    width: 18px;
-    height: 18px;
-  }
-
-  .comingSoonCardTitleCS {
-    font-size: 18px;
-    margin-bottom: 12px;
-  }
-
-  .comingSoonPillCS {
-    font-size: 9px;
-    height: 28px;
-  }
-}
-
-@media (max-width: 360px) {
-
-  .comingSoonSectionCS {
-    padding: 56px 12px;
-  }
-
-  .comingSoonTitleCS {
-    font-size: 30px;
-  }
-
-  .comingSoonCardCS {
-    padding: 16px;
-  }
-
-  .comingSoonCardTitleCS {
-    font-size: 16px;
-  }
-
-  .comingSoonPillCS {
-    font-size: 8px;
-    padding: 0 10px;
-  }
-}
       `}</style>
     </section>
   );
