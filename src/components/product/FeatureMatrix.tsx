@@ -262,7 +262,7 @@ export default function FeatureMatrix() {
         .featured .capability-icon {
           background:
             rgba(220,235,99,0.12);
-          color: #DCEB63;
+          color: #EAE26A;
         }
 
         .capability-index {

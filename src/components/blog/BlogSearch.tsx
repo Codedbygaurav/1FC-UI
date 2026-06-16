@@ -98,6 +98,8 @@ export default function BlogSearch() {
 
       .SearchWrapper input{
         flex:1;
+        font-family:"Geist-SemiBold";
+      letter-spacing:1px;
 
         border:none;
         outline:none;
@@ -114,6 +116,8 @@ export default function BlogSearch() {
       }
 
       .CategoryFilters{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         display:flex;
         flex-wrap:wrap;
         gap:12px;

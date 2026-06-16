@@ -67,7 +67,7 @@ export default function TrustBar() {
               <span style={{
                 width: '4px',
                 height: '3px',
-                background: '#DCEB63',
+                background: '#EAE26A',
                 borderRadius: '50%',
                 opacity: 0.6,
                 flexShrink: 0,

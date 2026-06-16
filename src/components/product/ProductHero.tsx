@@ -35,11 +35,11 @@ export default function ProductHero() {
       <div className="ph-product-hero-container">
         <div className="ph-hero-left">
           <div className="hero-label">
-            <LayoutDashboard size={14}/>
+            <LayoutDashboard size={14} />
             Unified Financial Operating System
           </div>
 
-          <h1 className="ph-hero-title">
+          <h1 className="hero-title">
             One platform.
             <br />
             Every financial
@@ -47,13 +47,12 @@ export default function ProductHero() {
             workflow <span>connected.</span>
           </h1>
 
-          <p className="ph-hero-subtext">
-            Investments, insurance, taxes, loans and planning — managed through one
-            intelligent operating system built for modern Indian families.
+          <p className="hero-subtext">
+            Investments, insurance, taxes, loans and planning — managed through
+            one intelligent operating system built for modern Indian families.
           </p>
-          
 
-          <div className="ph-hero-actions">
+          <div className="hero-actions">
             <button className="btn-primary">
               Explore Products
               <ArrowRight size={18} />
@@ -65,29 +64,23 @@ export default function ProductHero() {
             </button>
           </div>
           <div className="ph-hero-pills">
-  {pills.map((pill) => (
-    <div key={pill.text} className="tag-pill">
-      <pill.icon size={14} />
-      {pill.text}
-    </div>
-  ))}
-</div>
-
-
-         
+            {pills.map((pill) => (
+              <div key={pill.text} className="tag-pill">
+                <pill.icon size={14} />
+                {pill.text}
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="ph-hero-right">
-
           <div className="ph-dashboard-card">
             <div className="ph-dashboard-top">
               <span className="ph-dashboard-heading">
                 <LayoutDashboard size={16} />
                 Unified Dashboard
               </span>
-              <p className="ph-health-text">
-      Portfolio Health • 92%
-    </p>
+              <p className="ph-health-text">Portfolio Health • 92%</p>
 
               <div className="ph-live-pill">
                 <span />
@@ -96,18 +89,19 @@ export default function ProductHero() {
             </div>
 
             <div className="ph-dashboard-value">₹12.4Cr</div>
-              
+
             <div className="ph-dashboard-bar" />
 
             <div className="ph-modules-grid">
-
               {[
                 { icon: Activity, label: "Investments", value: "₹48.3L" },
                 { icon: Shield, label: "Insurance", value: "12 Policies" },
                 { icon: Landmark, label: "Tax Saving", value: "80C Active" },
               ].map((item) => (
                 <div key={item.label} className="ph-module-card">
-                  <div className="ph-module-icon"><item.icon size={15} /></div>
+                  <div className="ph-module-icon">
+                    <item.icon size={15} />
+                  </div>
                   <p>{item.label}</p>
                   <h4>{item.value}</h4>
                 </div>
@@ -115,12 +109,8 @@ export default function ProductHero() {
             </div>
           </div>
           <div className="ph-hero-mascot">
-  <img
-    src="/ProductHero.png"
-    alt="1FC Mascot"
-  />
-</div>
-
+            <img src="/ProductHero.png" alt="1FC Mascot" />
+          </div>
         </div>
       </div>
 
@@ -206,6 +196,7 @@ export default function ProductHero() {
 
 .ph-hero-right {
   position: relative;
+  
   display: flex;
   justify-content: center;
 }
@@ -216,13 +207,12 @@ export default function ProductHero() {
   max-width: 400px;
   width: 100%;
   padding: 24px;
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  backdrop-filter: blur(14px);
-  box-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.05),
-    0 4px 20px rgba(0, 0, 0, 0.03);
+  background:var(--color-dark-green);
+        border-radius:28px;
+        padding:28px;
+        color:white;
+        box-shadow:
+        0 24px 70px rgba(11,59,54,.18);
      z-index:2;
 }
 
@@ -232,6 +222,7 @@ export default function ProductHero() {
   align-items: center;
   gap: 8px;
   font-weight: 700;
+  color: var(--color-accent-lime)
 }
 
 .ph-dashboard-top {
@@ -239,6 +230,9 @@ export default function ProductHero() {
   justify-content: space-between;
   margin-bottom: 14px;
 }
+  .ph-dashboard-top p{
+  color: var(--color-bg-ivory);
+  }
 
 .ph-hero-right{
   position:relative;
@@ -270,7 +264,7 @@ export default function ProductHero() {
   display: flex;
   align-items: center;
   gap: 7px;
-  padding: 4px 10px;
+  padding: 0 10px;
   border-radius: 999px;
   background: rgba(214, 230, 74, 0.12);
 }
@@ -279,22 +273,22 @@ export default function ProductHero() {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #DCEB63;
+  background: #EAE26A;
 }
   .ph-live-pill p{
-        font-size:12px;
+        font-size:11px;
   }
 
 .ph-dashboard-value {
   font-size: clamp(34px, 4vw, 48px);
   font-weight: 900;
-  color: #DCEB63;
+  color: #EAE26A;
   margin-bottom: 14px;
 }
 
 .ph-dashboard-bar {
   height: 6px;
-  background: #DCEB63;
+  background: #EAE26A;
   border-radius: 999px;
   margin-bottom: 18px;
 }
@@ -306,11 +300,10 @@ export default function ProductHero() {
 }
 
 .ph-module-card {
-  padding: 14px;
-  border-radius: 18px;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  transition: all 0.25s ease;
+ 
+  background:rgba(255,255,255,.08);
+        border-radius:16px;
+        padding:16px;
 }
 
 .ph-module-card:hover {
@@ -549,7 +542,7 @@ export default function ProductHero() {
   }
 
   .ph-modules-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .ph-module-icon {

@@ -26,7 +26,7 @@ export default function FeaturesHero() {
               FEATURES OVERVIEW
             </div>
 
-            <h1 className="featuresHeroTitleFB">
+            <h1 className="hero-title">
               Every feature.
               <br />
               Every rupee.
@@ -34,20 +34,20 @@ export default function FeaturesHero() {
               <span>Under control.</span>
             </h1>
 
-            <p className="featuresHeroDescriptionFB">
+            <p className="hero-subtext">
               1FCode brings together 50+ features across 7 domains —
               investments, insurance, loans, tax, legal, platform
               intelligence and free tools — so nothing in your
               financial life falls through the cracks.
             </p>
 
-            <div className="featuresHeroActionsFB">
-              <button className="featuresHeroPrimaryBtnFB">
+            <div className="hero-actions">
+              <button className="btn-primary">
                 Explore All Features
                 <ArrowRight size={16} />
               </button>
 
-              <button className="featuresHeroSecondaryBtnFB">
+              <button className="btn-secondary">
                 <Play size={16} />
                 Take a Tour
               </button>
@@ -378,9 +378,9 @@ export default function FeaturesHero() {
           justify-content: center;
 
           background:
-            rgba(210,224,90,0.16);
+            var(--color-accent-lime);
 
-          color: #A6BA2D;
+          color: var(--color-dark-green);
         }
 
         .featuresHeroCardIconFB {
@@ -555,98 +555,8 @@ export default function FeaturesHero() {
   }
 }
 
-@media (max-width: 480px) {
 
-  .featuresHeroSectionFB {
-    padding: 110px 16px 56px;
-  }
 
-  .featuresHeroTitleFB {
-    font-size: 38px;
-  }
-
-  .featuresHeroDescriptionFB {
-    font-size: 14px;
-  }
-
-  .featuresHeroTrustRowFB {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .featuresHeroTrustItemFB {
-    font-size: 11px;
-  }
-
-  .featuresHeroMascotFB {
-    width: 240px;
-  }
-
-  .featuresHeroStatsWrapFB {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .featuresHeroStatCardFB.largeFB {
-    grid-column: span 1;
-  }
-
-  .featuresHeroStatCardFB {
-    min-height: auto;
-    padding: 18px;
-    border-radius: 20px;
-  }
-
-  .featuresHeroStatValueFB {
-    font-size: 40px;
-  }
-
-  .featuresHeroStatValueSmallFB {
-    font-size: 26px;
-    margin-bottom: 8px;
-  }
-
-  .featuresHeroStatLabelFB {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 360px) {
-
-  .featuresHeroSectionFB {
-    padding: 130px 12px 48px;
-  }
-
-  .featuresHeroTitleFB {
-    font-size: 35px;
-  }
-
-  .featuresHeroDescriptionFB {
-    font-size: 13px;
-  }
-
-  .featuresHeroMascotFB {
-    width: 210px;
-    
-  }
-
-  .featuresHeroStatValueFB {
-    font-size: 34px;
-  }
-
-  .featuresHeroStatValueSmallFB {
-    font-size: 22px;
-  }
-
-  .featuresHeroStatLabelFB {
-    font-size: 10px;
-  }
-
-  .featuresHeroTrustItemFB {
-    font-size: 10px;
-  }
-}
       `}</style>
     </section>
   );

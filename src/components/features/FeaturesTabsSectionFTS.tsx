@@ -306,12 +306,12 @@ export default function FeaturesTabsFTS() {
     CONNECTED FEATURES
   </div>
 
-  <h2 className="featuresTabsHeadingFTS">
+  <h2 className="section-title">
     Everything works
     <span> together</span>
   </h2>
 
-  <p className="featuresTabsDescFTS">
+  <p className="section-subtitle">
     One intelligent ecosystem connecting investments,
     insurance, taxes, loans and legal planning.
   </p>

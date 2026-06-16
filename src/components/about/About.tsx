@@ -1,7 +1,7 @@
 "use client";
 
 import GroupStructure from "./GroupStructure";
-import {Users,Crown,Briefcase, Building2} from "lucide-react"
+import {Crown, Building2} from "lucide-react"
 
 type PersonAP = {
   name: string;
@@ -196,12 +196,16 @@ export default function AboutPage() {
         }
 
         .founderBadgeAP {
+        font-family: "Geist-Bold";
+          letter-spacing:1px;
+          font-size:10px;
           display: inline-flex;
+          align-items:center;
           padding: 7px 12px;
           border-radius: 999px;
           background: rgba(11,59,54,0.06);
           color: var(--color-dark-green);
-          margin-bottom: 16px;
+          margin-bottom: 4px;
         }
         .founderBadgeAP p{
         padding:0 8px; 
@@ -209,6 +213,9 @@ export default function AboutPage() {
 
         .founderNameAP {
           margin: 0;
+          font-size:40px;
+          font-family: "Geist-Bold";
+          letter-spacing:1px;
         }
 
         .founderRoleAP {
@@ -218,6 +225,7 @@ export default function AboutPage() {
         }
 
         .founderDescAP {
+        line-height: 1.6;
           margin: 18px 0 0;
         }
 
@@ -277,17 +285,21 @@ export default function AboutPage() {
         }
 
         .directorNameAP {
+        font-family: "Geist-Bold";
+          letter-spacing:1px;
           margin: 0;
+          font-size:25px;
         }
 
         .directorRoleAP {
           margin: 6px 0 0;
           color: var(--color-secondary-green);
-          font-size: 12px;
+          font-size: 15px;
           font-weight: 700;
         }
 
         .directorDescAP {
+        line-height: 1.5;
           margin: 0;
         }
 
@@ -323,6 +335,8 @@ export default function AboutPage() {
         }
 
         .supportNameAP {
+        font-family: "Geist-Bold";
+          letter-spacing:1px;
           margin: 0;
         }
 
@@ -330,7 +344,7 @@ export default function AboutPage() {
           margin: 7px 0 0;
           color: #666666;
           font-size: 11px;
-          line-height: 1.55;
+          line-height: 1.5;
         }
 
         .supportEmailAP {
@@ -362,14 +376,7 @@ export default function AboutPage() {
     font-size: clamp(52px, 6vw, 64px);
   }
 
-  .heroTitleDescAP,
-  .heroTitleDesc {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 17px;
-    line-height: 1.8;
-  }
+  
 
   .heroVisualAP {
     max-width: 820px;
@@ -444,6 +451,11 @@ export default function AboutPage() {
     padding: 22px;
     border-radius: 24px;
   }
+    .founderNameAP{
+    line-height:1;
+    font-size:31px;
+    margin-top:4px;
+    }
 
   .founderImageWrapAP {
     height: 320px;
@@ -454,7 +466,7 @@ export default function AboutPage() {
   }
 
   .founderDescAP {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.75;
   }
 
@@ -474,8 +486,15 @@ export default function AboutPage() {
   }
 
   .directorDescAP {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.75;
+  }
+
+  .directorEmailAP{
+    font-size: 13px;
+  }
+  .directorRoleAP{
+  font-size:14px;
   }
 
   .supportSectionAP {
@@ -494,132 +513,8 @@ export default function AboutPage() {
   }
 }
 
-@media (max-width: 480px) {
 
-  .aboutContainerAP {
-    padding: 0 16px;
-  }
 
-  .heroSectionAP {
-    padding: 110px 0 56px;
-  }
-
-  .heroTitleAP {
-    font-size: 38px;
-  }
-
-  .heroTitleDescAP,
-  .heroTitleDesc {
-    font-size: 14px;
-  }
-
-  .heroVisualAP {
-    gap: 12px;
-  }
-
-  .heroVisualCardAP {
-    padding: 18px;
-    border-radius: 20px;
-  }
-
-  .AboutHeading {
-    font-size: 36px;
-  }
-
-  .founderWrapAP {
-    padding: 18px;
-    border-radius: 20px;
-  }
-
-  .founderImageWrapAP {
-    height: 260px;
-    border-radius: 18px;
-  }
-
-  .founderRoleAP {
-    font-size: 13px;
-  }
-
-  .founderDescAP {
-    font-size: 13px;
-  }
-
-  .founderEmailAP {
-    font-size: 11px;
-  }
-
-  .directorCardAP {
-    padding: 16px;
-  }
-
-  .directorImageAP {
-    width: 52px;
-    height: 52px;
-  }
-
-  .directorNameAP {
-    font-size: 16px;
-  }
-
-  .directorDescAP {
-    font-size: 12px;
-  }
-
-  .supportGridAP {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .supportCardAP {
-    padding: 16px;
-  }
-
-  .supportNameAP {
-    font-size: 15px;
-  }
-
-  .supportRoleAP {
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 360px) {
-
-  .aboutContainerAP {
-    padding: 0 12px;
-  }
-
-  .heroTitleAP {
-    font-size: 30px;
-  }
-
-  .heroTitleDescAP,
-  .heroTitleDesc {
-    font-size: 13px;
-  }
-
-  .AboutHeading {
-    font-size: 30px;
-  }
-
-  .founderImageWrapAP {
-    height: 220px;
-  }
-
-  .founderDescAP,
-  .directorDescAP {
-    font-size: 11px;
-  }
-
-  .directorEmailAP,
-  .supportEmailAP {
-    font-size: 8px;
-  }
-
-  .supportNameAP {
-    font-size: 13px;
-  }
-}
       `}</style>
 
       <main className="aboutPageAP">

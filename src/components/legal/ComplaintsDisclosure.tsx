@@ -150,7 +150,7 @@ export default function ComplianceDisclosure() {
 
 .ComplianceCard:hover{
   transform:translateY(-8px);
-  border-color:#DCEB63;
+  border-color:#EAE26A;
   box-shadow:
     0 20px 40px rgba(11,59,54,.08);
 }
@@ -187,7 +187,7 @@ export default function ComplianceDisclosure() {
 
 .FeaturedCard .CardIcon{
   background:rgba(220,235,99,.15);
-  color:#DCEB63;
+  color:#EAE26A;
 }
 
 .ComplianceCard h3{
@@ -228,7 +228,7 @@ export default function ComplianceDisclosure() {
 
 .FeaturedCard .CardAction{
   background:rgba(220,235,99,.15);
-  color:#DCEB63;
+  color:#EAE26A;
 }
 
 .ComplianceCard:hover .CardAction{

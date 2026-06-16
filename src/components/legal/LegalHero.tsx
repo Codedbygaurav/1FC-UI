@@ -136,11 +136,11 @@ export default function LegalHero() {
 
       .CardHeader span{
         font-size:13px;
-        color:#DCEB63;
+        color:#EAE26A;
       }
 
       .LiveTag{
-        background:#DCEB63;
+        background:#EAE26A;
         color:#0B3B36;
         font-size:11px;
         font-weight:700;
@@ -153,7 +153,7 @@ export default function LegalHero() {
         font-weight:800;
         line-height:1;
         margin-top:20px;
-        color:#DCEB63;
+        color:#EAE26A;
       }
 
       .StatLabel{
@@ -173,7 +173,7 @@ export default function LegalHero() {
         display:block;
         width:100%;
         height:100%;
-        background:#DCEB63;
+        background:#EAE26A;
       }
 
       .StatsGrid{

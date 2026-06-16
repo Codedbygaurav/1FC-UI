@@ -21,8 +21,8 @@ export default function FeaturesInvestmentsSection() {
             INVESTMENTS
           </div>
 
-          <h2 className="featuresInvestTitleFB">
-            Smarter investing.<br className="mobile-only"/>
+          <h2 className="section-title">
+            Smarter investing.<br/>
             <span> One connected portfolio.</span>
           </h2>
         </div>
@@ -225,7 +225,7 @@ export default function FeaturesInvestmentsSection() {
           background:
             rgba(220,235,99,0.14);
 
-          color: #DCEB63;
+          color: #EAE26A;
 
           font-size: 13px;
           font-weight: 700;
@@ -526,7 +526,7 @@ export default function FeaturesInvestmentsSection() {
   }
 
   .featuresInvestRightFB {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 

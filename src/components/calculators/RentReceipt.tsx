@@ -266,7 +266,7 @@ export default function RentReceipt() {
   font-weight:700;
   letter-spacing:.12em;
   text-transform:uppercase;
-  color:#DCEB63;
+  color:#EAE26A;
 }
 
 .previewBadge{

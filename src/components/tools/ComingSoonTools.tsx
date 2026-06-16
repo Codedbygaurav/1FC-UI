@@ -51,7 +51,7 @@ export default function ComingSoonTools() {
             COMING SOON
           </div>
 
-          <h2 className="comingSoonTitleCS">
+          <h2 className="section-title">
             More tools already<br className="mobile-only"/>
             <span> in development.</span>
           </h2>
@@ -90,7 +90,6 @@ export default function ComingSoonTools() {
       <style>{`
         .comingSoonSectionCS {
           padding: 72px 24px;
-          background: #F5F4EF;
           overflow: hidden;
           width: 100%;
           box-sizing: border-box;
@@ -107,30 +106,8 @@ export default function ComingSoonTools() {
           margin-bottom: 42px;
         }
 
-        .comingSoonTitleCS {
-          font-size:
-            clamp(42px,4vw,58px);
+        
 
-          line-height: 0.95;
-
-          letter-spacing: -0.07em;
-
-          font-weight: 900;
-
-          color: #111;
-        }
-
-        .comingSoonTitleCS span {
-          font-family:
-            "DM Serif Display",
-            serif;
-
-          font-style: italic;
-
-          font-weight: 400;
-
-          color: #0B544B;
-        }
 
         .comingSoonWrapCS {
           display: grid;
@@ -229,7 +206,7 @@ export default function ComingSoonTools() {
           border-radius: 999px;
 
           background:
-            rgba(201,219,78,0.18);
+            var(--color-accent-lime);
 
           font-size: 11px;
 
@@ -237,7 +214,7 @@ export default function ComingSoonTools() {
 
           letter-spacing: 0.08em;
 
-          color: #8FA60E;
+          color: var(--color-dark-green);
         }
 
     @media (max-width: 900px) {

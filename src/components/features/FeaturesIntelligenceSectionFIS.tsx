@@ -47,13 +47,13 @@ export default function FeaturesIntelligenceSectionFIS() {
             FINANCIAL INTELLIGENCE
           </div>
 
-          <h2 className="featuresIntelTitleFIS">
+          <h2 className="section-title">
             One intelligent
             <br />
             system <span>watching everything.</span>
           </h2>
 
-          <p className="featuresIntelDescFIS">
+          <p className="section-subtitle">
             1FCode continuously analyzes your financial ecosystem —
             investments, insurance, liabilities, taxes and cashflow —
             to deliver smarter financial decisions in real time.
@@ -182,10 +182,11 @@ export default function FeaturesIntelligenceSectionFIS() {
         }
 
         .featuresIntelTitleFIS {
+        font-family: "Geist-Bold";
+          letter-spacing:1px;
           font-size: clamp(44px, 4.2vw, 58px);
           line-height: 0.95;
           font-weight: 900;
-          letter-spacing: -0.07em;
           color: #111;
           margin: 18px 0 0;
         }
@@ -346,7 +347,7 @@ export default function FeaturesIntelligenceSectionFIS() {
           background:
             rgba(220,235,99,0.16);
 
-          color: #DCEB63;
+          color: #EAE26A;
 
           padding: 12px 16px;
 
@@ -425,7 +426,7 @@ export default function FeaturesIntelligenceSectionFIS() {
           background:
             rgba(220,235,99,0.14);
 
-          color: #DCEB63;
+          color: #EAE26A;
 
           display: flex;
           align-items: center;
@@ -481,7 +482,7 @@ export default function FeaturesIntelligenceSectionFIS() {
         }
 
         .featuresIntelStatCardFIS svg {
-          color: #DCEB63;
+          color: #EAE26A;
           margin-bottom: 8px;
         }
 

@@ -243,13 +243,13 @@ export default function FeaturesProtectionSectionFPS() {
           background:
             rgba(220,235,99,0.10);
 
-          color: #DCEB63;
+          color: #EAE26A;
         }
 
         .featuresProtectCardFPS.darkFPS
         .featuresProtectIconFPS svg {
-          color: #DCEB63;
-          stroke: #DCEB63;
+          color: #EAE26A;
+          stroke: #EAE26A;
         }
 
         .featuresProtectContentFPS {
@@ -329,7 +329,7 @@ export default function FeaturesProtectionSectionFPS() {
           background:
             rgba(220,235,99,0.12);
 
-          color: #DCEB63;
+          color: #EAE26A;
         }
 
         .featuresProtectStatsFPS {

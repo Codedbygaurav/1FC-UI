@@ -163,8 +163,6 @@ export default function PricingSection() {
               style={{
                 fontStyle: "italic",
 
-                fontFamily:
-                  "'DM Serif Display', Georgia, serif",
 
                 fontWeight: "400",
 
@@ -307,7 +305,7 @@ export default function PricingSection() {
                         height: "5px",
 
                         background:
-                          "#DCEB63",
+                          "#EAE26A",
 
                         borderRadius:
                           "50%",
@@ -323,7 +321,7 @@ export default function PricingSection() {
                           "600",
 
                         color:
-                          "#DCEB63",
+                          "#EAE26A",
 
                         letterSpacing:
                           "0.04em",
@@ -354,7 +352,7 @@ export default function PricingSection() {
                           "700",
 
                         color:
-                          "#DCEB63",
+                          "#EAE26A",
 
                         marginTop:
                           "10px",
@@ -374,7 +372,7 @@ export default function PricingSection() {
                           "900",
 
                         color:
-                          "#DCEB63",
+                          "#EAE26A",
 
                         letterSpacing:
                           "-0.06em",
@@ -475,7 +473,7 @@ export default function PricingSection() {
                       gap: "10px",
 
                       background:
-                        "#DCEB63",
+                        "#EAE26A",
 
                       color:
                         "#0B3B36",
@@ -627,7 +625,7 @@ export default function PricingSection() {
                           >
                             <path
                               d="M2 5L4 7L8 3"
-                              stroke="#DCEB63"
+                              stroke="#EAE26A"
                               strokeWidth="1.3"
                               strokeLinecap="round"
                               strokeLinejoin="round"

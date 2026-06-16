@@ -146,12 +146,13 @@ export default function NewsletterCTA() {
       }
 
       .NewsletterContent h2{
+      font-family:"Geist-Bold";
         font-size: clamp(52px, 6vw, 62px);
         font-weight:800;
 
         line-height:.95;
 
-        letter-spacing:-.05em;
+        letter-spacing:1px;
 
         margin:0 0 18px;
       }
@@ -164,7 +165,7 @@ export default function NewsletterCTA() {
         color:
         rgba(255,255,255,.75);
 
-        line-height:1.9;
+        line-height:1.6;
       }
 
       .NewsletterForm{
@@ -221,6 +222,8 @@ export default function NewsletterCTA() {
       }
 
       .NewsletterForm button{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         height:58px;
 
         border:none;

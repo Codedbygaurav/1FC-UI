@@ -1,17 +1,40 @@
 @import "tailwindcss";
+@import url("geist/font/sans.css");
+
+@font-face {
+  font-family: "AOT Serial Mono";
+  src: url("/fonts/AOT-Serial-Mono-VF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist-Bold";
+  src: url("/fonts/Geist-ExtraBold.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist-SemiBold";
+  src: url("/fonts/Geist-SemiBold.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
-  --color-dark-green: #0B3B36;
-  --color-secondary-green: #174C45;
-  --color-accent-lime: #DCEB63;
-  --color-bg-ivory: #FAFAF7;
+  --color-dark-green: #043335;
+  --color-secondary-green: #043335;
+  --color-accent-lime: #EAE26A;
+  --color-bg-ivory: #F4F4ED;
   --color-soft-neutral: #F5F6F2;
   --color-text-primary: #111111;
   --color-muted: #5E5E5E;
   --color-border: rgba(0,0,0,0.06);
 
-    --font-main: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-serif: "DM Serif Display", serif;
+   
+    --font-main: "Geist-Bold" !important;
 }
 
 * {
@@ -27,10 +50,17 @@ html {
 }
 
 body {
-  font-family: var(--font-main);
-  background-color: #FAFAF7;
+  font-family: "AOT Serial Mono";
+  line-height:1.6;
+  font-weight:600;
+  letter-spacing:-0.4px;
+  background-color: #F4F4ED;
   color: #111111;
-  line-height: 1.6;
+  
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Geist-Bold";
+  
 }
 
 .text-label {
@@ -239,6 +269,8 @@ body {
 }
 
 .btn-primary {
+  font-family: "Geist-Bold";
+  letter-spacing: 1px;
   background: #0B3B36 !important;
   color: #FFFFFF !important;
   border: none !important;
@@ -276,6 +308,8 @@ body {
 }
 
 .btn-secondary {
+  font-family: "Geist-Bold";
+  letter-spacing: 1px;
   background: #FFFFFF !important;
   color: #0B3B36 !important;
 
@@ -355,7 +389,7 @@ gap:10px;
 
 
 .text-lime {
-  color: #DCEB63;
+  color: #EAE26A;
 }
 
 .section-ivory {
@@ -433,7 +467,8 @@ gap:10px;
 
 .hero-label {
   display:inline-flex;
-  
+  font-family:"Geist-Bold";
+      letter-spacing:1px; 
   align-items: center;
   padding:8px 14px;
   gap: 10px;
@@ -448,10 +483,11 @@ gap:10px;
 }
 
 .hero-title {
-  font-size: clamp(46px, 5vw, 68px);
-  line-height: 0.92;
-  font-weight: 900;
-  letter-spacing: -0.06em;
+  font-size: 63.84px;
+  font-family: "Geist-Bold";
+  line-height: 61px;
+  font-weight: 800;
+  letter-spacing: -1.32px;
   margin: 18px 0;
 }
   .hero-left{
@@ -459,8 +495,11 @@ gap:10px;
 }
 
 .hero-title span {
-  font-family: "DM Serif Display", serif;
   font-style: italic;
+  font-family:
+            "DM Serif Display",
+            serif;
+  font-family: "Geist-Bold";
   color: #0b544b;
   font-weight: 400;
 }
@@ -468,7 +507,9 @@ gap:10px;
 .hero-subtext {
   max-width: 540px;
   font-size: 16px;
-  line-height: 1.75;
+  line-height:1.6;
+font-weight:500;
+letter-spacing:-1px;
   margin-bottom: 24px;
   color: #5d5d5d;
 }
@@ -481,6 +522,8 @@ gap:10px;
 }
 
 .section-title {
+  font-family: "Geist-Bold";
+  text-align: center;
           font-size:
             clamp(12px, 5vw, 54px);
           line-height: 0.95;
@@ -492,18 +535,17 @@ gap:10px;
 
         .section-title span {
           font-style: italic;
-          font-family:
-            "DM Serif Display",
-            serif;
           font-weight: 400;
           color: #0B3B36;
         }
 
         .section-subtitle {
           max-width: 720px;
-          margin: 0 auto;
+          margin: 0 auto 48px;
           font-size: 15px;
-          line-height: 1.75;
+          line-height:1.6;
+        font-weight:500;
+        letter-spacing:-1px;
           color: #6A6F6B;
         }
 
@@ -516,7 +558,7 @@ gap:10px;
   }
 
   .hero-title {
-    font-size: clamp(56px, 7vw, 68px);
+    font-size: 60px;
   }
 
   .hero-subtext {
@@ -546,7 +588,7 @@ gap:10px;
   
 
   .hero-title {
-    font-size: 44px;
+    font-size: 35px;
     line-height: 1;
     margin: 18px 0;
     text-align: center;
@@ -593,7 +635,10 @@ gap:10px;
 
 .section-label {
   display: inline-flex;
+  text-align: center;
+  width: 100%;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   opacity: 0.7;
   margin-bottom: 10px;
@@ -621,7 +666,7 @@ gap:10px;
 
 .CalculatorCard{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;background:#fff;border-radius:32px;padding:32px;margin-top:32px;box-shadow:0 20px 60px rgba(11,59,54,.08)}
       .FormulaCard{background:linear-gradient(135deg,#0B3B36,#174C45);padding:24px;border-radius:24px;color:#fff;margin-bottom:24px}
-      .FormulaCard span{display:block;color:#DCEB63;font-size:11px;margin-bottom:10px}
+      .FormulaCard span{display:block;color:#EAE26A;font-size:11px;margin-bottom:10px}
       .InputGroup{margin-bottom:24px}
       .InputTop{display:flex;justify-content:space-between;margin-bottom:12px}
       .InputGroup input{
@@ -642,7 +687,7 @@ gap:10px;
       .ResultCard{background:linear-gradient(135deg,#0B3B36,#174C45);padding:32px;border-radius:28px;color:#fff}
       .ResultLabel{opacity:.7}
       .ResultCard h2{font-size:clamp(42px,5vw,64px);margin:10px 0;font-weight:700}
-      .Growth{color:#DCEB63;font-weight:700}
+      .Growth{color:#EAE26A;font-weight:700}
       .Divider{height:1px;background:rgba(255,255,255,.15);margin:24px 0}
       .StatRow{display:flex;justify-content:space-between;margin-bottom:16px}
 
@@ -691,7 +736,7 @@ gap:10px;
 .vaultIcon{
   width:44px;
   height:44px;
-  color:#DCEB63;
+  color:#EAE26A;
   border-radius:12px;
 
   background:
@@ -712,7 +757,7 @@ gap:10px;
   background:
   rgba(220,235,99,.15);
 
-  color:#DCEB63;
+  color:#EAE26A;
 
   font-size:11px;
   font-weight:700;
@@ -729,7 +774,7 @@ gap:10px;
   margin-bottom:14px;
 }
 .vaultTitle span{
-  color:#DCEB63;
+  color:#EAE26A;
 }
 
 .vaultDescription{
@@ -769,7 +814,7 @@ gap:10px;
 .vaultStep span{
   display:block;
 
-  color:#DCEB63;
+  color:#EAE26A;
 
   font-size:13px;
   font-weight:700;
@@ -799,7 +844,7 @@ gap:10px;
   border:none;
   border-radius:999px;
 
-  background:#DCEB63;
+  background:#EAE26A;
 
   color:#0B3B36;
 

@@ -130,6 +130,10 @@ export default function GroupStructure() {
         }
 
         .groupStructureTitleGS {
+        font-family: "Geist-Bold";
+          letter-spacing:1px;
+          font-size:50px;
+          line-height:1.2;
           color: #f5fff8;
           margin: 0;
           text-align:center;
@@ -273,6 +277,7 @@ export default function GroupStructure() {
 
   .groupStructureTitleGS {
     font-size: clamp(52px, 6vw, 62px);
+    
     line-height: 0.98;
     text-align:center;
   }

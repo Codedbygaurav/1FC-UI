@@ -282,7 +282,7 @@ export default function HowItWorks() {
           >
             <div className="label-line" />
 
-            <span className="section-label">
+            <span className="section-labelH">
               How It Works
             </span>
 
@@ -294,7 +294,7 @@ export default function HowItWorks() {
             From scattered to{" "}
             <span className="workflow-highlight">
               sorted
-            </span>{" "}
+            </span>{"  "}
             in four steps
           </h2>
 
@@ -385,7 +385,7 @@ export default function HowItWorks() {
             rgba(220,235,99,0.35);
         }
 
-        .section-label {
+        .section-labelH {
           font-size: 11px;
 
           font-weight: 700;
@@ -399,6 +399,8 @@ export default function HowItWorks() {
         }
 
         .workflow-title {
+        font-family:"Geist-Bold"
+        letter-spacing:1px;
           max-width: 820px;
 
           margin-inline: auto;
@@ -418,13 +420,11 @@ export default function HowItWorks() {
         }
 
         .workflow-highlight {
-          color: #DCEB63;
-
+          color: #EAE26A;
+          margin-right:10px;
           font-style: italic;
 
-          font-family:
-            'DM Serif Display',
-            serif;
+          
 
           font-weight: 400;
         }
@@ -520,7 +520,7 @@ export default function HowItWorks() {
           border:
             1px solid rgba(220,235,99,0.14);
 
-          color: #DCEB63;
+          color: #EAE26A;
 
           margin-bottom: 18px;
         }
@@ -755,7 +755,7 @@ export default function HowItWorks() {
     font-size: 14px;
   }
 
-  .section-label {
+  .section-labelH {
     font-size: 10px;
   }
 

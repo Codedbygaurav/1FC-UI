@@ -180,12 +180,7 @@ export default function Footer() {
 
           text-transform: uppercase;
 
-          color: rgba(
-            220,
-            235,
-            99,
-            0.55
-          );
+          color: var(--color-accent-lime);
 
           margin-bottom: 20px;
         }

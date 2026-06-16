@@ -30,9 +30,6 @@ export default function AdvisorWidget() {
 
          
         <div className="advisor-content">
-          <div className="advisor-label">
-            AI FINANCIAL ASSISTANT
-          </div>
 
           <div className="advisor-title">
             Need help?
@@ -176,7 +173,7 @@ export default function AdvisorWidget() {
 
           border-radius: 50%;
 
-          background: #DCEB63;
+          background: #EAE26A;
 
           border:
             2px solid #0B3B36;
@@ -247,7 +244,7 @@ export default function AdvisorWidget() {
 
           background: transparent;
 
-          color: #DCEB63;
+          color: #EAE26A;
 
           font-size: 12px;
 

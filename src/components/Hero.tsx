@@ -214,15 +214,7 @@ export default function Hero() {
           backdrop-filter: blur(10px);
         }
 
-        .hero-title {
-          font-size: clamp(42px, 4.25vw, 62px);
-          line-height: 0.95;
-          letter-spacing: -0.06em;
-          font-weight: 850;
-          color: #111111;
-          margin: 22px 0;
-          max-width: 650px;
-        }
+        
 
         .hero-italic {
           font-style: italic;
@@ -331,7 +323,7 @@ export default function Hero() {
           width: 4px;
           height: 4px;
           border-radius: 50%;
-          background: #DCEB63;
+          background: #EAE26A;
         }
 
         .hero-visual {
@@ -591,7 +583,7 @@ export default function Hero() {
         .advisor-pill {
           margin-top: 10px;
           background: #0B3B36;
-          color: #DCEB63;
+          color: #EAE26A;
           height: 40px;
           border-radius: 12px;
           display: flex;
@@ -630,10 +622,7 @@ export default function Hero() {
     flex-direction: column;
   }
 
-  .hero-title {
-    max-width: 780px;
-    font-size: clamp(52px, 7vw, 64px);
-  }
+  
 
   .hero-description {
     max-width: 680px;
@@ -742,12 +731,7 @@ export default function Hero() {
     margin-bottom: 20px;
   }
 
-  .hero-title {
-    font-size: 46px;
-    line-height: 0.98;
-    max-width: 100%;
-    text-align: center;
-  }
+  
 
   .hero-description {
     font-size: 16px;
@@ -856,10 +840,7 @@ export default function Hero() {
     padding: 125px 16px 0;
   }
 
-  .hero-title {
-    font-size: 38px;
-    letter-spacing: -0.05em;
-  }
+  
 
   .hero-description {
     font-size: 15px;

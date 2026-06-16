@@ -296,12 +296,13 @@ export default function CalculatorSection() {
          
 
         .calc-heading {
+        font-family:"Geist-Bold"
+        letter-spacing:1px;
           font-size:
             clamp(28px, 3vw, 42px);
 
           line-height: 0.96;
 
-          letter-spacing: -0.07em;
 
           font-weight: 850;
 
@@ -484,7 +485,7 @@ export default function CalculatorSection() {
 
           background: #0b3b36;
 
-          color: #dceb63;
+          color: #EAE26A;
 
           font-size: 9px;
 

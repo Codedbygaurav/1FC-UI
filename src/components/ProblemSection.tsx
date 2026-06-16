@@ -42,26 +42,23 @@ export default function ProblemSection() {
 
       <div className="problem-container">
 
-        <div className="problem-label">
-          <span />
-          <p>Problem</p>
-        </div>
+        <div className="section-label ">problem</div>
 
 
-        <div className="problem-heading-wrap">
-          <h2 className="problem-heading">
+        
+          <h2 className="section-title">
             India’s financial system is still{" "}
             <span>fragmented</span>
           </h2>
 
-          <p className="problem-subtext">
+          <p className="section-subtitle">
             Families manage investments,
             insurance, taxes and planning
             across disconnected platforms —
             creating confusion, dependency and
             risk during critical moments.
           </p>
-        </div>
+        
 
 
         <div className="problem-layout">
@@ -183,89 +180,10 @@ export default function ProblemSection() {
         .problem-container {
           position: relative;
           z-index: 2;
-
+          
           max-width: 1280px;
           margin: 0 auto;
         }
-
-        
-
-        .problem-label {
-          display: inline-flex;
-          align-items: center;
-
-          gap: 10px;
-
-          margin-bottom: 22px;
-        }
-
-        .problem-label span {
-          width: 32px;
-          height: 1px;
-
-          background: #0b3b36;
-
-          opacity: 0.2;
-        }
-
-        .problem-label p {
-          font-size: 11px;
-          font-weight: 700;
-
-          letter-spacing: 0.14em;
-
-          text-transform: uppercase;
-
-          color: #666;
-        }
-
-        
-
-        .problem-heading-wrap {
-          margin-bottom:
-            clamp(34px, 5vw, 56px);
-        }
-
-        .problem-heading {
-          max-width: 720px;
-
-          font-size:
-            clamp(38px, 5vw, 60px);
-
-          line-height: 0.96;
-
-          letter-spacing: -0.06em;
-
-          font-weight: 850;
-
-          color: #111;
-
-          margin-bottom: 18px;
-        }
-
-        .problem-heading span {
-          color: #0b3b36;
-
-          font-style: italic;
-
-          font-family:
-            "DM Serif Display",
-            serif;
-
-          font-weight: 400;
-        }
-
-        .problem-subtext {
-          max-width: 620px;
-
-          font-size: 16px;
-
-          line-height: 1.8;
-
-          color: #666;
-        }
-
-       
 
         .problem-layout {
           display: grid;
@@ -355,7 +273,7 @@ export default function ProblemSection() {
           align-items: center;
           justify-content: center;
 
-          color: #dceb63;
+          color: #EAE26A;
         }
 
         .featured-badge {
@@ -438,7 +356,7 @@ export default function ProblemSection() {
 
           letter-spacing: -0.07em;
 
-          color: #dceb63;
+          color: #EAE26A;
         }
 
         .featured-text {
@@ -632,16 +550,7 @@ export default function ProblemSection() {
     margin-bottom: 44px;
   }
 
-  .problem-heading {
-    max-width: 820px;
-    font-size: clamp(50px, 6vw, 62px);
-  }
-
-  .problem-subtext {
-    max-width: 700px;
-    font-size: 17px;
-    line-height: 1.8;
-  }
+ 
 
   .problem-layout {
     grid-template-columns: 1fr;
@@ -686,26 +595,7 @@ export default function ProblemSection() {
     padding: 72px 20px;
   }
 
-  .problem-label {
-    margin-bottom: 14px;
-  }
-
-  .problem-heading-wrap {
-    margin-bottom: 30px;
-  }
-
-  .problem-heading {
-    font-size: 44px;
-    line-height: 1;
-    letter-spacing: -0.05em;
-    max-width: 100%;
-  }
-
-  .problem-subtext {
-    font-size: 15px;
-    line-height: 1.8;
-    max-width: 100%;
-  }
+  
 
   .problem-layout {
     gap: 16px;
@@ -801,9 +691,7 @@ export default function ProblemSection() {
     padding: 64px 16px;
   }
 
-  .problem-label span {
-    width: 24px;
-  }
+  
 
   .problem-heading {
     font-size: 36px;

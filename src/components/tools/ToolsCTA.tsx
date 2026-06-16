@@ -117,7 +117,7 @@ export default function ToolsCTA() {
           position: relative;
           overflow: hidden;
           padding: 80px 24px 100px;
-          background: #F5F4EF;
+          
         }
 
         .toolsCTAContainerTC {
@@ -140,12 +140,7 @@ export default function ToolsCTA() {
 
           border-radius: 32px;
 
-          background:
-            linear-gradient(
-              135deg,
-              #032B28 0%,
-              #07463D 100%
-            );
+          background: var(--color-dark-green);
 
           overflow: hidden;
         }
@@ -178,12 +173,14 @@ export default function ToolsCTA() {
         }
 
         .toolsCTATitleTC {
+        
           font-size:
-            clamp(44px,5vw,72px);
+            60px;
 
           line-height: 0.92;
 
-          letter-spacing: -0.04em;
+          font-family:"Geist-Bold";
+      letter-spacing:1px;
 
           font-weight: 900;
 
@@ -193,21 +190,19 @@ export default function ToolsCTA() {
         }
 
         .toolsCTATitleTC span {
-          font-family:
-            "DM Serif Display",
-            serif;
 
           font-style: italic;
 
           font-weight: 400;
 
-          color: #D9F85B;
+          color: var(--color-accent-lime);
         }
 
         .toolsCTADescTC {
+        
           font-size: 16px;
 
-          line-height: 1.8;
+          line-height: 1.6;
 
           color:
             rgba(255,255,255,0.72);
@@ -223,6 +218,8 @@ export default function ToolsCTA() {
 
         .toolsCTAPrimaryTC,
         .toolsCTASecondaryTC {
+        font-family:"Geist-Bold";
+      letter-spacing:1px;
           height: 52px;
 
           padding: 0 22px;
@@ -246,7 +243,7 @@ export default function ToolsCTA() {
         .toolsCTAPrimaryTC {
           border: none;
 
-          background: #D9F85B;
+          background: var(--color-accent-lime);
 
           color: #052F2B;
         }
@@ -335,7 +332,7 @@ export default function ToolsCTA() {
 
           letter-spacing: 0.08em;
 
-          color: #D9F85B;
+          color: var(--color-accent-lime);
         }
 
         .toolsCTAItemsTC {
@@ -375,7 +372,7 @@ export default function ToolsCTA() {
 
           font-size: 13px;
 
-          color: #D9F85B;
+          color: var(--color-accent-lime);
         }
 
   @media (max-width: 1000px) {

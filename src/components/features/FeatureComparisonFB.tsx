@@ -510,7 +510,7 @@ export default function FeatureComparisonFB() {
         }
 
         .goodValueFB {
-          color: #DCEB63;
+          color: #EAE26A;
 
           font-weight: 700;
         }

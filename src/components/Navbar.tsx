@@ -460,10 +460,10 @@ const handleNavigate = () => {
   {openSection === "tools" && (
     <div className="mobile-card-submenu">
       <Link
-        to="/tools/emi-calculator"
+        to="/tools/"
         onClick={handleNavigate}
       >
-        <span>EMI Calculator</span>
+        <span>All Calculator</span>
         <ArrowRight size={14} />
       </Link>
 
@@ -828,6 +828,8 @@ const handleNavigate = () => {
 }
 
 .nav-links {
+font-family:"Geist-SemiBold";
+      letter-spacing:1px;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -1097,6 +1099,8 @@ const handleNavigate = () => {
 }
 
 .refer-pill {
+font-family:"Geist-SemiBold";
+      letter-spacing:1px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1123,6 +1127,8 @@ const handleNavigate = () => {
 }
 
 .cta-btn {
+font-family:"Geist-Bold";
+      letter-spacing:1px;
   height: 46px;
   padding: 0 18px;
   border: none;
@@ -1227,12 +1233,15 @@ border-bottom-left-radius:0;
 }
 
 .mobile-nav-content{
+font-family:"Geist-SemiBold";
+      letter-spacing:1px;
   display:flex;
   flex-direction:column;
   align-items:flex-start;
 }
 
 .mobile-nav-content small{
+
   font-size:11px;
   opacity:.6;
   margin-top:2px;
@@ -1256,6 +1265,7 @@ border-bottom-left-radius:0;
 
     .mobile-submenu-label{
   grid-column:1/-1;
+  
 
   margin-top:6px;
 
@@ -1274,6 +1284,7 @@ border-bottom-left-radius:0;
 }
 
 .mobile-submenu {
+
   margin-top:-8px;
   border-top:1px solid rgba(0,0,0,.06);
 
@@ -1287,6 +1298,8 @@ border-bottom-left-radius:0;
   
 
 .mobile-card-submenu a{
+font-family:"Geist-SemiBold";
+      letter-spacing:1px;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -1346,6 +1359,8 @@ border-bottom-left-radius:0;
 }
 
 .mobile-secondary-link {
+font-family:"Geist-SemiBold";
+      letter-spacing:1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1482,6 +1497,8 @@ border-bottom-left-radius:0;
   }
 
   .mobile-cta {
+  font-family:"Geist-Bold";
+      letter-spacing:1px;
     width: 100%;
     height: 52px;
     border: none;

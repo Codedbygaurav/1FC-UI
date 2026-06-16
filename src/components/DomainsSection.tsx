@@ -450,6 +450,8 @@ export default function DomainsSection() {
         }
 
         .domains-title {
+        font-family:"Geist-Bold"
+        letter-spacing:1px;
           font-size:
             clamp(34px, 4.8vw, 58px);
 
@@ -469,9 +471,7 @@ export default function DomainsSection() {
         .domains-title span {
           font-style: italic;
 
-          font-family:
-            'DM Serif Display',
-            serif;
+          
 
           font-weight: 400;
 
@@ -1536,7 +1536,7 @@ function DomainCardDark({
                 "center",
 
               color:
-                "#DCEB63",
+                "#EAE26A",
 
               marginBottom:
                 "16px",
@@ -1673,7 +1673,7 @@ function DomainCardDark({
                 "-0.08em",
 
               color:
-                "#DCEB63",
+                "#EAE26A",
             }}
           >
             {domain.stat.value}

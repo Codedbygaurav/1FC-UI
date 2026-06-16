@@ -221,7 +221,7 @@ export default function ToolsGrid() {
           border-radius: 999px;
 
           background:
-            rgba(201,219,78,0.18);
+            var(--color-accent-lime);
 
           font-size: 10px;
 
@@ -229,7 +229,7 @@ export default function ToolsGrid() {
 
           letter-spacing: 0.08em;
 
-          color: #8FA60E;
+          color: var(--color-dark-green);
         }
 
         .toolsGridCardTitleTG {
@@ -295,6 +295,8 @@ export default function ToolsGrid() {
 
         .toolsGridBtnTG {
           height: 48px;
+          font-family:"Geist-Bold";
+      letter-spacing:1px;
 
           display: flex;
 

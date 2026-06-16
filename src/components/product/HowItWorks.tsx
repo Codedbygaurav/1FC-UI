@@ -240,7 +240,7 @@ export default function HowItWorks() {
         .featured .how-icon {
           background:
             rgba(220,235,99,0.12);
-          color: #DCEB63;
+          color: #EAE26A;
         }
 
         .how-number {

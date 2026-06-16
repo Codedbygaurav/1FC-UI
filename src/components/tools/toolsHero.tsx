@@ -22,7 +22,7 @@ export default function ToolsHero() {
             FREE FINANCIAL TOOLS
           </div>
 
-          <h1 className="toolsHeroTitleTP">
+          <h1 className="hero-title">
             Calculate smarter.
             <br />
             Decide better.
@@ -30,19 +30,19 @@ export default function ToolsHero() {
             <span>Pay nothing.</span>
           </h1>
 
-          <p className="toolsHeroDescTP">
+          <p className="hero-subtext">
             9 powerful financial calculators —
             SIP, EMI, FD, tax, net worth and more.
             Built for every Indian.
           </p>
 
-          <div className="toolsHeroActionsTP">
-            <button className="toolsHeroPrimaryBtnTP">
+          <div className="hero-actions">
+            <button className="btn-primary">
               Explore Tools
               <ArrowRight size={16} />
             </button>
 
-            <button className="toolsHeroSecondaryBtnTP">
+            <button className="btn-secondary">
               <LayoutDashboard size={16} />
               Get Full Platform
             </button>
@@ -364,13 +364,13 @@ export default function ToolsHero() {
           border-radius: 999px;
 
           background:
-            rgba(210,224,90,0.16);
+            var(--color-accent-lime);
 
           font-size: 10px;
 
           font-weight: 800;
 
-          color: #A6BA2D;
+          color: var(--color-dark-green);
         }
 
         .toolsHeroStatValueTP {
@@ -537,96 +537,7 @@ export default function ToolsHero() {
   }
 }
 
-@media (max-width: 480px) {
 
-  .toolsHeroSectionTP {
-    padding: 110px 16px 56px;
-  }
-
-  .toolsHeroTitleTP {
-    font-size: 42px;
-  }
-
-  .toolsHeroDescTP {
-    font-size: 14px;
-  }
-
-   .toolsHeroTrustTP {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    width: 100%;
-  }
-
-  .toolsHeroTrustItemTP {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .toolsHeroRightTP {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .toolsHeroStatCardTP.largeTP {
-    grid-column: span 1;
-  }
-
-  .toolsHeroStatCardTP {
-    padding: 18px;
-    border-radius: 20px;
-  }
-
-  .toolsHeroStatValueTP {
-    font-size: 40px;
-  }
-
-  .toolsHeroSmallValueTP {
-    font-size: 26px;
-  }
-
-  .toolsHeroStatBadgeTP {
-    font-size: 9px;
-    padding: 6px 10px;
-  }
-
-  .toolsHeroStatLabelTP {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 360px) {
-
-  .toolsHeroSectionTP {
-    padding: 130px 12px 48px;
-  }
-
-  .toolsHeroTitleTP {
-    font-size: 40px;
-  }
-
-  .toolsHeroDescTP {
-    font-size: 13px;
-  }
-
-  .toolsHeroPrimaryBtnTP,
-  .toolsHeroSecondaryBtnTP {
-    font-size: 12px;
-    height: 48px;
-  }
-
-  .toolsHeroStatValueTP {
-    font-size: 34px;
-  }
-
-  .toolsHeroSmallValueTP {
-    font-size: 22px;
-  }
-
-  .toolsHeroStatLabelTP {
-    font-size: 10px;
-  }
-}
       `}</style>
     </section>
   );

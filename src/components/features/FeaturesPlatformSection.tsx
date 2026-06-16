@@ -22,12 +22,12 @@ export default function FeaturesPlatformSection() {
             PLATFORM INTELLIGENCE
           </div>
 
-          <h2 className="featuresPlatformTitleFB">
+          <h2 className="section-title">
             One intelligent layer
             <span> powering everything.</span>
           </h2>
 
-          <p className="featuresPlatformDescFB">
+          <p className="section-subtitle">
             Every product inside 1FCode connects through one
             intelligent financial ecosystem — investments,
             insurance, loans, tax planning, estate management
@@ -183,6 +183,8 @@ export default function FeaturesPlatformSection() {
         }
 
         .featuresPlatformTitleFB {
+        font-family: "Geist-Bold";
+          letter-spacing:1px;
           font-size:
             clamp(42px, 4.2vw, 60px);
 
@@ -198,9 +200,6 @@ export default function FeaturesPlatformSection() {
         }
 
         .featuresPlatformTitleFB span {
-          font-family:
-            "DM Serif Display",
-            serif;
 
           font-style: italic;
 
@@ -212,7 +211,9 @@ export default function FeaturesPlatformSection() {
         .featuresPlatformDescFB {
           font-size: 14px;
 
-          line-height: 1.75;
+          line-height:1.6;
+font-weight:500;
+letter-spacing:-1px;
 
           color: #5F6864;
 
@@ -257,12 +258,12 @@ export default function FeaturesPlatformSection() {
         }
 
         .featuresPlatformDashboardWrapFB {
+        
           position: relative;
         }
 
         .featuresPlatformDashboardFB {
           position: relative;
-
           overflow: hidden;
 
           border-radius: 28px;
@@ -340,7 +341,7 @@ export default function FeaturesPlatformSection() {
           background:
             rgba(220,235,99,0.14);
 
-          color: #DCEB63;
+          color: #EAE26A;
 
           font-size: 10px;
 
@@ -373,7 +374,7 @@ export default function FeaturesPlatformSection() {
         }
 
         .featuresPlatformCardIconFB {
-          color: #DCEB63;
+          color: #EAE26A;
           margin-bottom: 10px;
         }
 
@@ -425,7 +426,7 @@ export default function FeaturesPlatformSection() {
         }
 
         .featuresPlatformInsightFB svg {
-          color: #DCEB63;
+          color: #EAE26A;
           flex-shrink: 0;
         }
 
@@ -598,7 +599,7 @@ export default function FeaturesPlatformSection() {
   }
 
   .featuresPlatformCardsFB {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 8px;
   }
 

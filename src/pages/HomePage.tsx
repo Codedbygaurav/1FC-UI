@@ -10,7 +10,7 @@ import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
-    <div style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
+    <div>
       
       <main>
         <Hero/>

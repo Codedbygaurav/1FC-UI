@@ -685,7 +685,7 @@ export default function ProductShowcase() {
 .dashboard-live span {
   font-size: 10px;
   font-weight: 700;
-  color: #DCEB63;
+  color: #EAE26A;
 }
 
 .live-dot {
@@ -694,7 +694,7 @@ export default function ProductShowcase() {
 
   border-radius: 50%;
 
-  background: #DCEB63;
+  background: #EAE26A;
 
   box-shadow:
     0 0 8px rgba(220,235,99,0.4);
@@ -755,7 +755,7 @@ export default function ProductShowcase() {
 
   background: rgba(220,235,99,0.14);
 
-  color: #DCEB63;
+  color: #EAE26A;
 
   font-size: 9px;
   font-weight: 700;
@@ -782,7 +782,7 @@ export default function ProductShowcase() {
   background:
     linear-gradient(
       90deg,
-      #DCEB63,
+      #EAE26A,
       #95AC39
     );
 }
@@ -1123,7 +1123,7 @@ margin-top:12px;
   }
 
   .stats-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .stat-card {
@@ -1139,6 +1139,8 @@ margin-top:12px;
   }
 
   .benefits-grid {
+    margin-top:10px;
+    
     grid-template-columns: 1fr;
     gap: 10px;
   }

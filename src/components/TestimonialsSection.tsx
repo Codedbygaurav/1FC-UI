@@ -280,6 +280,8 @@ export default function TrustSection() {
         }
 
         .trust-heading {
+        font-family:"Geist-Bold"
+        letter-spacing:1px;
           font-size:
             clamp(42px, 4.5vw, 64px);
 
@@ -299,9 +301,7 @@ export default function TrustSection() {
         .trust-heading span {
           font-style: italic;
 
-          font-family:
-            "DM Serif Display",
-            serif;
+          
 
           font-weight: 400;
 

@@ -8,7 +8,7 @@ export default function BlogPage() {
   return (
     <div>
         <BlogHero/>
-        <FeaturedArticle/>
+        {/* <FeaturedArticle/> */}
         <LatestArticles/>
         <NewsletterCTA/>
       

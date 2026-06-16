@@ -90,7 +90,7 @@ export default function CTASection() {
           >
            
 
-            <div className="section-label">
+            <div className="section-labelCTAHero">
               <span />
               <p>India's Financial Revolution</p>
             </div>
@@ -287,7 +287,7 @@ export default function CTASection() {
 
        
 
-        .section-label {
+        .section-labelCTAHero {
           display: inline-flex;
           align-items: center;
           gap: 10px;
@@ -295,7 +295,7 @@ export default function CTASection() {
           margin-bottom: 18px;
         }
 
-        .section-label span {
+        .section-labelCTAHero span {
           width: 7px;
           height: 7px;
 
@@ -304,7 +304,7 @@ export default function CTASection() {
           background: #0B3B36;
         }
 
-        .section-label p {
+        .section-labelCTAHero p {
           font-size: 11px;
           font-weight: 700;
 
@@ -318,12 +318,12 @@ export default function CTASection() {
       
 
         .stats-title {
-          font-size:
-            clamp(30px, 4vw, 52px);
+        font-family:"Geist-Bold";
+       
+          font-size:50px;
 
           line-height: 1.02;
 
-          letter-spacing: -0.05em;
 
           font-weight: 800;
 
@@ -337,10 +337,7 @@ export default function CTASection() {
         .stats-title span {
           font-style: italic;
 
-          font-family:
-            "DM Serif Display",
-            Georgia,
-            serif;
+          
 
           font-weight: 400;
 
@@ -498,11 +495,11 @@ export default function CTASection() {
   width:7px;
   height:7px;
   border-radius:50%;
-  background:#DCEB63;
+  background:#EAE26A;
 }
 
 .cta-pill p{
-  color:#DCEB63;
+  color:#EAE26A;
   font-size:10px;
   font-weight:700;
   letter-spacing:.08em;
@@ -519,10 +516,9 @@ letter-spacing:-2px;
 }
 
 .cta-title span{
-  color:#DCEB63;
-  font-family:"DM Serif Display",serif;
+  color:var(--color-accent-lime);
   font-style:italic;
-  font-weight:400;
+  font-weight:500;
 }
 
 
@@ -561,7 +557,7 @@ border-radius:16px;
 }
 
 .cta-points svg{
-  color:#DCEB63;
+  color:#EAE26A;
   flex-shrink:0;
 }
 
@@ -572,21 +568,25 @@ border-radius:16px;
 }
 
 .cta-primary{
+font-family:"Geist-Bold";
+        letter-spacing:1px;
   height:50px;
 min-width:200px;
 font-size:15px;
 
-  padding:0 45px;
+  padding:0 40px;
 
   border-radius:22px;
 
-  background:#DCEB63;
+  background:#EAE26A;
 
   color:#0B3B36;
 
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:center;
+  
+gap:10px;
 
   text-decoration:none;
 
@@ -594,6 +594,8 @@ font-size:15px;
 }
 
 .cta-secondary{
+font-family:"Geist-Bold";
+        letter-spacing:1px;
   height:50px;
   min-width:200px;
 
@@ -609,7 +611,8 @@ font-size:15px;
 
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:center;
+  gap:10px;
 
   text-decoration:none;
 
@@ -665,7 +668,7 @@ font-size:15px;
 
   border:1px solid rgba(220,235,99,.1);
 
-  color:#DCEB63;
+  color:#EAE26A;
 
   font-size:8px;
   font-weight:700;
@@ -679,7 +682,7 @@ font-size:15px;
 
   font-weight:900;
 
-  color:#DCEB63;
+  color:#EAE26A;
 
   letter-spacing:-1px;
 }
@@ -723,7 +726,7 @@ font-size:15px;
 
   background:rgba(220,235,99,.1);
 
-  color:#DCEB63;
+  color:#EAE26A;
 
   font-weight:700;
 }
@@ -819,7 +822,7 @@ section#about {
     padding-right: 8px !important;
   }
 
-  .section-label {
+  .section-labelCTAHero {
     margin-bottom: 14px;
     
   }

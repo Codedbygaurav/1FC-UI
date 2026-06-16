@@ -101,6 +101,7 @@ export default function FinalCTA() {
   );
 
   border-radius: 28px;
+  height:600px;
 }
 
 .cta-grid {
@@ -125,10 +126,9 @@ export default function FinalCTA() {
 
 .cta-content {
   display: grid;
-  grid-template-columns: 64% 36%;
+  grid-template-columns: 60% 40%;
   align-items: center;
-  min-height: 500px;
-  
+  height: 100%;
 }
 
 .cta-left {
@@ -136,6 +136,8 @@ export default function FinalCTA() {
   max-width: 1000px;
   margin: 0 auto;
   margin-left: 40px;
+  margin-bottom: 40px;
+  
 }
 
 .cta-badge {
@@ -166,7 +168,7 @@ export default function FinalCTA() {
   height: 8px;
 
   border-radius: 50%;
-  background: #dceb63;
+  background: #EAE26A;
 }
 
 .cta-title {
@@ -184,7 +186,7 @@ export default function FinalCTA() {
 }
 
 .cta-title span {
-  color: #dceb63;
+  color: #EAE26A;
 
   font-style: italic;
   font-weight: 400;
@@ -235,7 +237,7 @@ export default function FinalCTA() {
 }
 
 .cta-primary {
-  background: #dceb63;
+  background: #EAE26A;
   color: #06211e;
 }
 
@@ -256,7 +258,7 @@ export default function FinalCTA() {
   display: flex;
   align-items: center;
   gap: 8px;
-color: #dceb63;
+color: #EAE26A;
   padding: 10px 14px;
 
   border-radius: 999px;
@@ -282,7 +284,6 @@ color: #dceb63;
   justify-content: flex-end;
   align-items: flex-end;
 
-  min-height: 500px;
 }
 
 .hero-bg-circle {
@@ -330,19 +331,20 @@ color: #dceb63;
   position: relative;
   z-index: 2;
 
-  height: 520px;
+  height: 550px;
   width: auto;
 
   object-fit: contain;
   display: block;
 
   margin-right: 50px;
-  margin-bottom: -50px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1024px) {
 
   .cta-section {
+  height: auto;
     padding: 64px 28px;
     width: calc(100% - 12px);
   }
@@ -398,8 +400,13 @@ color: #dceb63;
 
 @media (max-width: 768px) {
 
+.cta-content{
+gap: 16px;
+}
+
   .cta-section {
-    padding: 72px 20px;
+  
+    padding: 20px 20px;
   }
 
   .cta-badge {
@@ -456,92 +463,14 @@ color: #dceb63;
 
   .hero-image {
     height: 360px;
-    margin-bottom: -20px;
+    bottom: -20px;
+  margin-bottom: 0;
   }
 }
 
-@media (max-width: 480px) {
 
-  .cta-section {
-    padding: 64px 16px;
-  }
 
-  .cta-badge {
-    font-size: 10px;
-    padding: 8px 12px;
-  }
-
-  .cta-title {
-    font-size: 36px;
-  }
-
-  .cta-description {
-    font-size: 14px;
-  }
-
-  .cta-primary,
-  .cta-secondary {
-    height: 52px;
-    font-size: 13px;
-  }
-
-  .trust-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .trust-item {
-    justify-content: flex-start;
-  }
-
-  .trust-item span {
-    font-size: 11px;
-  }
-
-  .hero-bg-circle {
-    width: 280px;
-    height: 280px;
-  }
-
-  .hero-image {
-    height: 280px;
-    max-width: 280px;
-    margin-bottom: -12px;
-    bottom:-55px;
-  }
-}
-
-@media (max-width: 360px) {
-
-  .cta-section {
-    padding: 56px 12px;
-  }
-
-  .cta-title {
-    font-size: 30px;
-  }
-
-  .cta-description {
-    font-size: 13px;
-  }
-
-  .cta-badge {
-    font-size: 9px;
-  }
-
-  .trust-item {
-    padding: 10px;
-  }
-
-  .trust-item span {
-    font-size: 10px;
-  }
-
-  .hero-image {
-    height: 340px;
-    max-width: 240px;
-    bottom:-45px;
-  }
-}`}</style>
+`}</style>
     </section>
   );
 }

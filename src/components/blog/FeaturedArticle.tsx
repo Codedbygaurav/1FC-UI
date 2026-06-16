@@ -109,6 +109,8 @@ export default function FeaturedArticle() {
 
       .FeaturedBadge{
         position:absolute;
+        font-family:"Geist-SemiBold";
+      letter-spacing:1px;
 
         top:24px;
         left:24px;
@@ -135,6 +137,8 @@ export default function FeaturedArticle() {
       }
 
       .FeaturedCategory{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         display:flex;
         align-items:center;
         gap:8px;
@@ -147,9 +151,11 @@ export default function FeaturedArticle() {
       }
 
       .FeaturedContent h2{
+      font-family: "Geist-Bold";
+          letter-spacing:1px;
         font-size:52px;
         line-height:.95;
-        letter-spacing:-.04em;
+        
         font-weight:600;
         margin:0 0 24px;
 
@@ -158,9 +164,12 @@ export default function FeaturedArticle() {
 
       .FeaturedContent p{
         font-size:16px;
-        line-height:1.9;
+        line-height:1.6;
+        font-weight:500;
+        letter-spacing:-1px;
         color:#667085;
         margin:0 0 24px;
+
       }
 
       .FeaturedMeta{
@@ -174,12 +183,16 @@ export default function FeaturedArticle() {
       }
 
       .FeaturedMeta span{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         display:flex;
         align-items:center;
         gap:6px;
       }
 
       .FeaturedButton{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         width:fit-content;
 
         border:none;
