@@ -34,12 +34,12 @@ const [selectedProduct, setSelectedProduct] =
               SEND A MESSAGE
             </div>
 
-            <h2 className="contactFormTitleCF">
+            <h2 className="section-title">
               Tell us how we can
               <span> help.</span>
             </h2>
 
-            <p className="contactFormDescCF">
+            <p className="section-subtitle">
               Fill out the form below and our team will
               get back to you as soon as possible.
             </p>
@@ -264,6 +264,8 @@ const [selectedProduct, setSelectedProduct] =
 }
 
 .fieldCF label{
+font-family:"Geist-Bold";
+letter-spacing:1px;
   margin-bottom:6px;
   font-size:14px;
   font-weight:600;
@@ -279,7 +281,7 @@ const [selectedProduct, setSelectedProduct] =
   font-size:15px;
   outline:none;
   transition:.3s;
-  font-family:var(--font-main);
+  
 }
 
 .fieldCF input
@@ -460,8 +462,9 @@ const [selectedProduct, setSelectedProduct] =
 
 .contactInfoHeaderCF h3{
   font-size:2rem;
-  font-weight:700;
   margin-bottom:10px;
+  font-family:"Geist-SemiBold"
+letter-spacing:1px;
 }
 
 .contactInfoHeaderCF p{
@@ -611,6 +614,8 @@ const [selectedProduct, setSelectedProduct] =
   }
 
   .contactInfoHeaderCF h3{
+  font-family:"Geist-SemiBold";
+letter-spacing:1px;
     font-size:1.5rem;
     margin-bottom:6px;
   }

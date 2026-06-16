@@ -85,7 +85,13 @@ const handleNavigate = () => {
   }, []);
 
   
+useEffect(() => {
+  document.body.style.overflow = menuOpen ? "hidden" : "auto";
 
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [menuOpen]);
 
 
   return (
@@ -373,6 +379,13 @@ const handleNavigate = () => {
 
 
 {/* MOBILE NAV */}
+
+{menuOpen && (
+  <div
+    className="MobileMenuOverlay"
+    onClick={() => setMenuOpen(false)}
+  />
+)}
 
 <div
   className={`mobile-nav ${
@@ -765,6 +778,7 @@ const handleNavigate = () => {
   border: 1px solid rgba(11,59,54,.06);
   box-shadow: 0 10px 40px rgba(0,0,0,.05);
   transition: .3s ease;
+  z-index:1000;
 }
   .mobile-overlay {
   position: fixed;
@@ -1152,6 +1166,7 @@ font-family:"Geist-Bold";
 }
 
 .mobile-nav {
+
   display: none;
 }
 
@@ -1179,9 +1194,11 @@ font-family:"Geist-Bold";
 
   overscroll-behavior:
     contain;
+    z-index:1000;
 }
 
 .mobile-grid {
+
   display: grid;
 
   grid-template-columns:
@@ -1191,6 +1208,7 @@ font-family:"Geist-Bold";
 }
 
 .mobile-nav-card {
+
   min-height: 72px;
 
    display:flex;
@@ -1249,6 +1267,7 @@ font-family:"Geist-SemiBold";
   .mobile-nav-card.expanded {
   display: block;
   grid-column: 1 / -1;
+  
 }
 
 .mobile-nav-header{
@@ -1398,6 +1417,33 @@ font-family:"Geist-SemiBold";
     rgba(11,59,54,.04);
 }
 
+.MobileMenuOverlay{
+  position: fixed;
+  inset: 0;
+  z-index: 998;
+
+  background: rgba(0,0,0,.15);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.MobileNav{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 320px;
+  height: 100vh;
+  z-index: 999;
+
+  background: white;
+  transition: .35s ease;
+}
+
+.MobileNav.active{
+  right: 0;
+}
+
 @media (min-width: 992px) {
   .mobile-nav {
     display: none;
@@ -1478,6 +1524,7 @@ font-family:"Geist-SemiBold";
     flex-direction: column;
     gap: 6px;
     box-shadow: 0 20px 60px rgba(0,0,0,.08);
+    
   }
 
   .mobile-nav a {

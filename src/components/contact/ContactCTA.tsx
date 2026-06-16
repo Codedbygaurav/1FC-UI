@@ -110,6 +110,8 @@ export default function ContactCTA() {
 }
 
 .contactCtaBadgeCT{
+font-family:"Geist-SemiBold";
+        letter-spacing:1px;
   display:inline-block;
   padding:8px 14px;
   border-radius:999px;
@@ -117,22 +119,20 @@ export default function ContactCTA() {
   border:1px solid rgba(255,255,255,.08);
   color:var(--color-accent-lime);
   font-size:12px;
-  font-weight:700;
-  letter-spacing:.08em;
   margin-bottom:20px;
 }
 
 .contactCtaTitleCT{
+font-family:"Geist-Bold";
+        letter-spacing:1px;
   color:white;
   font-size:clamp(2.8rem,4.8vw,4.8rem);
   line-height:.95;
-  font-weight:800;
-  letter-spacing:-.05em;
+
   margin-bottom:18px;
 }
 
 .contactCtaTitleCT span{
-  font-family:var(--font-serif);
   font-style:italic;
   font-weight:400;
   color:var(--color-accent-lime);
@@ -141,11 +141,13 @@ export default function ContactCTA() {
 .contactCtaDescCT{
   max-width:560px;
   color:rgba(255,255,255,.75);
-  line-height:1.75;
+  line-height:1.55;
   margin-bottom:28px;
 }
 
 .contactCtaActionsCT{
+font-family:"Geist-Bold";
+        letter-spacing:1px;
   display:flex;
   gap:12px;
   flex-wrap:wrap;
@@ -300,7 +302,7 @@ export default function ContactCTA() {
   }
 
   .contactCtaTitleCT{
-    font-size:2.2rem;
+    font-size:2rem;
     line-height:1;
     margin-bottom:14px;
   }
@@ -347,43 +349,7 @@ export default function ContactCTA() {
   
 }
 
-/* ---------- Mobile ---------- */
 
-@media(max-width:480px){
-
-  .contactCtaContainerCT{
-    padding:24px 18px;
-    border-radius:24px;
-  }
-
-  .contactCtaTitleCT{
-    font-size:1.9rem;
-  }
-
-  .contactCtaDescCT{
-    font-size:13px;
-  }
-
-  .contactCtaStatsCT{
-    grid-template-columns:1fr;
-    gap:12px;
-  }
-
-  .statCT{
-    text-align:left;
-    padding:12px 14px;
-    border-radius:14px;
-    background:rgba(255,255,255,.06);
-  }
-
-  .statCT h3{
-    font-size:1.35rem;
-  }
-
-  
-
-  
-}
 `}</style>
     </>
   );

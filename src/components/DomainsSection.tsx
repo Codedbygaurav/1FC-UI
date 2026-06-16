@@ -248,7 +248,7 @@ export default function DomainsSection() {
           </div>
 
           <h2 className="domains-title">
-            One ecosystem.{" "}
+            One ecosystem.<br/>
             <span>
               Six
             </span>{" "}
@@ -457,7 +457,6 @@ export default function DomainsSection() {
 
           line-height: 0.96;
 
-          letter-spacing: -0.050em;
 
           font-weight: 820;
 
@@ -504,6 +503,7 @@ export default function DomainsSection() {
         }
 
         .side-grid {
+        
           display: grid;
 
           grid-template-columns:
@@ -517,6 +517,7 @@ export default function DomainsSection() {
         .featured-shell,
         .compact-shell,
         .dark-shell {
+        
           transition:
             transform 0.35s ease,
             box-shadow 0.35s ease;
@@ -702,15 +703,15 @@ export default function DomainsSection() {
   }
 
   .domains-title {
-    font-size: 42px;
+    font-size: 30px;
     line-height: 1;
     margin-bottom: 14px;
     max-width: 100%;
   }
 
   .domains-subtitle {
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 1.6;
     max-width: 100%;
   }
 
@@ -727,65 +728,9 @@ export default function DomainsSection() {
   }
 }
 
-@media (max-width: 480px) {
 
-  .domains-section {
-    padding: 64px 16px;
-  }
 
-  .domains-header {
-    margin-bottom: 24px;
-  }
 
-  .domains-title {
-    font-size: 36px;
-    line-height: 1.02;
-  }
-
-  .domains-subtitle {
-    font-size: 14px;
-    line-height: 1.75;
-  }
-
-  .mobile-stack {
-    gap: 12px;
-  }
-
-  .mobile-shell {
-    border-radius: 20px;
-  }
-
-  .domains-label span {
-    font-size: 10px;
-  }
-
-  .domains-line {
-    width: 22px;
-  }
-}
-
-@media (max-width: 360px) {
-
-  .domains-section {
-    padding: 56px 12px;
-  }
-
-  .domains-title {
-    font-size: 30px;
-  }
-
-  .domains-subtitle {
-    font-size: 13px;
-  }
-
-  .mobile-shell {
-    border-radius: 18px;
-  }
-
-  .mobile-stack {
-    gap: 10px;
-  }
-}
       `}</style>
     </section>
   );
@@ -838,10 +783,13 @@ function DomainCardFeatured({
       <span
         style={{
           fontSize: "10px",
+          
+            fontFamily:"Geist-SemiBold",
+            letterSpacing: "1px",
+            
 
           fontWeight: 700,
 
-          letterSpacing: "0.12em",
 
           textTransform: "uppercase",
 
@@ -865,7 +813,8 @@ function DomainCardFeatured({
 
           lineHeight: "0.92",
 
-          letterSpacing: "-0.06em",
+          fontFamily:"Geist-Bold",
+            letterSpacing: "1px",
 
           fontWeight: 820,
 
@@ -881,7 +830,7 @@ function DomainCardFeatured({
         style={{
           fontSize: "14px",
 
-          lineHeight: "1.75",
+          lineHeight: "1.6",
 
           color: "#666",
 
@@ -1075,6 +1024,8 @@ function DomainCardFeatured({
               fontSize: mobile
                 ? "18px"
                 : "22px",
+                fontFamily:"Geist-SemiBold",
+            letterSpacing: "1px",
 
               fontWeight: 800,
 
@@ -1125,13 +1076,14 @@ function DomainCardFeatured({
               fontSize: mobile
                 ? "40px"
                 : "56px",
+                fontFamily:"Geist-Bold",
 
               lineHeight: "0.9",
 
               fontWeight: 820,
 
               letterSpacing:
-                "-0.07em",
+                "1px",
 
               color: "#0B3B36",
 
@@ -1168,6 +1120,8 @@ function DomainCardFeatured({
               style={{
                 padding:
                   "9px 11px",
+                  fontFamily:"Geist-SemiBold",
+            letterSpacing: "1px",
 
                 borderRadius:
                   "12px",
@@ -1284,9 +1238,10 @@ function DomainCompact({
               fontSize: "9px",
 
               fontWeight: 700,
+              fontFamily:"Geist-SemiBold",
 
               letterSpacing:
-                "0.08em",
+                "1px",
 
               textTransform:
                 "uppercase",
@@ -1304,6 +1259,7 @@ function DomainCompact({
             style={{
               width: "38px",
               height: "38px",
+              
 
               borderRadius:
                 "12px",
@@ -1338,8 +1294,8 @@ function DomainCompact({
 
             fontWeight: 760,
 
-            letterSpacing:
-              "-0.045em",
+           fontFamily:"Geist-Bold",
+            letterSpacing: "1px",
 
             color: "#111",
 
@@ -1357,7 +1313,7 @@ function DomainCompact({
               : "12px",
 
             lineHeight:
-              "1.7",
+              "1.6",
 
             color: "#666",
 
@@ -1386,6 +1342,8 @@ function DomainCompact({
               <span
                 key={tag}
                 style={{
+                  fontFamily:"Geist-SemiBold",
+            letterSpacing: "1px",
                   fontSize:
                     "9px",
 
@@ -1415,6 +1373,8 @@ function DomainCompact({
           style={{
             paddingTop:
               "14px",
+              fontFamily:"Geist-Bold",
+            letterSpacing: "1px",
 
             borderTop:
               "1px solid rgba(0,0,0,0.06)",
@@ -1501,6 +1461,7 @@ function DomainCardDark({
         style={{
           position: "relative",
           zIndex: 2,
+          
 
           display: "grid",
 
@@ -1551,8 +1512,8 @@ function DomainCardDark({
 
               fontWeight: 700,
 
-              letterSpacing:
-                "0.12em",
+              fontFamily:"Geist-Bold",
+            letterSpacing: "1px",
 
               textTransform:
                 "uppercase",
@@ -1582,8 +1543,8 @@ function DomainCardDark({
               fontWeight:
                 820,
 
-              letterSpacing:
-                "-0.06em",
+              fontFamily:"Geist-Bold",
+            letterSpacing: "1px",
 
               color:
                 "#FAFAF7",
@@ -1600,7 +1561,7 @@ function DomainCardDark({
               fontSize: "14px",
 
               lineHeight:
-                "1.75",
+                "1.6",
 
               color:
                 "rgba(250,250,247,0.68)",
@@ -1623,6 +1584,8 @@ function DomainCardDark({
                 "wrap",
 
               gap: "7px",
+              fontFamily:"Geist-SemiBold",
+            letterSpacing: "1px",
             }}
           >
             {domain.tags.map(
@@ -1632,6 +1595,7 @@ function DomainCardDark({
                   style={{
                     fontSize:
                       "9px",
+                      
 
                     padding:
                       "5px 10px",
@@ -1662,6 +1626,8 @@ function DomainCardDark({
               fontSize: mobile
                 ? "52px"
                 : "72px",
+                fontFamily:"Geist-Bold",
+            letterSpacing: "1px",
 
               lineHeight:
                 "0.9",
@@ -1669,8 +1635,7 @@ function DomainCardDark({
               fontWeight:
                 820,
 
-              letterSpacing:
-                "-0.08em",
+              
 
               color:
                 "#EAE26A",
@@ -1688,6 +1653,8 @@ function DomainCardDark({
 
               marginTop:
                 "6px",
+                fontFamily:"Geist-SemiBold",
+            letterSpacing: "1px",
             }}
           >
             {domain.stat.label}

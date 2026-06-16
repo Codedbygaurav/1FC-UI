@@ -3,7 +3,6 @@
 import {
   Brain,
   Activity,
-  Sparkles,
   Users,
   TrendingUp,
   ShieldCheck,
@@ -42,32 +41,27 @@ export default function FeaturesIntelligenceSectionFIS() {
   return (
     <section className="featuresIntelSectionFIS">
       <div className="featuresIntelContainerFIS">
-        <div className="featuresIntelLeftFIS">
-          <div className="section-label-left">
-            FINANCIAL INTELLIGENCE
-          </div>
+        
+          <div className="section-label">FINANCIAL INTELLIGENCE</div>
 
-          <h2 className="featuresIntelTitleFIS">
+          <h2 className="section-title">
             One intelligent
-            <br />
-            system <span>watching everything.</span>
+            system <br className="desktop-only"/> <span>watching everything.</span>
           </h2>
 
           <p className="section-subtitle">
-            1FCode continuously analyzes your financial ecosystem —
-            investments, insurance, liabilities, taxes and cashflow —
-            to deliver smarter financial decisions in real time.
+            1FCode continuously analyzes your financial ecosystem — investments,
+            insurance, liabilities, taxes and cashflow — to deliver smarter
+            financial decisions in real time.
           </p>
-
+        
+        <div className="featuresIntelWrapCard">
           <div className="featuresIntelInsightsGridFIS">
             {insights.map((item) => {
               const Icon = item.icon;
 
               return (
-                <div
-                  key={item.title}
-                  className="featuresIntelInsightCardFIS"
-                >
+                <div key={item.title} className="featuresIntelInsightCardFIS">
                   <div className="featuresIntelInsightTopFIS">
                     <div className="featuresIntelIconFIS">
                       <Icon size={16} />
@@ -81,74 +75,74 @@ export default function FeaturesIntelligenceSectionFIS() {
               );
             })}
           </div>
-        </div>
 
-        <div className="featuresIntelDashboardWrapFIS">
-          <div className="featuresIntelDashboardFIS">
-            <div className="featuresIntelTopBarFIS">
-              <div>
-                <span>Unified Net Worth</span>
+          <div className="featuresIntelDashboardWrapFIS">
+            <div className="featuresIntelDashboardFIS">
+              <div className="featuresIntelTopBarFIS">
+                <div>
+                  <span>Unified Net Worth</span>
 
-                <h2>₹48.2L</h2>
-              </div>
-
-              <div className="featuresIntelGrowthBadgeFIS">
-                <ArrowUpRight size={16} />
-                +18.4%
-              </div>
-            </div>
-
-            <div className="featuresIntelGraphAreaFIS">
-              <div className="featuresIntelGraphShapeFIS" />
-
-              <div className="featuresIntelMiniCardFIS featuresIntelMiniCardOneFIS">
-                <div className="featuresIntelMiniIconFIS">
-                  <Landmark size={14} />
+                  <h2>₹48.2L</h2>
                 </div>
 
-                <span>Portfolio Health</span>
-
-                <h4 className="mobile-hiddenFIS">
-                  Risk score improved by 12%
-                </h4>
+                <div className="featuresIntelGrowthBadgeFIS">
+                  <ArrowUpRight size={16} />
+                  +18.4%
+                </div>
               </div>
 
-              <div className="featuresIntelMiniCardFIS featuresIntelMiniCardTwoFIS">
-                <div className="featuresIntelMiniIconFIS">
-                  <Brain size={14} />
+              <div className="featuresIntelGraphAreaFIS">
+                <div className="featuresIntelGraphShapeFIS" />
+
+                <div className="featuresIntelMiniCardFIS featuresIntelMiniCardOneFIS">
+                  <div className="featuresIntelMiniIconFIS">
+                    <Landmark size={14} />
+                  </div>
+
+                  <span>Portfolio Health</span>
+
+                  <h4 className="mobile-hiddenFIS">
+                    Risk score improved by 12%
+                  </h4>
                 </div>
 
-                <span>AI Alert</span>
+                <div className="featuresIntelMiniCardFIS featuresIntelMiniCardTwoFIS">
+                  <div className="featuresIntelMiniIconFIS">
+                    <Brain size={14} />
+                  </div>
 
-                <h4 className="mobile-hiddenFIS">
-                  Tax optimization opportunity detected
-                </h4>
-              </div>
-            </div>
+                  <span>AI Alert</span>
 
-            <div className="featuresIntelStatsGridFIS">
-              <div className="featuresIntelStatCardFIS">
-                <Landmark size={16} />
-
-                <span>Investments</span>
-
-                <h3>₹26.6L</h3>
+                  <h4 className="mobile-hiddenFIS">
+                    Tax optimization opportunity detected
+                  </h4>
+                </div>
               </div>
 
-              <div className="featuresIntelStatCardFIS">
-                <ShieldCheck size={16} />
+              <div className="featuresIntelStatsGridFIS">
+                <div className="featuresIntelStatCardFIS">
+                  
 
-                <span>Insurance</span>
+                  <span>Investments</span>
 
-                <h3>₹4.8Cr</h3>
-              </div>
+                  <h3>₹26.6L</h3>
+                </div>
 
-              <div className="featuresIntelStatCardFIS">
-                <Activity size={16} />
+                <div className="featuresIntelStatCardFIS">
+                  
 
-                <span>Liabilities</span>
+                  <span>Insurance</span>
 
-                <h3>₹11.2L</h3>
+                  <h3>₹4.8Cr</h3>
+                </div>
+
+                <div className="featuresIntelStatCardFIS">
+                  
+
+                  <span>Liabilities</span>
+
+                  <h3>₹11.2L</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -168,10 +162,6 @@ export default function FeaturesIntelligenceSectionFIS() {
           max-width: 1280px;
           margin: 0 auto;
 
-          display: grid;
-          grid-template-columns: 0.92fr 1.08fr;
-
-          gap: 48px;
           align-items: center;
 
           padding: 0 24px;
@@ -214,6 +204,12 @@ export default function FeaturesIntelligenceSectionFIS() {
           flex-direction: column;
           gap: 12px;
           margin-top: 32px;
+        }
+
+        .featuresIntelWrapCard{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:60px;
         }
 
         .featuresIntelInsightCardFIS {
@@ -467,6 +463,7 @@ export default function FeaturesIntelligenceSectionFIS() {
         }
 
         .featuresIntelStatCardFIS {
+        font-family:"Geist-Bold";
           height: 90px;
 
           border-radius: 20px;
@@ -499,6 +496,12 @@ export default function FeaturesIntelligenceSectionFIS() {
         }
 
    @media (max-width: 980px) {
+
+   .featuresIntelWrapCard{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:60px;
+        }
 
   .featuresIntelSectionFIS {
     padding: 88px 0;
@@ -728,7 +731,7 @@ export default function FeaturesIntelligenceSectionFIS() {
   }
 
   .featuresIntelStatsGridFIS {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 8px;
   }
 

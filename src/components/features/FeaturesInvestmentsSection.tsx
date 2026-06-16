@@ -178,12 +178,7 @@ export default function FeaturesInvestmentsSection() {
           border-radius: 28px;
           padding: 24px;
 
-          background:
-            linear-gradient(
-              135deg,
-              #032F2B 0%,
-              #063B35 100%
-            );
+          background:var(--color-dark-green);
 
           min-height: 280px;
 

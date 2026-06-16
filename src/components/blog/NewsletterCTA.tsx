@@ -147,7 +147,7 @@ export default function NewsletterCTA() {
 
       .NewsletterContent h2{
       font-family:"Geist-Bold";
-        font-size: clamp(52px, 6vw, 62px);
+        font-size: 62px;
         font-weight:800;
 
         line-height:.95;
@@ -274,7 +274,7 @@ export default function NewsletterCTA() {
         }
 
         .NewsletterContent h2{
-          font-size:40px;
+          font-size:30px;
         }
 
         .NewsletterForm{

@@ -194,12 +194,15 @@ export default function GroupStructure() {
         }
 
         .parentCardGS h3 {
+        font-family:"Geist-Bold";
+          letter-spacing: 1px;
           color: white;
           margin: 0 0 9px;
         }
 
         .parentCardGS p,
         .childCardGS p {
+        
           display: inline-flex;
           padding: 7px 11px;
           border-radius: 999px;
@@ -259,6 +262,8 @@ export default function GroupStructure() {
         }
 
         .childCardGS h4 {
+        font-family:"Geist-Bold";
+          letter-spacing: 1px;
           color: white;
           margin: 0 0 10px;
         }

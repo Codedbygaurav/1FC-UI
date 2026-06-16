@@ -374,11 +374,12 @@ export default function ToolsHero() {
         }
 
         .toolsHeroStatValueTP {
+        font-family:"Geist-Bold";
+          letter-spacing: 1px;
           font-size: 52px;
 
           line-height: 1;
 
-          letter-spacing: -0.07em;
 
           font-weight: 900;
 
@@ -391,11 +392,13 @@ export default function ToolsHero() {
         }
 
         .toolsHeroSmallValueTP {
+        font-family:"Geist-Bold";
+          letter-spacing: 1px;
           font-size: 34px;
 
           line-height: 1;
 
-          letter-spacing: -0.05em;
+          
 
           font-weight: 900;
 

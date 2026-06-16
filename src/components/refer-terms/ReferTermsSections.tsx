@@ -165,6 +165,9 @@ export default function ReferTermsSections() {
       }
 
       .ReferAccordionTrigger{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
+      color:var(--color-dark-green);
         width:100%;
         border:none;
         background:none;

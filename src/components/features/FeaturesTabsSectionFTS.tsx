@@ -368,7 +368,7 @@ export default function FeaturesTabsFTS() {
       <style>{`
         .featuresTabsSectionFTS {
           padding: 90px 0 80px;
-          background: #f5f4ef;
+          background: var(--color-bg-ivory);
         }
 
         .featuresTabsContainerFTS {
@@ -472,7 +472,7 @@ export default function FeaturesTabsFTS() {
         }
 
         .featuresTabBtnFTS.active {
-          background: linear-gradient(135deg,#003d36,#0b6b5c);
+          background: var(--color-dark-green);
           color: #fff;
         }
 
@@ -520,7 +520,7 @@ export default function FeaturesTabsFTS() {
           width: 8px;
           height: 8px;
           border-radius: 50%;
-          background: #0b6b5c;
+          background: var(--color-dark-green);
         }
 
         .featuresTabIconFTS {

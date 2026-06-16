@@ -145,6 +145,8 @@ export default function GoldCTA() {
       }
 
       .GoldCTAButton{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         border:none;
 
         background:
@@ -178,7 +180,7 @@ export default function GoldCTA() {
         }
 
         .GoldCTAContent h2{
-          font-size:40px;
+          font-size:35px;
         }
 
         .GoldCTAButton{

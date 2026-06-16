@@ -359,6 +359,7 @@ export default function CTASection() {
        
 
         .revolution-stats {
+        ;
           display: grid;
 
           grid-template-columns:
@@ -368,6 +369,7 @@ export default function CTASection() {
         }
 
         .stat-card {
+        
           background: #FAFAF7;
 
           border:
@@ -390,6 +392,8 @@ export default function CTASection() {
         }
 
         .stat-value {
+        font-family:"Geist-Bold";
+        letter-spacing: 1px;
           font-size:
             clamp(24px, 4vw, 38px);
 
@@ -397,7 +401,6 @@ export default function CTASection() {
 
           line-height: 1;
 
-          letter-spacing: -0.05em;
 
           color: #0B3B36;
 
@@ -405,6 +408,8 @@ export default function CTASection() {
         }
 
         .stat-label {
+        font-family:"Geist-SemiBold";
+        letter-spacing: 1px;
           font-size: 12px;
 
           line-height: 1.6;
@@ -419,12 +424,7 @@ export default function CTASection() {
 
           overflow: hidden;
 
-          background:
-            linear-gradient(
-              135deg,
-              #0B3B36 0%,
-              #062F2B 100%
-            );
+          background:var(--color-dark-green);
 
           border-radius: 24px;
 
@@ -507,9 +507,10 @@ export default function CTASection() {
 }
 
 .cta-title{
-  font-size:clamp(25px,4vw,55px);
+font-family:"Geist-Bold";
+        letter-spacing: 1px;
+  font-size:50px;
 line-height:.95;
-letter-spacing:-2px;
   font-weight:800;
   color:#FAFAF7;
   margin-bottom:24px;
@@ -641,11 +642,11 @@ font-family:"Geist-Bold";
 
   padding:18px;
 
-  background:linear-gradient(
-    180deg,
-    rgba(13,49,45,.92),
-    rgba(8,35,32,.96)
-  );
+  background: color-mix(
+  in srgb,
+  black 10%,
+  transparent
+);
 
   border:1px solid rgba(255,255,255,.12);
 
@@ -945,7 +946,8 @@ section#about {
   }
 
   .cta-wrapper {
-    padding: 24px 16px;
+    padding: 24px 16px 13px;
+    
   }
 
   .cta-title {
@@ -963,7 +965,8 @@ section#about {
   .price-card {
     width: 155px;
     padding: 12px;
-    left: 8px;
+    bottom:-10px;
+    left: 30px;
   }
 
   .price-pill {
@@ -988,41 +991,11 @@ section#about {
   }
 
   .cta-mascot {
-    height: 220px;
+    height: 250px;
+    right:-75px;
   }
 }
 
-@media (max-width: 400px) {
-
-  .stats-title {
-    font-size: 32px;
-  }
-
-  .cta-title {
-    font-size: 30px;
-  }
-
-  .cta-points div {
-    font-size: 12px;
-  }
-
-  .price-card {
-    width: 155px;
-    left: 20px;
-    bottom:-15px;
-
-  }
-
-  .price-value {
-    font-size: 30px;
-  }
-
-  .cta-mascot {
-    height: 200px;
-    right:-80px;
-    bottom:-20px;
-  }
-}
       `}</style>
     </section>
   );

@@ -152,6 +152,8 @@ export default function HowItWorks() {
       }
 
       .StepNumber{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         font-size:14px;
         font-weight:800;
         color:#98A2B3;

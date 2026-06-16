@@ -424,6 +424,8 @@ letter-spacing: 1px;
 }
 
 .showcase-subtitle {
+font-family:"Geist-SemiBold";
+letter-spacing:1px;
   font-size: 15px;
 
   line-height: 1.6;
@@ -602,7 +604,7 @@ letter-spacing: 1px;
 
   border-radius: 14px;
 
-  background: #0B3B36;
+  background:var(--color-dark-green);
 
   color: white;
 
@@ -628,20 +630,15 @@ letter-spacing: 1px;
   display: flex;
   flex-direction: column;
 
-  gap: 6px;
+  gap: 10px;
 
-  padding: 12px;
+  padding: 20px 22px;
 
   border-radius: 28px;
 
   overflow: hidden;
 
-  background:
-    linear-gradient(
-      180deg,
-      #0B3B36 0%,
-      #06211E 100%
-    );
+  background:var(--color-dark-green);
 
   box-shadow:
     0 20px 50px rgba(0,0,0,0.08);

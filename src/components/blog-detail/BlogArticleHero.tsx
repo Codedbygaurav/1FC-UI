@@ -106,6 +106,8 @@ export default function BlogArticleHero() {
       }
 
       .BlogArticleMeta{
+      font-family:"Geist-SemiBold";
+          letter-spacing: 1px;
         display:flex;
         flex-wrap:wrap;
         gap:18px;
@@ -130,11 +132,12 @@ export default function BlogArticleHero() {
       }
 
       .BlogArticleTitle{
-        font-size:clamp(48px,7vw,96px);
+      font-family:"Geist-Bold";
+          letter-spacing: 1px;
+        font-size:78px;
 
         line-height:1;
 
-        letter-spacing:-.06em;
 
         margin:0 0 24px;
 

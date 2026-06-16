@@ -232,11 +232,15 @@ export default function ReferTermsHero() {
       }
 
       .ReferTermsCardHeading{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         color:var(--color-accent-lime);
         font-weight:700;
       }
 
       .ReferTermsLivePill{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         background:rgba(220,235,99,.12);
         color:var(--color-accent-lime);
         padding:6px 10px;
@@ -246,6 +250,8 @@ export default function ReferTermsHero() {
       }
 
       .ReferTermsMainValue{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         font-size:72px;
         line-height:1;
         margin-top:18px;
@@ -254,6 +260,8 @@ export default function ReferTermsHero() {
       }
 
       .ReferTermsMainLabel{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         margin-top:8px;
         font-size:20px;
       }

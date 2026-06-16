@@ -119,7 +119,7 @@ export default function ArticleContent() {
       .ArticleContentContainer h2{
         font-size:42px;
         line-height:1;
-        letter-spacing:-.04em;
+        letter-spacing:1px;
 
         margin:
         70px 0 24px;
@@ -204,6 +204,8 @@ export default function ArticleContent() {
       }
 
       .TakeawayCard h3{
+      font-family:"Geist-Bold";
+          letter-spacing: 1px;
         margin:10px 0 0;
 
         font-size:34px;

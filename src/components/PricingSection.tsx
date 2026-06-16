@@ -64,7 +64,7 @@ export default function PricingSection() {
       id="pricing"
       style={{
         background:
-          "linear-gradient(180deg, #FAFAF7 0%, #F5F6F2 100%)",
+          "var(--color-bg-ivory)",
 
         padding:
           "clamp(64px, 7vw, 110px) 20px",
@@ -115,7 +115,7 @@ export default function PricingSection() {
                 fontWeight: "700",
 
                 letterSpacing:
-                  "0.1em",
+                  "1px",
 
                 color: "#5E5E5E",
 
@@ -148,7 +148,8 @@ export default function PricingSection() {
               fontWeight: "800",
 
               letterSpacing:
-                "-0.04em",
+                "1px",
+                fontFamily:"Geist-Bold",
 
               lineHeight: "1.05",
 
@@ -158,7 +159,7 @@ export default function PricingSection() {
             }}
           >
             Professional financial
-            guidance, priced{" "}
+            guidance,<br/> priced{" "}
             <span
               style={{
                 fontStyle: "italic",
@@ -204,7 +205,7 @@ export default function PricingSection() {
         >
           <div
             style={{
-              background: "#0B3B36",
+              background: "var(--color-dark-green)",
 
               borderRadius: "28px",
 
@@ -262,8 +263,6 @@ export default function PricingSection() {
                     width: "220px",
                     height: "220px",
 
-                    background:
-                      "radial-gradient(circle, rgba(220,235,99,0.12) 0%, transparent 72%)",
 
                     pointerEvents:
                       "none",
@@ -305,7 +304,7 @@ export default function PricingSection() {
                         height: "5px",
 
                         background:
-                          "#EAE26A",
+                          "var(--color-accent-lime)",
 
                         borderRadius:
                           "50%",
@@ -321,7 +320,7 @@ export default function PricingSection() {
                           "600",
 
                         color:
-                          "#EAE26A",
+                          "var(--color-accent-lime)",
 
                         letterSpacing:
                           "0.04em",
@@ -352,7 +351,7 @@ export default function PricingSection() {
                           "700",
 
                         color:
-                          "#EAE26A",
+                          "var(--color-accent-lime)",
 
                         marginTop:
                           "10px",
@@ -366,16 +365,16 @@ export default function PricingSection() {
                     <span
                       style={{
                         fontSize:
-                          "clamp(68px, 8vw, 92px)",
+                          "60px",
+                          letterSpacing:"-6px",
 
                         fontWeight:
                           "900",
 
                         color:
-                          "#EAE26A",
+                          "var(--color-accent-lime)",
 
-                        letterSpacing:
-                          "-0.06em",
+                        
 
                         lineHeight:
                           "0.9",
@@ -461,6 +460,7 @@ export default function PricingSection() {
                     href="#"
                     className="margin-Top"
                     style={{
+                      marginTop:"20px",
                       display:
                         "flex",
 
@@ -473,7 +473,7 @@ export default function PricingSection() {
                       gap: "10px",
 
                       background:
-                        "#EAE26A",
+                        "var(--color-accent-lime)",
 
                       color:
                         "#0B3B36",
@@ -493,7 +493,8 @@ export default function PricingSection() {
                         "none",
 
                       letterSpacing:
-                        "-0.02em",
+                        "1px",
+                        fontFamily:"Geist-Bold",
 
                       transition:
                         "all 0.25s ease",
@@ -625,7 +626,7 @@ export default function PricingSection() {
                           >
                             <path
                               d="M2 5L4 7L8 3"
-                              stroke="#EAE26A"
+                              stroke="var(--color-accent-lime)"
                               strokeWidth="1.3"
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -665,6 +666,9 @@ export default function PricingSection() {
             textAlign: "center",
 
             padding: "16px 18px",
+
+            fontFamily:"Geist-SemiBold",
+            letterSpacing:"1px",
 
             background:
               "rgba(255,255,255,0.72)",

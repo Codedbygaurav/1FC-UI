@@ -220,6 +220,8 @@ export default function ArticleCTA() {
       }
 
       .ArticleCTAForm button{
+      font-family:"Geist-Bold";
+          letter-spacing: 1px;
         height:58px;
 
         border:none;

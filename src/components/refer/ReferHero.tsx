@@ -14,6 +14,7 @@ export default function ReferHero() {
         <div className="ReferHeroContent">
 
           <div className="hero-label">
+            <Gift size={14}/>
             REFER & EARN
           </div>
 
@@ -232,6 +233,8 @@ export default function ReferHero() {
       }
 
       .CardTop{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         display:flex;
         justify-content:space-between;
         align-items:center;
@@ -243,6 +246,8 @@ export default function ReferHero() {
       }
 
       .LiveTag{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         background:var(--color-accent-lime);
         color:var(--color-dark-green);
         font-size:11px;
@@ -252,6 +257,8 @@ export default function ReferHero() {
       }
 
       .ReferralMainStat{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         font-size:64px;
         font-weight:900;
         margin-top:22px;
@@ -259,6 +266,8 @@ export default function ReferHero() {
       }
 
       .ReferralMainLabel{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         margin-top:10px;
         color:rgba(255,255,255,.75);
       }
@@ -307,6 +316,7 @@ export default function ReferHero() {
       @media(max-width:768px){
 
         .ReferHero{
+        text-align:center;
           padding:120px 20px;
         }
 
@@ -326,6 +336,12 @@ export default function ReferHero() {
         .ReferSecondaryBtn{
           width:100%;
           justify-content:center;
+        }
+
+        .ReferTrustRow{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        padding: 0 10px
         }
 
         .ReferralCard{

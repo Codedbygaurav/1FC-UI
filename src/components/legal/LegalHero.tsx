@@ -135,11 +135,15 @@ export default function LegalHero() {
       }
 
       .CardHeader span{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         font-size:13px;
-        color:#EAE26A;
+        color:Var(--color-accent-lime);
       }
 
       .LiveTag{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         background:#EAE26A;
         color:#0B3B36;
         font-size:11px;
@@ -149,14 +153,18 @@ export default function LegalHero() {
       }
 
       .BigStat{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         font-size:92px;
         font-weight:800;
         line-height:1;
         margin-top:20px;
-        color:#EAE26A;
+        color:var(--color-accent-lime);
       }
 
       .StatLabel{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         font-size:22px;
         font-weight:600;
       }

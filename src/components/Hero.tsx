@@ -391,6 +391,7 @@ export default function Hero() {
   border: 1px dashed rgba(11,59,54,.10);
 }
   .orbit-label {
+  
   background: rgba(255,255,255,.92);
   border-radius: 999px;
   padding: 6px 10px;
@@ -415,6 +416,7 @@ export default function Hero() {
   text-align: center;
 }
   .orbit-node span {
+  font-family:"Geist-SemiBold";
   font-size: 12px;
   font-weight: 700;
   color: #0B3B36;
@@ -478,6 +480,7 @@ export default function Hero() {
 }
 
         .hero-floating-card {
+        font-family:"Geist-SemiBold";
           position: absolute;
           padding: 13px;
           border-radius: 20px;
@@ -524,6 +527,7 @@ export default function Hero() {
         }
 
         .hero-card-value {
+        font-family:"Geist-Bold";
           font-size: 26px;
           font-weight: 850;
           line-height: 1;
@@ -662,6 +666,7 @@ export default function Hero() {
   }
 
   .orbit-node span {
+  
     font-size: 11px;
   }
 

@@ -119,6 +119,7 @@ export default function LiveGoldRates() {
       }
 
       .RateCard{
+      
         background:#fff;
         border:1px solid #ECEFF3;
         border-radius:28px;
@@ -137,6 +138,8 @@ export default function LiveGoldRates() {
       }
 
       .RateTop{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         display:flex;
         justify-content:space-between;
         align-items:center;
@@ -160,6 +163,7 @@ export default function LiveGoldRates() {
       }
 
       .RateChange{
+      
         display:flex;
         align-items:center;
         gap:6px;
@@ -187,6 +191,8 @@ export default function LiveGoldRates() {
       }
 
       .RateCard h3{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         margin:0 0 12px;
 
         font-size:28px;
@@ -194,6 +200,8 @@ export default function LiveGoldRates() {
       }
 
       .RateValue{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         font-size:48px;
         font-weight:900;
 

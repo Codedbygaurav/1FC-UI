@@ -271,11 +271,7 @@ letter-spacing:-1px;
           padding: 24px;
 
           background:
-            linear-gradient(
-              135deg,
-              #032F2B 0%,
-              #063B35 100%
-            );
+            var(--color-dark-green);
 
           box-shadow:
             0 24px 60px

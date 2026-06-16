@@ -175,6 +175,8 @@ export default function LegalDocuments() {
       }
 
       .DocButton{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
   margin-top:26px;
   height:52px;
   border:none;

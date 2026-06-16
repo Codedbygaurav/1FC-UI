@@ -223,6 +223,8 @@ export default function GoldCalculator() {
       }
 
       .InputGroup label{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         font-size:14px;
         font-weight:700;
         color:#111;
@@ -231,6 +233,8 @@ export default function GoldCalculator() {
       .InputGroup input,
       .InputGroup select{
         height:60px;
+        font-family:"Geist-SemiBold";
+      letter-spacing:1px;
 
         border:1px solid #E5E7EB;
 
@@ -249,6 +253,7 @@ export default function GoldCalculator() {
       .InputGroup select:focus{
         border-color:
         var(--color-accent-lime);
+        
       }
 
       .ResultCard{

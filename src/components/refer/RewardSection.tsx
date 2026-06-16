@@ -142,6 +142,8 @@ export default function RewardsSection() {
       }
 
       .FeaturedReward::before{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         content:"MOST POPULAR";
         position:absolute;
         top:20px;
@@ -182,6 +184,8 @@ export default function RewardsSection() {
       }
 
       .RewardAmount{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         font-size:56px;
         line-height:1;
         font-weight:900;
@@ -189,6 +193,8 @@ export default function RewardsSection() {
       }
 
       .RewardCard h3{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         margin:0 0 14px;
         font-size:30px;
         line-height:1.1;

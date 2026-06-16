@@ -215,7 +215,7 @@ export default function HowItWorks() {
         overflow: "hidden",
 
         background:
-          "linear-gradient(180deg, #062F2B 0%, #0B3B36 50%, #082D29 100%)",
+          "var(--color-dark-green)",
 
         padding:
           "clamp(42px, 5vw, 78px) 20px",
@@ -390,7 +390,7 @@ export default function HowItWorks() {
 
           font-weight: 700;
 
-          letter-spacing: 0.12em;
+          
 
           color:
             rgba(220,235,99,0.7);
@@ -399,7 +399,7 @@ export default function HowItWorks() {
         }
 
         .workflow-title {
-        font-family:"Geist-Bold"
+        font-family:"Geist-Bold";
         letter-spacing:1px;
           max-width: 820px;
 
@@ -408,11 +408,11 @@ export default function HowItWorks() {
           margin-bottom: 16px;
 
           font-size:
-            clamp(34px, 5vw, 60px);
+            54px;
 
           line-height: 1.02;
 
-          letter-spacing: -0.04em;
+          
 
           font-weight: 850;
 
@@ -420,7 +420,7 @@ export default function HowItWorks() {
         }
 
         .workflow-highlight {
-          color: #EAE26A;
+          color: var(--color-accent-lime);
           margin-right:10px;
           font-style: italic;
 
@@ -436,7 +436,7 @@ export default function HowItWorks() {
 
           font-size: 16px;
 
-          line-height: 1.7;
+          line-height: 1.55;
 
           color:
             rgba(250,250,247,0.55);
@@ -492,14 +492,14 @@ export default function HowItWorks() {
         }
 
         .step-number {
+        font-family:"Geist-SemiBold";
+        letter-spacing: 1px;
           font-size: 11px;
 
           font-weight: 700;
+          
 
-          letter-spacing: 0.08em;
-
-          color:
-            rgba(220,235,99,0.55);
+          color: var(--color-accent-lime);
 
           margin-bottom: 14px;
         }
@@ -526,11 +526,12 @@ export default function HowItWorks() {
         }
 
         .step-title {
+        font-Family:"Geist-Bold";
+            letter-Spacing:1px;
           font-size: 18px;
 
           line-height: 1.3;
 
-          letter-spacing: -0.03em;
 
           font-weight: 700;
 
@@ -542,7 +543,7 @@ export default function HowItWorks() {
         .step-desc {
           font-size: 13px;
 
-          line-height: 1.7;
+          line-height: 1.55;
 
           color:
             rgba(250,250,247,0.52);
@@ -551,6 +552,7 @@ export default function HowItWorks() {
 
         .stats-band {
           margin-top: 34px;
+          
 
           display: grid;
 
@@ -581,28 +583,28 @@ export default function HowItWorks() {
         }
 
         .stat-number {
-          font-size:
-            clamp(20px, 2.5vw, 32px);
+          font-size: 35px;
+            font-Family:"Geist-Bold";
+            letter-Spacing: "1px";
 
           line-height: 1;
 
-          letter-spacing: -0.05em;
 
           font-weight: 850;
 
           color:
-            rgba(220,235,99,0.9);
+            var(--color-accent-lime);
 
           margin-bottom: 6px;
         }
 
         .stat-label {
-          font-size: 11px;
+          font-family:"Geist-SemiBold";
 
           font-weight: 500;
 
           color:
-            rgba(250,250,247,0.42);
+            red;
         }
 
 

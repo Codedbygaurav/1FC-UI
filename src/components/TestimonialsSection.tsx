@@ -70,11 +70,6 @@ export default function TrustSection() {
            
 
           <div className="trust-left reveal">
-            <span className="trust-kicker">
-              Financial clarity
-              shouldn’t disappear
-              during emergencies.
-            </span>
 
             <h2 className="trust-heading">
               Families deserve{" "}
@@ -287,7 +282,6 @@ export default function TrustSection() {
 
           line-height: 0.96;
 
-          letter-spacing: -0.050em;
 
           font-weight: 850;
 
@@ -313,7 +307,7 @@ export default function TrustSection() {
         .trust-description {
           font-size: 16px;
 
-          line-height: 1.9;
+          line-height: 1.6;
 
           color: #666;
 
@@ -326,6 +320,8 @@ export default function TrustSection() {
 
         .trust-pills {
           display: flex;
+          font-Family:"Geist-SemiBold";
+            letter-Spacing: "1px";
 
           flex-wrap: wrap;
 
@@ -517,7 +513,8 @@ export default function TrustSection() {
 
           font-weight: 760;
 
-          letter-spacing: -0.04em;
+          font-Family:"Geist-Bold";
+            letter-Spacing: "1px";
 
           color: #111;
 
@@ -527,7 +524,7 @@ export default function TrustSection() {
         .trust-card-content p {
           font-size: 14px;
 
-          line-height: 1.8;
+          line-height: 1.6;
 
           color: #666;
 
@@ -627,15 +624,15 @@ export default function TrustSection() {
   }
 
   .trust-heading {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 1;
     margin-bottom: 16px;
     max-width: 100%;
   }
 
   .trust-description {
-    font-size: 14px;
-    line-height: 1.8;
+    font-size: 13px;
+    line-height: 1.6;
     max-width: 100%;
     margin-bottom: 20px;
   }
@@ -685,89 +682,9 @@ export default function TrustSection() {
   }
 }
 
-/* ==========================================
-   SMALL MOBILE (≤480px)
-========================================== */
-@media (max-width: 480px) {
 
-  .trust-section {
-    padding: 60px 14px;
-  }
 
-  .trust-heading {
-    font-size: 32px;
-  }
 
-  .trust-description {
-    font-size: 13px;
-  }
-
-  .trust-kicker {
-    font-size: 10px;
-  }
-
-  .trust-pill {
-    padding: 11px 12px;
-  }
-
-  .trust-pill p {
-    font-size: 11px !important;
-  }
-
-  .trust-card {
-    padding: 18px;
-    border-radius: 18px;
-  }
-
-  .trust-card-icon {
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
-    border-radius: 12px;
-  }
-
-  .trust-card-content h3 {
-    font-size: 16px;
-  }
-
-  .trust-card-content p {
-    font-size: 12px;
-  }
-}
-
-/* ==========================================
-   EXTRA SMALL (≤360px)
-========================================== */
-@media (max-width: 360px) {
-
-  .trust-section {
-    padding: 54px 12px;
-  }
-
-  .trust-heading {
-    font-size: 28px;
-  }
-
-  .trust-description {
-    font-size: 12px;
-  }
-
-  .trust-pill p {
-    font-size: 10px !important;
-  }
-
-  .trust-card {
-    padding: 16px;
-  }
-
-  .trust-card-content h3 {
-    font-size: 15px;
-  }
-
-  .trust-card-content p {
-    font-size: 11px;
-  }
-}
       `}</style>
     </section>
   );

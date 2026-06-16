@@ -161,6 +161,8 @@ export default function GoldFAQ() {
       }
 
       .GoldFAQQuestion{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         width:100%;
         border:none;
         background:none;

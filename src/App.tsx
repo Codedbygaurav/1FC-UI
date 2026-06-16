@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 
@@ -29,6 +29,7 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetailsPage from "./pages/BlogDetailsPage";
 import GoldRatePage from "./pages/GoldRatePage";
 import ReferTermsPage from "./pages/ReferTermsPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 
 export default function App() {
@@ -41,6 +42,10 @@ export default function App() {
         <Route
           path="/"
           element={<Home />}
+        />
+        <Route
+          path="*"
+          element={<NotFoundPage/>}
         />
 
         <Route

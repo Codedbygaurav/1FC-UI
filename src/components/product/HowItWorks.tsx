@@ -209,12 +209,7 @@ export default function HowItWorks() {
         }
 
         .how-card.featured {
-          background:
-            linear-gradient(
-              180deg,
-              rgba(11,59,54,0.95),
-              rgba(8,36,32,0.94)
-            );
+          background:var(--color-dark-green);
           color: white;
         }
 
@@ -244,6 +239,7 @@ export default function HowItWorks() {
         }
 
         .how-number {
+        font-family:"Geist-SemiBold";
           font-size: 13px;
           font-weight: 700;
           color: rgba(0,0,0,0.28);
@@ -256,7 +252,7 @@ export default function HowItWorks() {
         .how-card h3 {
           font-size: 24px;
           line-height: 1.05;
-          letter-spacing: -0.04em;
+          letter-spacing: 1px;
           font-weight: 800;
           margin-bottom: 14px;
           color: #111111;

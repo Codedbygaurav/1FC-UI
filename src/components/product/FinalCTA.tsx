@@ -93,12 +93,7 @@ export default function FinalCTA() {
 
   padding: 48px 24px;
 
-  background: linear-gradient(
-    90deg,
-    #042b28 0%,
-    #063733 40%,
-    #0a4a43 100%
-  );
+  background:var(--color-dark-green);
 
   border-radius: 28px;
   height:600px;

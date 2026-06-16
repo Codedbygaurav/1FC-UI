@@ -90,6 +90,7 @@ export default function PrivacyHighlights() {
       <style>{`
 
       .PrivacyHighlights{
+      
         max-width:1280px;
         margin:auto;
         padding:48px 24px 40px;
@@ -108,6 +109,7 @@ export default function PrivacyHighlights() {
       }
 
       .PrivacyHighlightCard{
+      
         background:#fff;
         border:1px solid #ECEFF3;
         border-radius:28px;
@@ -140,6 +142,8 @@ export default function PrivacyHighlights() {
       }
 
       .PrivacyHighlightCard h3{
+      
+      
         margin:0 0 12px;
         font-size:24px;
         line-height:1.15;
@@ -148,6 +152,7 @@ export default function PrivacyHighlights() {
       }
 
       .PrivacyHighlightCard p{
+      
         margin:0;
         color:#667085;
         line-height:1.8;
@@ -182,6 +187,7 @@ export default function PrivacyHighlights() {
         }
 
         .PrivacyHighlightCard h3{
+        
           font-size:22px;
         }
 

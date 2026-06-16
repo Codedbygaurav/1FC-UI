@@ -220,12 +220,15 @@ export default function TermsHero() {
       }
 
       .TermsCardTop{
+      
         display:flex;
         justify-content:space-between;
         align-items:center;
       }
 
       .TermsCardHeading{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         display:flex;
         align-items:center;
         gap:8px;
@@ -234,6 +237,8 @@ export default function TermsHero() {
       }
 
       .TermsLivePill{
+      font-family:"Geist-SemiBold";
+      letter-spacing:1px;
         background:
         rgba(220,235,99,.12);
 
@@ -249,6 +254,8 @@ export default function TermsHero() {
       }
 
       .TermsMainValue{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
         font-size:72px;
         font-weight:900;
         color:var(--color-accent-lime);

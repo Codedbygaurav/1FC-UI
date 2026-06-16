@@ -47,7 +47,7 @@ export default function ProblemSection() {
 
         
           <h2 className="section-title">
-            India’s financial system is still{" "}
+            India’s financial system is still<br/>
             <span>fragmented</span>
           </h2>
 
@@ -277,10 +277,11 @@ export default function ProblemSection() {
         }
 
         .featured-badge {
+        font-family:"Geist-SemiBold";
+        letter-spacing: 1px;
           font-size: 11px;
           font-weight: 700;
 
-          letter-spacing: 0.14em;
 
           text-transform: uppercase;
 
@@ -295,14 +296,15 @@ export default function ProblemSection() {
         }
 
         .featured-content h3 {
+        font-family:"Geist-Bold";
+        letter-spacing: 1px;
           max-width: 420px;
 
-          font-size:
-            clamp(40px, 4.5vw, 58px);
+          font-size:50px;
 
           line-height: 0.94;
 
-          letter-spacing: -0.05em;
+          
 
           font-weight: 850;
 
@@ -316,7 +318,7 @@ export default function ProblemSection() {
 
           font-size: 16px;
 
-          line-height: 1.8;
+          line-height: 1.6;
 
           color:
             rgba(250,250,247,0.72);
@@ -325,6 +327,7 @@ export default function ProblemSection() {
         
 
         .featured-stat {
+        
           padding-top: 32px;
           padding-bottom: 8px;
         }
@@ -347,6 +350,8 @@ export default function ProblemSection() {
         }
 
         .featured-number {
+        font-family:"Geist-SemiBold";
+        letter-spacing: 1px;
           font-size:
             clamp(58px, 7vw, 84px);
 
@@ -354,7 +359,6 @@ export default function ProblemSection() {
 
           font-weight: 900;
 
-          letter-spacing: -0.07em;
 
           color: #EAE26A;
         }
@@ -364,7 +368,7 @@ export default function ProblemSection() {
 
           font-size: 15px;
 
-          line-height: 1.7;
+          line-height: 1.6;
 
           color:
             rgba(250,250,247,0.68);
@@ -512,11 +516,11 @@ export default function ProblemSection() {
         }
 
         .secondary-content h4 {
+        font-family:"Geist-Bold";
+        letter-spacing: 1px;
           font-size: 20px;
 
           line-height: 1.15;
-
-          letter-spacing: -0.04em;
 
           font-weight: 760;
 
@@ -528,7 +532,7 @@ export default function ProblemSection() {
         .secondary-content p {
           font-size: 14px;
 
-          line-height: 1.75;
+          line-height: 1.55;
 
           color: #666;
 
@@ -680,7 +684,7 @@ export default function ProblemSection() {
 
   .secondary-content p {
     font-size: 14px;
-    line-height: 1.75;
+    line-height: 1.55;
     max-width: 100%;
   }
 }

@@ -232,12 +232,7 @@ export default function FeatureMatrix() {
         }
 
         .capability-card.featured {
-          background:
-            linear-gradient(
-              180deg,
-              #0B3B36 0%,
-              #06211E 100%
-            );
+          background:var(--color-dark-green);
           color: white;
         }
 

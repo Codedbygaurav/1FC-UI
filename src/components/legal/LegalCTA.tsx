@@ -38,7 +38,7 @@ export default function LegalCTA({
 
 .privacyContainerPVC{
   width:100%;
-  max-width:1280px;
+  max-width:1080px;
   margin:0 auto;
   padding:0 24px;
 }
@@ -110,11 +110,12 @@ export default function LegalCTA({
 }
 
 .privacyCtaTitlePVC{
-  font-size:clamp(42px,5vw,68px);
+font-family:"Geist-Bold";
+      letter-spacing:1px;
+  font-size:40px;
 
   line-height:.92;
 
-  letter-spacing:-0.06em;
 
   font-weight:900;
 
@@ -134,6 +135,9 @@ export default function LegalCTA({
 }
 
 .privacyCtaButtonPVC{
+font-family:"Geist-Bold";
+      letter-spacing:1px;
+
   border:none;
 
   background:var(--color-accent-lime);
@@ -194,13 +198,13 @@ export default function LegalCTA({
   }
 
   .privacyCtaTitlePVC{
-    font-size:38px;
+    font-size:30px;
     line-height:.95;
   }
 
   .privacyCtaTextPVC{
     max-width:100%;
-    font-size:15px;
+    font-size:14px;
     margin:0 auto;
   }
 

@@ -63,12 +63,12 @@ export default function WhyContactUs() {
               HOW CAN WE HELP?
             </span>
 
-            <h2 className="whyContactTitleWC">
+            <h2 className="section-title">
               More than support.
               <span> Real guidance.</span>
             </h2>
 
-            <p className="whyContactDescWC">
+            <p className="section-subtitle">
               Whether you're an individual, family, business,
               or partner, our specialists are available to
               help you move forward with confidence.
@@ -178,6 +178,8 @@ export default function WhyContactUs() {
         }
 
         .darkWC h3{
+        font-family:"Geist-Bold";
+        letter-spacing:1px;
           color:white !important;
         }
 
@@ -207,10 +209,11 @@ export default function WhyContactUs() {
 }
 
         .whyContactCardWC h3{
+        font-family:"Geist-Bold";
+        letter-spacing:1px;
           font-size:1.5rem;
           margin-bottom:14px;
           color:var(--color-text-primary);
-          font-weight:700;
         }
 
         .whyContactCardWC p{

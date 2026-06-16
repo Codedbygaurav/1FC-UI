@@ -45,12 +45,12 @@ export default function FAQSection(){
               FREQUENTLY ASKED QUESTIONS
             </span>
 
-            <h2 className="faqTitleFQ">
+            <h2 className="section-title">
               Questions we hear
               <span> often.</span>
             </h2>
 
-            <p className="faqDescFQ">
+            <p className="section-subtitle">
               Find quick answers to common questions before
               reaching out to our team.
             </p>
@@ -157,6 +157,9 @@ export default function FAQSection(){
         }
 
         .faqQuestionFQ{
+        font-family:"Geist-Bold";
+      letter-spacing:1px;
+      color:var(--color-dark-green);
           width:100%;
           background:none;
           border:none;
@@ -168,7 +171,6 @@ export default function FAQSection(){
           cursor:pointer;
           font-size:1.1rem;
           font-weight:700;
-          color:var(--color-text-primary);
         }
 
         .faqAnswerWrapperFQ{

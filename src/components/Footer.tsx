@@ -105,7 +105,7 @@ export default function Footer() {
 
           overflow: hidden;
 
-          background: #082b27;
+          background: var(--color-dark-green);
 
           border-top: 1px solid
             rgba(255, 255, 255, 0.05);

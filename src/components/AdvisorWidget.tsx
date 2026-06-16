@@ -65,11 +65,7 @@ export default function AdvisorWidget() {
           overflow: hidden;
 
           background:
-            linear-gradient(
-              135deg,
-              rgba(11,59,54,0.92),
-              rgba(6,33,30,0.96)
-            );
+            var(--color-dark-green);
 
           border:
             1px solid rgba(255,255,255,0.08);

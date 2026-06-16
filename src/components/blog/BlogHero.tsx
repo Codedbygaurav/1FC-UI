@@ -216,6 +216,8 @@ export default function BlogHero() {
       }
 
       .BlogCardHeading{
+      font-family:"Geist-SemiBold";
+          letter-spacing: 1px;
         display:flex;
         align-items:center;
         gap:8px;
@@ -233,6 +235,8 @@ export default function BlogHero() {
       }
 
       .BlogMainValue{
+      font-family:"Geist-Bold";
+          letter-spacing: 1px;
         font-size:64px;
         font-weight:900;
         color:var(--color-accent-lime);
@@ -309,6 +313,10 @@ export default function BlogHero() {
 
         .BlogHero{
           padding:120px 20px 70px;
+        }
+
+        .BlogMainValue{
+        font-size:40px;
         }
 
         .BlogHeroTitle{

@@ -22,6 +22,7 @@ export default function TrustBar() {
       padding: '10px 0',
       overflow: 'hidden',
       position: 'relative',
+      fontFamily:"Geist-SemiBold"
     }}>
       {/* Edge fades */}
       <div style={{

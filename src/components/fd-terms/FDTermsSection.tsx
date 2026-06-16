@@ -142,11 +142,18 @@ export default function FDTermsSection() {
       }
 
       .FDAccordionItem{
+      
         background:#fff;
         border:1px solid #ECEFF3;
         border-radius:24px;
         overflow:hidden;
         transition:.3s ease;
+      }
+
+      .FDAccordionItem span{
+      font-family:"Geist-Bold";
+      letter-spacing:1px;
+      color:var(--color-dark-green);
       }
 
       .FDAccordionItem:hover{
@@ -160,6 +167,7 @@ export default function FDTermsSection() {
       }
 
       .FDAccordionTrigger{
+      
         width:100%;
         border:none;
         background:none;
@@ -178,7 +186,10 @@ export default function FDTermsSection() {
         color:#0B3B36;
       }
 
+      
+
       .FDAccordionContent{
+      
         max-height:0;
         overflow:hidden;
         transition:.35s ease;

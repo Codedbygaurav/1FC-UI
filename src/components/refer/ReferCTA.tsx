@@ -134,6 +134,8 @@ export default function ReferCTA() {
 }
 
 .referBadge{
+font-family:"Geist-SemiBold";
+      letter-spacing:1px;
   color:var(--color-accent-lime);
 
   font-size:11px;
@@ -146,13 +148,14 @@ export default function ReferCTA() {
 }
 
 .referTitle{
+font-family:"Geist-SemiBold";
+      letter-spacing:1px;
   color:white;
 
   font-size:clamp(54px,6vw,82px);
 
   line-height:.9;
 
-  letter-spacing:-.07em;
 
   margin:0 0 24px;
 
@@ -167,12 +170,14 @@ export default function ReferCTA() {
 
   font-size:18px;
 
-  line-height:1.8;
+  line-height:1.6;
 
   margin-bottom:32px;
 }
 
 .referButtons{
+font-family:"Geist-Bold";
+      letter-spacing:1px;
   display:flex;
   gap:14px;
 
@@ -224,6 +229,8 @@ export default function ReferCTA() {
 }
 
 .referPills{
+font-family:"Geist-SemiBold";
+      letter-spacing:1px;
   display:flex;
   flex-wrap:wrap;
   gap:12px;
@@ -346,7 +353,7 @@ export default function ReferCTA() {
   }
 
   .referTitle{
-    font-size:48px;
+    font-size:40px;
   }
 
   .referDescription{
@@ -364,7 +371,7 @@ export default function ReferCTA() {
   }
 
   .referVisual{
-    min-height:300px;
+    min-height:220px;
   }
 
   .referMascot{

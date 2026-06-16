@@ -195,12 +195,7 @@ export default function FeaturesProtectionSectionFPS() {
         }
 
         .featuresProtectCardFPS.darkFPS {
-          background:
-            linear-gradient(
-              135deg,
-              #032F2B 0%,
-              #063B35 100%
-            );
+          background:var(--color-dark-green);
 
           border: none;
         }
@@ -278,11 +273,10 @@ export default function FeaturesProtectionSectionFPS() {
         .featuresProtectCardFPS h3 {
         font-family:"Geist-Bold";
           letter-spacing:1px;
-          font-size: 17px;
+          font-size: 20px;
 
           line-height: 1.22;
 
-          letter-spacing: -0.05em;
 
           font-weight: 700;
 
