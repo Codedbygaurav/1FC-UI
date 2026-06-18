@@ -216,7 +216,7 @@ export default function ProblemSection() {
           background:
             linear-gradient(
               145deg,
-              #0b3b36 0%,
+              var(--color-dark-green) 0%,
               #062f2b 58%,
               #031f1d 100%
             );
@@ -494,7 +494,7 @@ export default function ProblemSection() {
           align-items: center;
           justify-content: center;
 
-          color: #0b3b36;
+          color: var(--color-dark-green);
 
           box-shadow:
             inset 0 1px 0

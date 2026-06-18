@@ -158,7 +158,7 @@ export default function ContactHero() {
         .contactTitleCH span {
           font-family: "DM Serif Display", serif;
   font-style: italic;
-  color: #0b544b;
+  color: var(--color-dark-green);
   font-weight: 400;
         }
 

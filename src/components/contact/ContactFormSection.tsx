@@ -148,7 +148,7 @@ const [selectedProduct, setSelectedProduct] =
 
                 <div>
                   <span>Phone</span>
-                  <h4>+91 98765 43210</h4>
+                  <h4>022-2506 2525 / 022-2506 0088</h4>
                 </div>
               </div>
 
@@ -159,7 +159,7 @@ const [selectedProduct, setSelectedProduct] =
 
                 <div>
                   <span>Email</span>
-                  <h4>hello@yourcompany.com</h4>
+                  <h4>customersupport@1fcode.com</h4>
                 </div>
               </div>
 
@@ -169,8 +169,8 @@ const [selectedProduct, setSelectedProduct] =
                 </div>
 
                 <div>
-                  <span>Office</span>
-                  <h4>New Delhi, India</h4>
+                  <span>Company</span>
+                  <h4>1FC Financial and Investment Advisors Pvt. Ltd.</h4>
                 </div>
               </div>
 
@@ -235,7 +235,7 @@ const [selectedProduct, setSelectedProduct] =
   font-style:italic;
   font-family:"DM Serif Display",serif;
   font-weight:400;
-  color:#0B3B36;
+  color:var(--color-dark-green);
 }
 
 .contactFormDescCF{

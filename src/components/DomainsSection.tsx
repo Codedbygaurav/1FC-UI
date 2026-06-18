@@ -432,7 +432,7 @@ export default function DomainsSection() {
           width: 30px;
           height: 1px;
 
-          background: #0B3B36;
+          background: var(--color-dark-green);
 
           opacity: 0.25;
         }
@@ -474,7 +474,7 @@ export default function DomainsSection() {
 
           font-weight: 400;
 
-          color: #0B3B36;
+          color: var(--color-dark-green);
         }
 
         .domains-subtitle {
@@ -772,7 +772,7 @@ function DomainCardFeatured({
           alignItems: "center",
           justifyContent: "center",
 
-          color: "#0B3B36",
+          color: "var(--color-dark-green)",
 
           marginBottom: "18px",
         }}
@@ -793,7 +793,7 @@ function DomainCardFeatured({
 
           textTransform: "uppercase",
 
-          color: "#0B3B36",
+          color: "var(--color-dark-green)",
 
           opacity: 0.58,
 
@@ -965,7 +965,7 @@ function DomainCardFeatured({
               C460 128, 520 70, 700 22
             "
             fill="none"
-            stroke="#0B3B36"
+            stroke="var(--color-dark-green)"
             strokeWidth="3.4"
             strokeLinecap="round"
           />
@@ -1029,7 +1029,7 @@ function DomainCardFeatured({
 
               fontWeight: 800,
 
-              color: "#0B3B36",
+              color: "var(--color-dark-green)",
 
               marginBottom: "2px",
             }}
@@ -1085,7 +1085,7 @@ function DomainCardFeatured({
               letterSpacing:
                 "1px",
 
-              color: "#0B3B36",
+              color: "var(--color-dark-green)",
 
               marginBottom: "4px",
             }}
@@ -1247,7 +1247,7 @@ function DomainCompact({
                 "uppercase",
 
               color:
-                "#0B3B36",
+                "var(--color-dark-green)",
 
               opacity: 0.6,
             }}
@@ -1276,7 +1276,7 @@ function DomainCompact({
                 "center",
 
               color:
-                "#0B3B36",
+                "var(--color-dark-green)",
             }}
           >
             {domain.icon}
@@ -1390,7 +1390,7 @@ function DomainCompact({
                 800,
 
               color:
-                "#0B3B36",
+                "var(--color-dark-green)",
 
               marginBottom:
                 "3px",
@@ -1429,7 +1429,7 @@ function DomainCardDark({
     <div
       style={{
         background:
-          "linear-gradient(135deg,#041B18 0%,#0B3B36 100%)",
+          "linear-gradient(135deg,#041B18 0%,var(--color-dark-green) 100%)",
 
         padding: mobile
           ? "24px"

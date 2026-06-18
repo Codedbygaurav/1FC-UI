@@ -102,7 +102,7 @@ export default function PricingSection() {
                 width: "24px",
 
                 background:
-                  "#0B3B36",
+                  "var(--color-dark-green)",
 
                 opacity: 0.3,
               }}
@@ -132,7 +132,7 @@ export default function PricingSection() {
                 width: "24px",
 
                 background:
-                  "#0B3B36",
+                  "var(--color-dark-green)",
 
                 opacity: 0.3,
               }}
@@ -167,7 +167,7 @@ export default function PricingSection() {
 
                 fontWeight: "400",
 
-                color: "#0B3B36",
+                color: "var(--color-dark-green)",
               }}
             >
               honestly
@@ -476,7 +476,7 @@ export default function PricingSection() {
                         "var(--color-accent-lime)",
 
                       color:
-                        "#0B3B36",
+                        "var(--color-dark-green)",
 
                       height: "54px",
 
@@ -697,7 +697,7 @@ export default function PricingSection() {
 
             <strong
               style={{
-                color: "#0B3B36",
+                color: "var(--color-dark-green)",
               }}
             >
               #FCode gives you an

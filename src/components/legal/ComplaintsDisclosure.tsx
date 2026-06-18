@@ -126,7 +126,7 @@ export default function ComplianceDisclosure() {
   border-radius:999px;
   font-size:14px;
   font-weight:700;
-  color:#0B3B36;
+  color:var(--color-dark-green);
 }
 
 .ComplianceGrid{
@@ -156,7 +156,7 @@ export default function ComplianceDisclosure() {
 }
 
 .FeaturedCard{
-  background:#0B3B36;
+  background:var(--color-dark-green);
   border:none;
   color:#fff;
 }
@@ -180,7 +180,7 @@ export default function ComplianceDisclosure() {
   display:flex;
   align-items:center;
   justify-content:center;
-  color:#0B3B36;
+  color:var(--color-dark-green);
   margin-bottom:24px;
   flex-shrink:0;
 }
@@ -222,7 +222,7 @@ export default function ComplianceDisclosure() {
   display:flex;
   align-items:center;
   justify-content:center;
-  color:#0B3B36;
+  color:var(--color-dark-green);
   transition:.3s ease;
 }
 

@@ -243,7 +243,7 @@ export default function FeaturesHero() {
 
           font-style: italic;
           font-weight: 400;
-          color: #0B544B;
+          color: var(--color-dark-green);
         }
 
         .featuresHeroDescriptionFB {
@@ -281,7 +281,7 @@ export default function FeaturesHero() {
         }
 
         .featuresHeroPrimaryBtnFB {
-          background: #0B3B36;
+          background: var(--color-dark-green);
           color: white;
         }
 
@@ -389,7 +389,7 @@ export default function FeaturesHero() {
         }
 
         .featuresHeroCardIconFB {
-          color: #0B544B;
+          color: var(--color-dark-green);
           margin-bottom: 12px;
         }
 
@@ -399,7 +399,7 @@ export default function FeaturesHero() {
           line-height: 1;
           letter-spacing: -0.07em;
           font-weight: 900;
-          color: #0B544B;
+          color: var(--color-dark-green);
         }
 
         .featuresHeroStatValueSmallFB {
@@ -409,7 +409,7 @@ export default function FeaturesHero() {
           line-height: 1;
           letter-spacing: -0.06em;
           font-weight: 900;
-          color: #0B544B;
+          color: var(--color-dark-green);
           margin-bottom: 12px;
         }
 

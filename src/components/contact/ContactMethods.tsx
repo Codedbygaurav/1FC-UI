@@ -16,14 +16,14 @@ export default function ContactMethods() {
     title: "Call Us",
     description:
       "Speak directly with our financial advisors for personalized guidance.",
-    value: "+91 98765 43210",
+    value: "022-35386600",
   },
   {
     icon: <Mail size={28} />,
     title: "Email Us",
     description:
       "Send detailed questions and receive expert assistance from our team.",
-    value: "support@yourcompany.com",
+    value: "customersupport@1fcode.com",
   },
   {
     icon: <MessageCircle size={28} />,
@@ -101,7 +101,7 @@ export default function ContactMethods() {
   font-style:italic;
   font-family:"DM Serif Display",serif;
   font-weight:400;
-  color:#0B3B36;
+  color:var(--color-dark-green);
 }
 
 .contactMethodsGridCM{
@@ -141,7 +141,7 @@ export default function ContactMethods() {
   display:flex;
   align-items:center;
   justify-content:center;
-  color:#0B3B36;
+  color:var(--color-dark-green);
   margin-bottom:20px;
 }
 

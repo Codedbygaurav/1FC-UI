@@ -14,7 +14,7 @@ export default function GroupStructure() {
     },
     {
       logo: "1FC",
-      title: "1FC Investments",
+      title: "1FC Financial & Investment advisors private limited",
       tag: "FINANCIAL ADVISORY",
     },
     {

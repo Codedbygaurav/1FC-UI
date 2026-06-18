@@ -122,7 +122,7 @@ letter-spacing: 1px;
 
           font-weight: 400;
 
-          color: #0B544B;
+          color: var(--color-dark-green);
         }
 
         .toolsGridWrapTG {
@@ -196,7 +196,7 @@ letter-spacing: 1px;
   align-items: center;
   justify-content: center;
 
-  color: #0B544B;
+  color: var(--color-dark-green);
 
   flex-shrink: 0;
 }
@@ -205,9 +205,9 @@ letter-spacing: 1px;
   width: 22px;
   height: 22px;
 
-  stroke: #0B544B;
+  stroke: var(--color-dark-green);
 
-  color: #0B544B;
+  color: var(--color-dark-green);
 
   stroke-width: 2.2;
 }
@@ -313,7 +313,7 @@ letter-spacing: 1px;
 
           border-radius: 16px;
 
-          background: #0B3B36;
+          background: var(--color-dark-green);
 
           color: white;
 

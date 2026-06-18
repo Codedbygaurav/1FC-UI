@@ -134,7 +134,7 @@ export default function WhyContactUs() {
             "DM Serif Display",
             serif;
           font-weight: 400;
-          color: #0B3B36;
+          color: var(--color-dark-green);
         }
 
         .whyContactDescWC{
@@ -204,7 +204,7 @@ export default function WhyContactUs() {
   display:flex;
   align-items:center;
   justify-content:center;
-  color:#0B3B36;
+  color:var(--color-dark-green);
   margin-bottom:20px;
 }
 

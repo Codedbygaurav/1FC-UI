@@ -249,11 +249,11 @@ letter-spacing:-1px;
 
           font-weight: 600;
 
-          color: #0B3B36;
+          color: var(--color-dark-green);
         }
 
         .featuresPlatformItemFB svg {
-          color: #0B544B;
+          color: var(--color-dark-green);
           flex-shrink: 0;
         }
 

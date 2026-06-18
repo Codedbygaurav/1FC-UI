@@ -120,7 +120,7 @@ export default function LegalHero() {
       }
 
       .HeroCard{
-        background:#0B3B36;
+        background:var(--color-dark-green);
         border-radius:28px;
         padding:32px;
         color:white;
@@ -145,7 +145,7 @@ export default function LegalHero() {
       font-family:"Geist-SemiBold";
       letter-spacing:1px;
         background:#EAE26A;
-        color:#0B3B36;
+        color:var(--color-dark-green);
         font-size:11px;
         font-weight:700;
         padding:6px 10px;

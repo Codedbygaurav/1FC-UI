@@ -828,7 +828,7 @@ useEffect(() => {
   background: linear-gradient(
     135deg,
     #08342f,
-    #0b3b36
+    var(--color-dark-green)
   );
   display: flex;
   align-items: center;
@@ -873,7 +873,7 @@ font-family:"Geist-SemiBold";
   position:relative;
 
   background:rgba(11,59,54,.08) !important ; 
-  color:#0B3B36 !important;
+  color:var(--color-dark-green) !important;
 
 }
 
@@ -998,7 +998,7 @@ font-family:"Geist-SemiBold";
 
   text-transform:uppercase;
 
-  color:#0B3B36;
+  color:var(--color-dark-green);
 
   margin-bottom:14px;
 }
@@ -1025,7 +1025,7 @@ font-family:"Geist-SemiBold";
 .platform-overview-card svg{
   margin-top:20px;
 
-  color:#0B3B36;
+  color:var(--color-dark-green);
 }
 
 .nav-item:hover .platform-dropdown{
@@ -1123,7 +1123,7 @@ font-family:"Geist-SemiBold";
   border-radius: 999px;
   text-decoration: none;
   background: rgba(11,59,54,.06);
-  color: #0B3B36;
+  color: var(--color-dark-green);
   font-size: 14px;
   font-weight: 700;
   white-space: nowrap;
@@ -1150,7 +1150,7 @@ font-family:"Geist-Bold";
   background: linear-gradient(
     135deg,
     #08342f,
-    #0b3b36
+    var(--color-dark-green)
   );
   color: white;
   display: flex;
@@ -1247,7 +1247,7 @@ border-bottom-left-radius:0;
   background:#f8fafb;
   border-color:#d9e4e2;
 
-  color:#0B3B36;
+  color:var(--color-dark-green);
 }
 
 .mobile-nav-content{
@@ -1299,7 +1299,7 @@ font-family:"Geist-SemiBold";
 
   letter-spacing:.12em;
 
-  color:#0B3B36;
+  color:var(--color-dark-green);
 }
 
 .mobile-submenu {
@@ -1351,7 +1351,7 @@ font-family:"Geist-SemiBold";
   background:
     rgba(220,235,99,.18);
 
-  color:#0B3B36;
+  color:var(--color-dark-green);
 
   font-size:10px;
   font-weight:800;
@@ -1486,7 +1486,7 @@ font-family:"Geist-SemiBold";
 
     border-radius:999px;
 
-    background:#0B3B36;
+    background:var(--color-dark-green);
 
     transition:
       transform .25s ease,
@@ -1553,7 +1553,7 @@ font-family:"Geist-SemiBold";
     background: linear-gradient(
       135deg,
       #08342f,
-      #0b3b36
+      var(--color-dark-green)
     );
     color: white;
     font-weight: 700;

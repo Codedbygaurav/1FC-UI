@@ -16,7 +16,7 @@ export default function TrustBar() {
 
   return (
     <div style={{
-      background: '#0B3B36',
+      background: 'var(--color-dark-green)',
       borderTop: '1px solid rgba(255,255,255,0.06)',
       borderBottom: '1px solid rgba(255,255,255,0.06)',
       padding: '10px 0',
@@ -31,7 +31,7 @@ export default function TrustBar() {
         top: 0,
         bottom: 0,
         width: '80px',
-        background: 'linear-gradient(to right, #0B3B36, transparent)',
+        background: 'linear-gradient(to right, var(--color-dark-green), transparent)',
         zIndex: 2,
         pointerEvents: 'none',
       }} />
@@ -41,7 +41,7 @@ export default function TrustBar() {
         top: 0,
         bottom: 0,
         width: '80px',
-        background: 'linear-gradient(to left, #0B3B36, transparent)',
+        background: 'linear-gradient(to left, var(--color-dark-green), transparent)',
         zIndex: 2,
         pointerEvents: 'none',
       }} />

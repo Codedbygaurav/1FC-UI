@@ -232,7 +232,7 @@ export default function ToolsHero() {
 
           font-weight: 400;
 
-          color: #0B544B;
+          color: var(--color-dark-green);
         }
 
         .toolsHeroDescTP {
@@ -280,7 +280,7 @@ export default function ToolsHero() {
         }
 
         .toolsHeroPrimaryBtnTP {
-          background: #0B3B36;
+          background: var(--color-dark-green);
           color: white;
         }
 
@@ -383,11 +383,11 @@ export default function ToolsHero() {
 
           font-weight: 900;
 
-          color: #0B544B;
+          color: var(--color-dark-green);
         }
 
         .toolsHeroCardIconTP {
-          color: #0B544B;
+          color: var(--color-dark-green);
           margin-bottom: 12px;
         }
 
@@ -402,7 +402,7 @@ export default function ToolsHero() {
 
           font-weight: 900;
 
-          color: #0B544B;
+          color: var(--color-dark-green);
 
           margin-bottom: 12px;
         }

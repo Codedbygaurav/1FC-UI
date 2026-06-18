@@ -315,7 +315,7 @@ letter-spacing: 1px;
 
   background: rgba(255,255,255,0.82);
 
-  color: #0B3B36;
+  color: var(--color-dark-green);
 
   font-size: 11px;
   font-weight: 700;
@@ -324,7 +324,7 @@ letter-spacing: 1px;
 }
 
 .product-tab.active {
-  background: #0B3B36;
+  background: var(--color-dark-green);
   color: white;
 
   box-shadow:
@@ -359,7 +359,7 @@ letter-spacing: 1px;
 
   background: rgba(11,59,54,0.08);
 
-  color: #0B3B36;
+  color: var(--color-dark-green);
 
   font-size: 10px;
   font-weight: 700;
@@ -419,7 +419,7 @@ letter-spacing: 1px;
 
 .desktop-navPS-btn.active,
 .mobile-navPS-btn.active {
-  background: #0B3B36;
+  background: var(--color-dark-green);
   color: white;
 }
 
@@ -430,7 +430,7 @@ letter-spacing:1px;
 
   line-height: 1.6;
 
-  color: #0B3B36;
+  color: var(--color-dark-green);
 
   font-weight: 500;
 
@@ -491,7 +491,7 @@ text-align:center;
 
   line-height: 1;
 
-  color: #0B3B36;
+  color: var(--color-dark-green);
 
   margin-bottom: 6px;
 }
@@ -551,7 +551,7 @@ letter-spacing: 1px;
 
   font-size: 9px;
 
-  color: #0B3B36;
+  color: var(--color-dark-green);
 }
 
 .benefit-item span{
@@ -583,7 +583,7 @@ letter-spacing: 1px;
   font-size: 10px;
   font-weight: 700;
 
-  color: #0B3B36;
+  color: var(--color-dark-green);
 }
 
 

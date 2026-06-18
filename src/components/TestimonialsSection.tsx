@@ -220,7 +220,7 @@ export default function TrustSection() {
           width: 34px;
           height: 1px;
 
-          background: #0b3b36;
+          background: var(--color-dark-green);
 
           opacity: 0.2;
         }
@@ -267,7 +267,7 @@ export default function TrustSection() {
 
           text-transform: uppercase;
 
-          color: #0b3b36;
+          color: var(--color-dark-green);
 
           opacity: 0.72;
 
@@ -301,7 +301,7 @@ export default function TrustSection() {
 
           font-size: 0.92em;
 
-          color: #0b3b36;
+          color: var(--color-dark-green);
         }
 
         .trust-description {
@@ -381,7 +381,7 @@ export default function TrustSection() {
 
           border-radius: 999px;
 
-          background: #0b3b36;
+          background: var(--color-dark-green);
 
           flex-shrink: 0;
         }
@@ -498,7 +498,7 @@ export default function TrustSection() {
           align-items: center;
           justify-content: center;
 
-          color: #0b3b36;
+          color: var(--color-dark-green);
 
           box-shadow:
             inset 0 1px 0 rgba(255,255,255,0.4);

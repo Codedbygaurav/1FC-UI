@@ -189,7 +189,7 @@ font-family: "Geist-Bold";
   align-items:center;
   gap:8px;
   text-decoration:none;
-  color:#0B3B36;
+  color:var(--color-dark-green);
   font-size:14px;
   font-weight:600;
   margin-bottom:28px;
@@ -206,7 +206,7 @@ font-family: "Geist-SemiBold";
   padding:8px 14px;
   border-radius:999px;
   background:#F1F3EE;
-  color:#0B3B36;
+  color:var(--color-dark-green);
   font-size:10px;
   font-weight:700;
   letter-spacing:.12em;
@@ -253,7 +253,7 @@ font-family: "Geist-SemiBold";
   background:
     linear-gradient(
       180deg,
-      #0B3B36,
+      var(--color-dark-green),
       #082D29
     );
 
@@ -345,8 +345,8 @@ gap:10px;
   background:
     linear-gradient(
       135deg,
-      #0B3B36,
-      #174C45
+      var(--color-dark-green),
+      var(--color-dark-green)
     );
 
   color:#FAFAF7;

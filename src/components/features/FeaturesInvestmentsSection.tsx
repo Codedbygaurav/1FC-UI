@@ -303,7 +303,7 @@ export default function FeaturesInvestmentsSection() {
 
 
         .featuresInvestCardIconFB {
-          color: #0B544B;
+          color: var(--color-dark-green);
           margin-bottom: 14px;
         }
 
@@ -328,7 +328,7 @@ export default function FeaturesInvestmentsSection() {
 
           letter-spacing: -0.04em;
 
-          color: #0B3B36;
+          color: var(--color-dark-green);
         }
 
         .featuresInvestRailFB {
@@ -360,11 +360,11 @@ export default function FeaturesInvestmentsSection() {
 
           font-weight: 600;
 
-          color: #0B3B36;
+          color: var(--color-dark-green);
         }
 
         .featuresInvestPillFB svg {
-          color: #0B544B;
+          color: var(--color-dark-green);
           flex-shrink: 0;
         }
 

@@ -111,7 +111,7 @@ export default function ReferCTA() {
   background:
     linear-gradient(
       135deg,
-      #0B3B36,
+      var(--color-dark-green),
       #0D4B43
     );
 

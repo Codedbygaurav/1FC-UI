@@ -423,7 +423,7 @@ export default function FeaturesTabsFTS() {
 
   font-size: 0.9em;
 
-  color: #0B544B;
+  color: var(--color-dark-green);
 }
 
 .featuresTabsDescFTS {
@@ -536,7 +536,7 @@ export default function FeaturesTabsFTS() {
   align-items: center;
   justify-content: center;
 
-  color: #0B544B;
+  color: var(--color-dark-green);
 
   flex-shrink: 0;
 }
@@ -545,8 +545,8 @@ export default function FeaturesTabsFTS() {
   width: 22px;
   height: 22px;
 
-  color: #0B544B;
-  stroke: #0B544B;
+  color: var(--color-dark-green);
+  stroke: var(--color-dark-green);
 }
 
         .featuresTabTitleFTS {

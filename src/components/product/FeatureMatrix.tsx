@@ -187,7 +187,7 @@ export default function FeatureMatrix() {
             "DM Serif Display",
             serif;
           font-weight: 400;
-          color: #0B3B36;
+          color: var(--color-dark-green);
         }
 
         .matrix-subtitle {
@@ -252,7 +252,7 @@ export default function FeatureMatrix() {
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #0B3B36;
+          color: var(--color-dark-green);
         }
 
         .featured .capability-icon {
@@ -316,7 +316,7 @@ letter-spacing: 1px;
           border: 1px solid rgba(11,59,54,0.05);
           box-shadow:
             0 8px 20px rgba(0,0,0,0.025);
-          color: #0B3B36;
+          color: var(--color-dark-green);
           font-size: 11px;
           font-weight: 700;
         }

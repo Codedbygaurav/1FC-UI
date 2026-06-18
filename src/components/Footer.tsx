@@ -72,9 +72,7 @@ export default function Footer() {
         <div className="footer-bottom">
           <div className="footer-bottom-left">
             <span>
-              © 2026 1FCode
-              Financial Technologies
-              Pvt. Ltd.
+              © 2026 1FCode-1FC Technology Private Limited
             </span>
 
             <span>

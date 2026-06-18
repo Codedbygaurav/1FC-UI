@@ -172,7 +172,7 @@ export default function AdvisorWidget() {
           background: #EAE26A;
 
           border:
-            2px solid #0B3B36;
+            2px solid var(--color-dark-green);
 
           box-shadow:
             0 0 10px rgba(220,235,99,0.5);

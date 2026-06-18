@@ -276,7 +276,7 @@ export default function FeatureComparisonFB() {
 
           text-transform: uppercase;
 
-          color: #0B544B;
+          color: var(--color-dark-green);
         }
 
         .featureComparisonTitleFB {
@@ -303,7 +303,7 @@ export default function FeatureComparisonFB() {
 
           font-weight: 400;
 
-          color: #0B544B;
+          color: var(--color-dark-green);
         }
 
         .featureComparisonDescFB {
@@ -353,7 +353,7 @@ export default function FeatureComparisonFB() {
           background:
             linear-gradient(
               135deg,
-              #0B3B36 0%,
+              var(--color-dark-green) 0%,
               #072522 100%
             );
 

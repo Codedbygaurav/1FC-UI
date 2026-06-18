@@ -279,7 +279,7 @@ export default function CalculatorSection() {
         .label-line {
           width: 30px;
           height: 1px;
-          background: #0b3b36;
+          background: var(--color-dark-green);
 
           opacity: 0.2;
         }
@@ -390,7 +390,7 @@ export default function CalculatorSection() {
           align-items: center;
           justify-content: center;
 
-          color: #0b3b36;
+          color: var(--color-dark-green);
 
           font-size: 16px;
 
@@ -483,7 +483,7 @@ export default function CalculatorSection() {
 
           border-radius: 999px;
 
-          background: #0b3b36;
+          background: var(--color-dark-green);
 
           color: #EAE26A;
 

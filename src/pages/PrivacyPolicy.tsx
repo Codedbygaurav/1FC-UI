@@ -214,7 +214,7 @@ export default function PrivacyPolicy() {
         .PVC-hero-title span{
         font-family:"DM Serif Display",serif;
         font-style:italic;
-        color:#0b544b;
+        color:var(--color-dark-green);
         font-weight:400;
         }
 
@@ -479,7 +479,7 @@ export default function PrivacyPolicy() {
 }
  .PVC-questions{
   font-weight:700;
-  color: #0B3B36;
+  color: var(--color-dark-green);
   font-size:15px;
   }
 

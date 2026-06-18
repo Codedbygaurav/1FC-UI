@@ -266,7 +266,7 @@ font-family: "Geist-Bold";
   align-items:center;
   gap:8px;
   text-decoration:none;
-  color:#0B3B36;
+  color:var(--color-dark-green);
   font-size:14px;
   font-weight:600;
   margin-bottom:28px;
@@ -283,7 +283,7 @@ font-family: "Geist-SemiBold";
   padding:8px 14px;
   border-radius:999px;
   background:#F1F3EE;
-  color:#0B3B36;
+  color:var(--color-dark-green);
   font-size:10px;
   font-weight:700;
   letter-spacing:.12em;
@@ -361,7 +361,7 @@ font-family: "Geist-Bold";
   background:
     linear-gradient(
       180deg,
-      #0B3B36,
+      var(--color-dark-green),
       #082D29
     );
 
@@ -421,7 +421,7 @@ font-family: "Geist-Bold";
   width:18px;
   height:18px;
   border-radius:50%;
-  background:#0B3B36;
+  background:var(--color-dark-green);
   cursor:pointer;
 }
 
@@ -441,7 +441,7 @@ font-family: "Geist-Bold";
   font-size:clamp(42px,6vw,68px);
   line-height:.95;
   letter-spacing:-0.05em;
-  color:#0B3B36;
+  color:var(--color-dark-green);
   margin-bottom:24px;
   font-weight:700;
 }

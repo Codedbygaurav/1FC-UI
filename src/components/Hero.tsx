@@ -205,7 +205,7 @@ export default function Hero() {
           padding: 10px 16px;
           border-radius: 999px;
           background: rgba(11,59,54,0.08);
-          color: #0B3B36;
+          color: var(--color-dark-green);
           font-size: 12px;
           font-weight: 650;
           letter-spacing: 0.04em;
@@ -219,13 +219,13 @@ export default function Hero() {
         .hero-italic {
           font-style: italic;
           font-family: 'DM Serif Display', serif;
-          color: #0B3B36;
+          color: var(--color-dark-green);
           font-weight: 400;
         }
 
         .hero-highlight {
           background: rgba(11,59,54,0.075);
-          color: #0B3B36;
+          color: var(--color-dark-green);
           border: 1px solid rgba(11,59,54,0.08);
           padding: 0px 9px 3px;
           border-radius: 10px;
@@ -292,7 +292,7 @@ export default function Hero() {
         .hero-stat-accent {
           width: 100%;
           height: 3px;
-          background: #0B3B36;
+          background: var(--color-dark-green);
           border-radius: 999px;
           margin-bottom: 14px;
         }
@@ -300,7 +300,7 @@ export default function Hero() {
         .hero-stat-number {
           font-size: 27px;
           font-weight: 850;
-          color: #0B3B36;
+          color: var(--color-dark-green);
           line-height: 1;
           margin-bottom: 6px;
         }
@@ -419,7 +419,7 @@ export default function Hero() {
   font-family:"Geist-SemiBold";
   font-size: 12px;
   font-weight: 700;
-  color: #0B3B36;
+  color: var(--color-dark-green);
 }
 
 .orbit-node svg {
@@ -431,7 +431,7 @@ export default function Hero() {
   box-shadow:
     0 10px 24px rgba(0,0,0,.06),
     0 1px 0 rgba(255,255,255,.9);
-    color:#0B3B36;
+    color:var(--color-dark-green);
 }
 
 .node-invest {
@@ -476,7 +476,7 @@ export default function Hero() {
 .system-subtitle {
   font-size: 14px;
   font-weight: 800;
-  color: #0B3B36;
+  color: var(--color-dark-green);
 }
 
         .hero-floating-card {
@@ -577,7 +577,7 @@ export default function Hero() {
         .portfolio-fill {
           height: 100%;
           border-radius: 999px;
-          background: #0B3B36;
+          background: var(--color-dark-green);
         }
 
         .fill-0 { width: 62%; }
@@ -586,7 +586,7 @@ export default function Hero() {
 
         .advisor-pill {
           margin-top: 10px;
-          background: #0B3B36;
+          background: var(--color-dark-green);
           color: #EAE26A;
           height: 40px;
           border-radius: 12px;

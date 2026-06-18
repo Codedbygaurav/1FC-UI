@@ -299,7 +299,7 @@ export default function CalculatorPreviewGrid() {
 
           font-weight: 400;
 
-          color: #0B544B;
+          color: var(--color-dark-green);
         }
 
          
@@ -572,7 +572,7 @@ export default function CalculatorPreviewGrid() {
 
           font-weight: 900;
 
-          color: #0B544B;
+          color: var(--color-dark-green);
 
           margin-bottom: 10px;
         }

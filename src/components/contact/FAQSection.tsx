@@ -127,7 +127,7 @@ export default function FAQSection(){
             "DM Serif Display",
             serif;
           font-weight: 400;
-          color: #0B3B36;
+          color: var(--color-dark-green);
         }
 
         .faqDescFQ{

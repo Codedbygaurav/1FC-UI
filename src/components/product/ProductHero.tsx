@@ -172,7 +172,7 @@ export default function ProductHero() {
 .ph-hero-title span {
   font-family: "DM Serif Display", serif;
   font-style: italic;
-  color: #0b544b;
+  color: var(--color-dark-green);
   font-weight: 400;
 }
 

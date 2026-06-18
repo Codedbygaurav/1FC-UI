@@ -170,12 +170,12 @@ export default function ComingSoonTools() {
 
           margin-bottom: 18px;
 
-          color: #0B544B;
+          color: var(--color-dark-green);
         }
 
         .comingSoonIconCS svg {
-          color: #0B544B;
-          stroke: #0B544B;
+          color: var(--color-dark-green);
+          stroke: var(--color-dark-green);
         }
 
         .comingSoonCardTitleCS {

@@ -301,7 +301,7 @@ export default function CTASection() {
 
           border-radius: 50%;
 
-          background: #0B3B36;
+          background: var(--color-dark-green);
         }
 
         .section-labelCTAHero p {
@@ -341,7 +341,7 @@ export default function CTASection() {
 
           font-weight: 400;
 
-          color: #0B3B36;
+          color: var(--color-dark-green);
         }
 
         .stats-subtext {
@@ -402,7 +402,7 @@ export default function CTASection() {
           line-height: 1;
 
 
-          color: #0B3B36;
+          color: var(--color-dark-green);
 
           margin-bottom: 8px;
         }
@@ -581,7 +581,7 @@ font-size:15px;
 
   background:#EAE26A;
 
-  color:#0B3B36;
+  color:var(--color-dark-green);
 
   display:flex;
   align-items:center;
