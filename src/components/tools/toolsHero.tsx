@@ -225,7 +225,7 @@ export default function ToolsHero() {
 
         .toolsHeroTitleTP span {
           font-family:
-            "DM Serif Display",
+            "Geist-Bold",
             serif;
 
           font-style: italic;

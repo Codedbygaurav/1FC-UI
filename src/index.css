@@ -48,20 +48,16 @@ html {
 }
 
 body {
-  font-family: "AOT Serial Mono";
+  font-family: "Geist-Bold"!important;
   line-height: 1.6;
   font-weight: 600;
-  letter-spacing: -0.4px;
+  letter-spacing: 1px !important;
   background-color: #f4f4ed;
   color: #111111;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Geist-Bold";
+p {
+  font-family: "AOT Serial Mono" !important;
+  letter-spacing: 0.1px !important;
 }
 
 .text-label {
@@ -526,7 +522,7 @@ h6 {
 
 .hero-title span {
   font-style: italic;
-  font-family: "DM Serif Display", serif;
+  font-family: "Geist-Bold", serif;
 
   color: var(--color-dark-green);
   font-weight: 400;

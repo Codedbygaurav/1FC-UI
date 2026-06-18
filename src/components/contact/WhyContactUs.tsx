@@ -131,7 +131,7 @@ export default function WhyContactUs() {
         .whyContactTitleWC span{
           font-style: italic;
           font-family:
-            "DM Serif Display",
+            "Geist-Bold",
             serif;
           font-weight: 400;
           color: var(--color-dark-green);

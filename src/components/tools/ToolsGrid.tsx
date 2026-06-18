@@ -115,7 +115,7 @@ letter-spacing: 1px;
 
         .toolsGridTitleTG span {
           font-family:
-            "DM Serif Display",
+            "Geist-Bold",
             serif;
 
           font-style: italic;

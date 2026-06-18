@@ -296,7 +296,7 @@ export default function FeatureComparisonFB() {
 
         .featureComparisonTitleFB span {
           font-family:
-            "DM Serif Display",
+            "Geist-Bold",
             serif;
 
           font-style: italic;

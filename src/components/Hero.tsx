@@ -218,7 +218,7 @@ export default function Hero() {
 
         .hero-italic {
           font-style: italic;
-          font-family: 'DM Serif Display', serif;
+          font-family: 'Geist-Bold', serif;
           color: var(--color-dark-green);
           font-weight: 400;
         }
@@ -231,7 +231,7 @@ export default function Hero() {
           border-radius: 10px;
           display: inline-block;
           font-style: italic;
-          font-family: 'DM Serif Display', serif;
+          font-family: 'Geist-Bold', serif;
           font-weight: 400;
         }
 

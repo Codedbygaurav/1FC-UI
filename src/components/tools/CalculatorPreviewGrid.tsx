@@ -292,7 +292,7 @@ export default function CalculatorPreviewGrid() {
 
         .calculatorPreviewTitleCP span {
           font-family:
-            "DM Serif Display",
+            "Geist-Bold",
             serif;
 
           font-style: italic;

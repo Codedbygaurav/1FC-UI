@@ -156,7 +156,7 @@ export default function FeaturesInvestmentsSection() {
 
         .featuresInvestTitleFB span {
           font-family:
-            "DM Serif Display",
+            "Geist-Bold",
             serif;
 
           font-style: italic;

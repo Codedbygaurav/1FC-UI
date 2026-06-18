@@ -191,7 +191,7 @@ export default function ReferTermsHero() {
       }
 
       .ReferTermsTitle span{
-        font-family:"DM Serif Display", serif;
+        font-family:"Geist-Bold", serif;
         font-style:italic;
         color:var(--color-dark-green);
         font-weight:400;
