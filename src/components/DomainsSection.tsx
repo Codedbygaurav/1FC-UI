@@ -1497,7 +1497,7 @@ function DomainCardDark({
                 "center",
 
               color:
-                "#EAE26A",
+                "var(--color-accent-lime)",
 
               marginBottom:
                 "16px",
@@ -1638,7 +1638,7 @@ function DomainCardDark({
               
 
               color:
-                "#EAE26A",
+                "var(--color-accent-lime)",
             }}
           >
             {domain.stat.value}

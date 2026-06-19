@@ -163,7 +163,7 @@ export default function FinalCTA() {
   height: 8px;
 
   border-radius: 50%;
-  background: #EAE26A;
+  background: var(--color-accent-lime);
 }
 
 .cta-title {

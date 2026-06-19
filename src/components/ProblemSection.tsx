@@ -268,7 +268,7 @@ export default function ProblemSection() {
           align-items: center;
           justify-content: center;
 
-          color: #EAE26A;
+          color: var(--color-accent-lime);
         }
 
         .featured-badge {
@@ -355,7 +355,7 @@ export default function ProblemSection() {
           font-weight: 900;
 
 
-          color: #EAE26A;
+          color: var(--color-accent-lime);
         }
 
         .featured-text {

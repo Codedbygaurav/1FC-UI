@@ -520,7 +520,7 @@ export default function HowItWorks() {
           border:
             1px solid rgba(220,235,99,0.14);
 
-          color: #EAE26A;
+          color: var(--color-accent-lime);
 
           margin-bottom: 18px;
         }

@@ -233,7 +233,7 @@ const [selectedProduct, setSelectedProduct] =
 
 .contactFormTitleCF span{
   font-style:italic;
-  font-family:"Geist-Bold",serif;
+  font-family:"Geist-Bold";
   font-weight:400;
   color:var(--color-dark-green);
 }

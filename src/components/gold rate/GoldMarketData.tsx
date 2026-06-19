@@ -88,7 +88,7 @@ export default function GoldMarketData() {
                   800,25
                   "
                   fill="none"
-                  stroke="#EAE26A"
+                  stroke="var(--color-accent-lime)"
                   strokeWidth="5"
                   strokeLinecap="round"
                 />

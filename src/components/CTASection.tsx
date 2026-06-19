@@ -495,11 +495,11 @@ export default function CTASection() {
   width:7px;
   height:7px;
   border-radius:50%;
-  background:#EAE26A;
+  background:var(--color-accent-lime);
 }
 
 .cta-pill p{
-  color:#EAE26A;
+  color:var(--color-accent-lime);
   font-size:10px;
   font-weight:700;
   letter-spacing:.08em;
@@ -558,7 +558,7 @@ border-radius:16px;
 }
 
 .cta-points svg{
-  color:#EAE26A;
+  color:var(--color-accent-lime);
   flex-shrink:0;
 }
 
@@ -579,7 +579,7 @@ font-size:15px;
 
   border-radius:22px;
 
-  background:#EAE26A;
+  background:var(--color-accent-lime);
 
   color:var(--color-dark-green);
 
@@ -669,7 +669,7 @@ font-family:"Geist-Bold";
 
   border:1px solid rgba(234,226,106,.1);
 
-  color:#EAE26A;
+  color:var(--color-accent-lime);
 
   font-size:8px;
   font-weight:700;
@@ -683,7 +683,7 @@ font-family:"Geist-Bold";
 
   font-weight:900;
 
-  color:#EAE26A;
+  color:var(--color-accent-lime);
 
   letter-spacing:-1px;
 }
@@ -727,7 +727,7 @@ font-family:"Geist-Bold";
 
   background:rgba(220,235,99,.1);
 
-  color:#EAE26A;
+  color:var(--color-accent-lime);
 
   font-weight:700;
 }

@@ -170,7 +170,7 @@ export default function ProductHero() {
 }
 
 .ph-hero-title span {
-  font-family: "Geist-Bold", serif;
+  font-family: "Geist-Bold";
   font-style: italic;
   color: var(--color-dark-green);
   font-weight: 400;
@@ -273,7 +273,7 @@ export default function ProductHero() {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #EAE26A;
+  background: var(--color-accent-lime);
 }
   .ph-live-pill p{
         font-size:11px;
@@ -282,13 +282,13 @@ export default function ProductHero() {
 .ph-dashboard-value {
   font-size: clamp(34px, 4vw, 48px);
   font-weight: 900;
-  color: #EAE26A;
+  color: var(--color-accent-lime);
   margin-bottom: 14px;
 }
 
 .ph-dashboard-bar {
   height: 6px;
-  background: #EAE26A;
+  background: var(--color-accent-lime);
   border-radius: 999px;
   margin-bottom: 18px;
 }

@@ -375,7 +375,7 @@ font-family: "Geist-Bold";
   font-weight:700;
   letter-spacing:.12em;
   text-transform:uppercase;
-  color:#EAE26A;
+  color:var(--color-accent-lime);
   margin-bottom:10px;
 }
 

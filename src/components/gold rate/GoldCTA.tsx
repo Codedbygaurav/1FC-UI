@@ -115,7 +115,7 @@ export default function GoldCTA() {
         font-size:11px;
         font-weight:800;
 
-        letter-spacing:.14em;
+        letter-spacing:1px;
 
         text-transform:uppercase;
 
@@ -128,7 +128,7 @@ export default function GoldCTA() {
 
         line-height:.95;
 
-        letter-spacing:-.05em;
+        letter-spacing:1px;
 
         margin:0 0 18px;
       }

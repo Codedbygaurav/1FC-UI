@@ -296,8 +296,7 @@ export default function FeatureComparisonFB() {
 
         .featureComparisonTitleFB span {
           font-family:
-            "Geist-Bold",
-            serif;
+            "Geist-Bold";
 
           font-style: italic;
 
@@ -510,7 +509,7 @@ export default function FeatureComparisonFB() {
         }
 
         .goodValueFB {
-          color: #EAE26A;
+          color: var(--color-accent-lime);
 
           font-weight: 700;
         }

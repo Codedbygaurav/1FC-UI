@@ -337,7 +337,7 @@ letter-spacing:-1px;
           background:
             rgba(234,226,106,0.14);
 
-          color: #EAE26A;
+          color: var(--color-accent-lime);
 
           font-size: 10px;
 
@@ -370,7 +370,7 @@ letter-spacing:-1px;
         }
 
         .featuresPlatformCardIconFB {
-          color: #EAE26A;
+          color: var(--color-accent-lime);
           margin-bottom: 10px;
         }
 
@@ -422,7 +422,7 @@ letter-spacing:-1px;
         }
 
         .featuresPlatformInsightFB svg {
-          color: #EAE26A;
+          color: var(--color-accent-lime);
           flex-shrink: 0;
         }
 

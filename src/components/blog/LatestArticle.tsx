@@ -516,7 +516,7 @@ width:88px;
 
   border-radius:24px;
 
-  background:var(--color-accent-lime);
+  background:rgba(4, 51, 53,0.3);
   
   color: var(--color-dark-green)
 }

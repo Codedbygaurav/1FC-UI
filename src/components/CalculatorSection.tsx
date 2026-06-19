@@ -485,7 +485,7 @@ export default function CalculatorSection() {
 
           background: var(--color-dark-green);
 
-          color: #EAE26A;
+          color: var(--color-accent-lime);
 
           font-size: 9px;
 

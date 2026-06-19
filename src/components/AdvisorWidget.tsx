@@ -169,7 +169,7 @@ export default function AdvisorWidget() {
 
           border-radius: 50%;
 
-          background: #EAE26A;
+          background: var(--color-accent-lime);
 
           border:
             2px solid var(--color-dark-green);
@@ -240,7 +240,7 @@ export default function AdvisorWidget() {
 
           background: transparent;
 
-          color: #EAE26A;
+          color: var(--color-accent-lime);
 
           font-size: 12px;
 

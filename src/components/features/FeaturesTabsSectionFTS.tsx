@@ -415,7 +415,7 @@ export default function FeaturesTabsFTS() {
 }
 
 .featuresTabsHeadingFTS span {
-  font-family: "Geist-Bold", serif;
+  font-family: "Geist-Bold";
 
   font-style: italic;
 

@@ -156,8 +156,7 @@ export default function FeaturesInvestmentsSection() {
 
         .featuresInvestTitleFB span {
           font-family:
-            "Geist-Bold",
-            serif;
+            "Geist-Bold";
 
           font-style: italic;
           font-weight: 400;
@@ -221,7 +220,7 @@ export default function FeaturesInvestmentsSection() {
           background:
             rgba(234,226,106,0.14);
 
-          color: #EAE26A;
+          color: var(--color-accent-lime);
 
           font-size: 13px;
           font-weight: 700;

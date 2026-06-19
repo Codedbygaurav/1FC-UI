@@ -338,7 +338,7 @@ export default function FeaturesIntelligenceSectionFIS() {
           background:
             rgba(234,226,106,0.16);
 
-          color: #EAE26A;
+          color: var(--color-accent-lime);
 
           padding: 12px 16px;
 
@@ -417,7 +417,7 @@ export default function FeaturesIntelligenceSectionFIS() {
           background:
             rgba(234,226,106,0.14);
 
-          color: #EAE26A;
+          color: var(--color-accent-lime);
 
           display: flex;
           align-items: center;
@@ -474,7 +474,7 @@ export default function FeaturesIntelligenceSectionFIS() {
         }
 
         .featuresIntelStatCardFIS svg {
-          color: #EAE26A;
+          color: var(--color-accent-lime);
           margin-bottom: 8px;
         }
 

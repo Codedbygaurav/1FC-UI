@@ -270,7 +270,7 @@ font-family: "Geist-SemiBold";
   font-weight:700;
   letter-spacing:.12em;
   text-transform:uppercase;
-  color:#EAE26A;
+  color:var(--color-accent-lime);
 }
 
 .previewBadge{

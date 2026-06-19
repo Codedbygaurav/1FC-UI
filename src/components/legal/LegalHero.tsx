@@ -144,7 +144,7 @@ export default function LegalHero() {
       .LiveTag{
       font-family:"Geist-SemiBold";
       letter-spacing:1px;
-        background:#EAE26A;
+        background:var(--color-accent-lime);
         color:var(--color-dark-green);
         font-size:11px;
         font-weight:700;
@@ -181,7 +181,7 @@ export default function LegalHero() {
         display:block;
         width:100%;
         height:100%;
-        background:#EAE26A;
+        background:var(--color-accent-lime);
       }
 
       .StatsGrid{

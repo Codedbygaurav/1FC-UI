@@ -238,8 +238,7 @@ export default function FeaturesHero() {
 
         .featuresHeroTitleFB span {
           font-family:
-            "Geist-Bold",
-            serif;
+            "Geist-Bold";
 
           font-style: italic;
           font-weight: 400;

@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: "Geist-Bold";
-  src: url("/fonts/Geist-ExtraBold.ttf") format("truetype");
+  src: url("/fonts/Geist-Bold.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 :root {
   --color-dark-green: #043335;
   --color-secondary-green: #043335;
-  --color-accent-lime: #eae26a;
+  --color-accent-lime: #EAE26A;
   --color-bg-ivory: #f4f4ed;
   --color-soft-neutral: #f5f6f2;
   --color-text-primary: #111111;
@@ -428,7 +428,7 @@ p {
 }
 
 .text-lime {
-  color: #eae26a;
+  color: var(--color-accent-lime);
 }
 
 .section-ivory {
@@ -530,7 +530,7 @@ p {
 
 .hero-title span {
   font-style: italic;
-  font-family: "Geist-Bold", serif;
+  font-family: "Geist-Bold";
 
   color: var(--color-dark-green);
   font-weight: 400;
@@ -740,7 +740,7 @@ p {
 .FormulaCard span {
   font-family: "Geist-SemiBold";
   display: block;
-  color: #eae26a;
+  color: var(--color-accent-lime);
   font-size: 11px;
   margin-bottom: 10px;
 }
@@ -859,7 +859,7 @@ p {
 
   background: rgba(234,226,106 0.15);
 
-  color: #eae26a;
+  color: var(--color-accent-lime);
 
   font-size: 11px;
   font-weight: 700;

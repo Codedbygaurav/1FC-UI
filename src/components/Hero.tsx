@@ -218,7 +218,7 @@ export default function Hero() {
 
         .hero-italic {
           font-style: italic;
-          font-family: 'Geist-Bold', serif;
+          font-family: 'Geist-Bold';
           color: var(--color-dark-green);
           font-weight: 400;
         }
@@ -231,7 +231,7 @@ export default function Hero() {
           border-radius: 10px;
           display: inline-block;
           font-style: italic;
-          font-family: 'Geist-Bold', serif;
+          font-family: 'Geist-Bold';
           font-weight: 400;
         }
 
@@ -323,7 +323,7 @@ export default function Hero() {
           width: 4px;
           height: 4px;
           border-radius: 50%;
-          background: #EAE26A;
+          background: var(--color-accent-lime);
         }
 
         .hero-visual {
@@ -587,7 +587,7 @@ export default function Hero() {
         .advisor-pill {
           margin-top: 10px;
           background: var(--color-dark-green);
-          color: #EAE26A;
+          color: var(--color-accent-lime);
           height: 40px;
           border-radius: 12px;
           display: flex;

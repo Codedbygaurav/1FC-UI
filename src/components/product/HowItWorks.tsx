@@ -142,8 +142,7 @@ export default function HowItWorks() {
         .how-title span {
           font-style: italic;
           font-family:
-            "Geist-Bold",
-            serif;
+            "Geist-Bold";
           font-weight: 400;
           color: var(--color-dark-green);
         }
@@ -235,7 +234,7 @@ export default function HowItWorks() {
         .featured .how-icon {
           background:
             rgba(220,235,99,0.12);
-          color: #EAE26A;
+          color: var(--color-accent-lime);
         }
 
         .how-number {

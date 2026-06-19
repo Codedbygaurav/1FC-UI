@@ -124,8 +124,7 @@ export default function FAQSection(){
         .faqTitleFQ span{
           font-style: italic;
           font-family:
-            "Geist-Bold",
-            serif;
+            "Geist-Bold";
           font-weight: 400;
           color: var(--color-dark-green);
         }
