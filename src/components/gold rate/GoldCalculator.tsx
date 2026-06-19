@@ -280,7 +280,7 @@ export default function GoldCalculator() {
         border-radius:18px;
 
         background:
-        rgba(220,235,99,.15);
+        rgba(234,226,106,.15);
 
         color:
         var(--color-accent-lime);
@@ -314,7 +314,7 @@ export default function GoldCalculator() {
         color:
         var(--color-accent-lime);
 
-        letter-spacing:-.04em;
+        letter-spacing:1px;
       }
 
       .ResultCard p{

@@ -283,10 +283,10 @@ export default function PricingSection() {
                       gap: "8px",
 
                       background:
-                        "rgba(220,235,99,0.1)",
+                        "rgba(234,226,106,0.1)",
 
                       border:
-                        "1px solid rgba(220,235,99,0.18)",
+                        "1px solid rgba(234,226,106,0.18)",
 
                       borderRadius:
                         "999px",
@@ -366,7 +366,7 @@ export default function PricingSection() {
                       style={{
                         fontSize:
                           "60px",
-                          letterSpacing:"-6px",
+                          letterSpacing:"1px",
 
                         fontWeight:
                           "900",
@@ -518,8 +518,10 @@ export default function PricingSection() {
                     </svg>
                   </a>
 
-                  <p
+                  <div
                     style={{
+                      fontFamily:"Geist-Regular",
+                      
                       fontSize:
                         "12px",
 
@@ -528,6 +530,7 @@ export default function PricingSection() {
 
                       textAlign:
                         "center",
+                        
 
                       marginTop:
                         "14px",
@@ -538,7 +541,7 @@ export default function PricingSection() {
                   >
                     30-day free trial ·
                     Cancel anytime
-                  </p>
+                  </div>
                 </div>
               </div>
 
@@ -601,7 +604,7 @@ export default function PricingSection() {
                             height: "18px",
 
                             background:
-                              "rgba(220,235,99,0.12)",
+                              "rgba(234,226,106,0.12)",
 
                             borderRadius:
                               "50%",
@@ -681,8 +684,9 @@ export default function PricingSection() {
             maxWidth: "620px",
           }}
         >
-          <p
+          <span
             style={{
+              fontFamily:"Geist-Regular",
               fontSize: "13px",
 
               color: "#5E5E5E",
@@ -698,13 +702,14 @@ export default function PricingSection() {
             <strong
               style={{
                 color: "var(--color-dark-green)",
+                
               }}
             >
               #FCode gives you an
               entire financial
               ecosystem for ₹365.
             </strong>
-          </p>
+          </span>
         </div>
       </div>
 

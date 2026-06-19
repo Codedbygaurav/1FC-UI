@@ -717,7 +717,7 @@ useEffect(() => {
     var(--color-accent-lime);
 
   box-shadow:
-    0 0 0 4px rgba(220,235,99,.18);
+    0 0 0 4px rgba(234,226,106,.18);
 }
 
 .dropdown-footer{
@@ -750,7 +750,7 @@ useEffect(() => {
     var(--color-accent-lime);
 
   box-shadow:
-    0 0 0 4px rgba(220,235,99,.18);
+    0 0 0 4px rgba(234,226,106,.18);
 }
 
       .navbar-wrap {
@@ -825,11 +825,8 @@ useEffect(() => {
   height: 58px;
   border-radius: 18px;
   overflow: hidden;
-  background: linear-gradient(
-    135deg,
-    #08342f,
-    var(--color-dark-green)
-  );
+  background: 
+    var(--color-dark-green);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1147,11 +1144,7 @@ font-family:"Geist-Bold";
   padding: 0 18px;
   border: none;
   border-radius: 14px;
-  background: linear-gradient(
-    135deg,
-    #08342f,
-    var(--color-dark-green)
-  );
+  background:var(--color-dark-green);
   color: white;
   display: flex;
   align-items: center;
@@ -1349,7 +1342,7 @@ font-family:"Geist-SemiBold";
   border-radius:999px;
 
   background:
-    rgba(220,235,99,.18);
+    rgba(234,226,106,.18);
 
   color:var(--color-dark-green);
 
@@ -1550,11 +1543,9 @@ font-family:"Geist-SemiBold";
     height: 52px;
     border: none;
     border-radius: 16px;
-    background: linear-gradient(
-      135deg,
-      #08342f,
+    background:
       var(--color-dark-green)
-    );
+    ;
     color: white;
     font-weight: 700;
     display: flex;

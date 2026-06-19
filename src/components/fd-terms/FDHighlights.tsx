@@ -140,9 +140,7 @@ export default function FDHighlights() {
       }
 
       .FDHighlightCard h3{
-      font-family:"Geist-Bold";
-      letter-spacing:1px;
-      color:var(--color-dark-green);
+      
         margin:0 0 12px;
         font-size:24px;
         line-height:1.15;

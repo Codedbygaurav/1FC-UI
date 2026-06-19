@@ -241,7 +241,7 @@ export default function FeatureComparisonFB() {
           background:
             radial-gradient(
               circle,
-              rgba(220,235,99,0.16),
+              rgba(234,226,106,0.16),
               transparent 72%
             );
 
@@ -378,7 +378,7 @@ export default function FeatureComparisonFB() {
           background:
             radial-gradient(
               circle,
-              rgba(220,235,99,0.18),
+              rgba(234,226,106,0.18),
               transparent 70%
             );
 
@@ -410,7 +410,7 @@ export default function FeatureComparisonFB() {
 
         .featureComparisonSideLabelFB.greenFB {
           color:
-            rgba(220,235,99,0.84);
+            rgba(234,226,106,0.84);
         }
 
         .featureComparisonSideTitleFB {

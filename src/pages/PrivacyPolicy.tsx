@@ -195,7 +195,7 @@ export default function PrivacyPolicy() {
           gap: 8px;
           padding: 7px 12px;
           border-radius: 999px;
-          background: rgba(220, 235, 99, 0.35);
+          background: rgba(234,226,106, 0.35);
           color: var(--color-dark-green);
           font-size: 11px;
           font-weight: 800;
@@ -260,7 +260,7 @@ export default function PrivacyPolicy() {
           height: 220px;
           right: -70px;
           top: -70px;
-          background: rgba(220, 235, 99, 0.18);
+          background: rgba(234,226,106, 0.18);
           border-radius: 999px;
           filter: blur(4px);
         }
@@ -345,7 +345,7 @@ export default function PrivacyPolicy() {
           width: 32px;
           height: 32px;
           border-radius: 10px;
-          background: rgba(220, 235, 99, 0.55);
+          background: rgba(234,226,106, 0.55);
           color: var(--color-dark-green);
           display: flex;
           align-items: center;

@@ -245,7 +245,7 @@ export default function ToolsCTA() {
 
           background: var(--color-accent-lime);
 
-          color: #052F2B;
+          color: var(--color-dark-green);
         }
 
         .toolsCTASecondaryTC {

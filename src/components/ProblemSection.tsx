@@ -214,12 +214,7 @@ export default function ProblemSection() {
           border-radius: 34px;
 
           background:
-            linear-gradient(
-              145deg,
-              var(--color-dark-green) 0%,
-              #062f2b 58%,
-              #031f1d 100%
-            );
+            var(--color-dark-green);
 
           box-shadow:
             0 30px 70px

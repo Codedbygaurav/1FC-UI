@@ -52,7 +52,7 @@ export default function GroupStructure() {
                   1FC Group
                 </h3>
 
-                <p className="text-label">
+                <p className="tag-text-label">
                   PARENT COMPANY
                 </p>
               </div>
@@ -80,7 +80,7 @@ export default function GroupStructure() {
                       {company.title}
                     </h4>
 
-                    <p className="text-label">
+                    <p className="tag-text-label">
                       {company.tag}
                     </p>
                   </div>
@@ -124,6 +124,7 @@ export default function GroupStructure() {
         }
 
         .groupStructureBadgeGS {
+        
           color: var(--color-accent-lime);
           margin-bottom: 16px;
           text-align:center;
@@ -175,7 +176,7 @@ export default function GroupStructure() {
           width: 60px;
           height: 60px;
           border-radius: 18px;
-          background: #043a35;
+          background: var(--color-dark-green);
           border: 1px solid rgba(216,243,93,0.18);
           display: flex;
           align-items: center;
@@ -202,11 +203,15 @@ export default function GroupStructure() {
 
         .parentCardGS p,
         .childCardGS p {
+
+        font-family:"Geist-SemiBold";
+        letter-spacing:1px;
         
           display: inline-flex;
+          font-size:12px;
           padding: 7px 11px;
           border-radius: 999px;
-          background: rgba(216,243,93,0.13);
+          background: rgba(234,226,106,0.13);
           color: var(--color-accent-lime);
           margin: 0;
           white-space: nowrap;
@@ -214,8 +219,8 @@ export default function GroupStructure() {
 
         .treeLineVerticalGS {
           width: 1px;
-          height: 42px;
-          background: rgba(216,243,93,0.28);
+          height: 48px;
+          background: rgba(234,226,106,0.28);
           margin: 0 auto;
         }
 
@@ -225,7 +230,7 @@ export default function GroupStructure() {
           right: 12%;
           top: 158px;
           height: 1px;
-          background: rgba(216,243,93,0.24);
+          background: rgba(234,226,106,0.24);
         }
 
         .childrenGridGS {
@@ -268,6 +273,7 @@ export default function GroupStructure() {
           margin: 0 0 10px;
         }
 
+
   @media (max-width: 1024px) {
 
   .groupStructureSectionGS {
@@ -280,8 +286,13 @@ export default function GroupStructure() {
     text-align: center;
   }
 
+  .parentCardGS p,
+        .childCardGS p{
+        font-size:10px;
+        }
+
   .groupStructureTitleGS {
-    font-size: clamp(52px, 6vw, 62px);
+    font-size: 45px;
     
     line-height: 0.98;
     text-align:center;
@@ -392,7 +403,8 @@ export default function GroupStructure() {
   }
 
   .groupStructureTitleGS {
-    font-size: 36px;
+    font-size: 28px;
+    line-height:1.2;
   }
 
   .groupStructureTitleGS span {

@@ -116,6 +116,7 @@ export default function AboutPage() {
         
 
         .heroVisualAP {
+        text-align:center;
         font-family:"Geist-SemiBold";
           letter-spacing: 1px;
           display: grid;

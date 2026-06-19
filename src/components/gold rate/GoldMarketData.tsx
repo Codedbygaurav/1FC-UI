@@ -216,7 +216,7 @@ export default function GoldMarketData() {
         gap:8px;
 
         background:
-        rgba(220,235,99,.12);
+        rgba(234,226,106,.12);
 
         color:
         var(--color-accent-lime);
@@ -257,6 +257,7 @@ export default function GoldMarketData() {
       }
 
       .GoldMetricCard{
+      text-align:center;
         background:#fff;
         border:1px solid #ECEFF3;
         border-radius:24px;
@@ -278,9 +279,9 @@ export default function GoldMarketData() {
       .GoldMetricCard p{
         margin:0;
         color:#667085;
-
         display:flex;
         align-items:center;
+        justify-content:center;
         gap:6px;
       }
 

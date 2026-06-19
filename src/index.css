@@ -21,6 +21,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Geist-Regular";
+  src: url("/fonts/Geist-Regular.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --color-dark-green: #043335;
@@ -140,7 +147,8 @@ p {
 }
 
 .text-serif-accent {
-  font-family: var(--font-serif);
+  font-family: "Geist-Bold";
+  letter-spacing: 1px;
   font-style: italic;
   font-weight: 400;
 }
@@ -818,7 +826,7 @@ p {
 
   border-radius: 50%;
 
-  background: rgba(220, 235, 99, 0.08);
+  background: rgba(234,226,106 0.08);
 }
 
 .vaultTop {
@@ -834,7 +842,7 @@ p {
   color: var(--color-accent-lime);
   border-radius: 12px;
 
-  background: rgba(220, 235, 99, 0.12);
+  background: rgba(234,226,106 0.12);
 
   display: flex;
   align-items: center;
@@ -849,7 +857,7 @@ p {
 
   border-radius: 999px;
 
-  background: rgba(220, 235, 99, 0.15);
+  background: rgba(234,226,106 0.15);
 
   color: #eae26a;
 

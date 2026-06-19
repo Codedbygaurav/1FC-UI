@@ -235,14 +235,14 @@ letter-spacing: 1px;
 font-family:"Geist-Bold";
 letter-spacing: 1px;
 
-  background: #EAE26A;
-  color: #06211e;
+  background: var(--color-accent-lime);
+  color: var(--color-dark-green);
 }
 
 .cta-secondary {
 font-family:"Geist-Bold";
 letter-spacing: 1px;
-  background: rgba(255,255,255,0.06);
+  background: rgba(234,226,106,0.06);
   border: 1px solid rgba(255,255,255,0.08);
   color: white;
 }
@@ -258,12 +258,12 @@ letter-spacing: 1px;
   display: flex;
   align-items: center;
   gap: 8px;
-color: #EAE26A;
+color: var(--color-bg-ivory);
   padding: 10px 14px;
 
   border-radius: 999px;
 
-  background: rgba(255,255,255,0.05);
+  background: rgba(234,226,106,0.05);
   border: 1px solid rgba(255,255,255,0.06);
 }
   .trust-item svg {
@@ -274,7 +274,7 @@ color: #EAE26A;
 .trust-item span {
   font-size: 11px;
   font-weight: 600;
-  color: rgba(255,255,255,0.85);
+  color: var(--color-bg-ivory);
 }
 
 .cta-right {

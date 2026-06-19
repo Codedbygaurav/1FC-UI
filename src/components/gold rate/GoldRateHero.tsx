@@ -203,7 +203,7 @@ export default function GoldRatesHero() {
       }
 
       .GoldLivePill{
-        background:rgba(220,235,99,.15);
+        background:rgba(234,226,106,.15);
         color:var(--color-accent-lime);
         padding:6px 10px;
         border-radius:999px;

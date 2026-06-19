@@ -247,7 +247,7 @@ export default function FeaturesIntelligenceSectionFIS() {
           align-items: center;
           justify-content: center;
 
-          color: #0B5A4F;
+          color: var(--color-dark-green);
 
           flex-shrink: 0;
         }
@@ -275,12 +275,7 @@ export default function FeaturesIntelligenceSectionFIS() {
           overflow: hidden;
 
           background:
-            linear-gradient(
-              135deg,
-              #012C28 0%,
-              #014238 50%,
-              #0B5A4F 100%
-            );
+            var(--color-dark-green);
 
           border-radius: 28px;
 
@@ -309,7 +304,7 @@ export default function FeaturesIntelligenceSectionFIS() {
           background:
             radial-gradient(
               circle,
-              rgba(220,235,99,0.12),
+              rgba(234,226,106,0.12),
               transparent 70%
             );
         }
@@ -341,7 +336,7 @@ export default function FeaturesIntelligenceSectionFIS() {
           gap: 6px;
 
           background:
-            rgba(220,235,99,0.16);
+            rgba(234,226,106,0.16);
 
           color: #EAE26A;
 
@@ -420,7 +415,7 @@ export default function FeaturesIntelligenceSectionFIS() {
           border-radius: 10px;
 
           background:
-            rgba(220,235,99,0.14);
+            rgba(234,226,106,0.14);
 
           color: #EAE26A;
 

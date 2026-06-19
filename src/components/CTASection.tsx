@@ -378,7 +378,7 @@ export default function CTASection() {
           border-radius: 16px;
 
           padding: 18px;
-
+          text-align:center;
           transition:
             transform 0.25s ease,
             box-shadow 0.25s ease;
@@ -484,9 +484,9 @@ export default function CTASection() {
 
   border-radius:999px;
 
-  background:rgba(220,235,99,.08);
+  background:rgba(234,226,106,.08);
 
-  border:1px solid rgba(220,235,99,.12);
+  border:1px solid rgba(234,226,106,.12);
 
   margin-bottom:28px;
 }
@@ -665,9 +665,9 @@ font-family:"Geist-Bold";
 
   border-radius:999px;
 
-  background:rgba(220,235,99,.08);
+  background: var(color--accent-lime);
 
-  border:1px solid rgba(220,235,99,.1);
+  border:1px solid rgba(234,226,106,.1);
 
   color:#EAE26A;
 

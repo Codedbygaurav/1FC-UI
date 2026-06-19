@@ -88,7 +88,7 @@ export default function GoldCTA() {
         border-radius:50%;
 
         background:
-        rgba(220,235,99,.08);
+        rgba(234,226,106,.08);
       }
 
       .GoldCTAContent::after{
@@ -105,7 +105,7 @@ export default function GoldCTA() {
         border-radius:50%;
 
         background:
-        rgba(220,235,99,.05);
+        rgba(234,226,106,.05);
       }
 
       .GoldCTALabel{

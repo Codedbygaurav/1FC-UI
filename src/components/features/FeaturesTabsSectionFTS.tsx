@@ -513,7 +513,7 @@ export default function FeaturesTabsFTS() {
           font-size: 11px;
           font-weight: 800;
           letter-spacing: 1px;
-          color: #0b6b5c;
+          color: var(--color-dark-green);
         }
 
         .featuresTabLiveDotFTS {

@@ -205,7 +205,7 @@ export default function FeaturesPlatformSection() {
 
           font-weight: 400;
 
-          color: #0B5A4F;
+          color: var(--color-dark-green);
         }
 
         .featuresPlatformDescFB {
@@ -288,7 +288,7 @@ letter-spacing:-1px;
           background:
             radial-gradient(
               circle at top right,
-              rgba(220,235,99,0.12),
+              rgba(234,226,106,0.12),
               transparent 32%
             );
 
@@ -335,7 +335,7 @@ letter-spacing:-1px;
           border-radius: 999px;
 
           background:
-            rgba(220,235,99,0.14);
+            rgba(234,226,106,0.14);
 
           color: #EAE26A;
 

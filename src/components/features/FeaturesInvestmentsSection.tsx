@@ -161,7 +161,7 @@ export default function FeaturesInvestmentsSection() {
 
           font-style: italic;
           font-weight: 400;
-          color: #0B5A4F;
+          color: var(--color-dark-green);
         }
 
         .featuresInvestGridFB {
@@ -219,7 +219,7 @@ export default function FeaturesInvestmentsSection() {
           border-radius: 999px;
 
           background:
-            rgba(220,235,99,0.14);
+            rgba(234,226,106,0.14);
 
           color: #EAE26A;
 
@@ -251,7 +251,7 @@ export default function FeaturesInvestmentsSection() {
           background:
             linear-gradient(
               180deg,
-              rgba(220,235,99,0.4),
+              rgba(234,226,106,0.4),
               transparent
             );
 

@@ -109,11 +109,7 @@ export default function ReferCTA() {
   margin:48px auto;
 
   background:
-    linear-gradient(
-      135deg,
-      var(--color-dark-green),
-      #0D4B43
-    );
+    var(--color-dark-green);
 
   border-radius:36px;
 
@@ -150,7 +146,7 @@ font-family:"Geist-SemiBold";
 .referTitle{
 font-family:"Geist-SemiBold";
       letter-spacing:1px;
-  color:white;
+  color:var(--color-bg-ivory);
 
   font-size:clamp(54px,6vw,82px);
 
@@ -221,7 +217,7 @@ font-family:"Geist-Bold";
   border:
     1px solid rgba(255,255,255,.12);
 
-  color:white;
+  color:var(--color-bg-ivory);
 
   font-weight:700;
 
@@ -252,8 +248,7 @@ font-family:"Geist-SemiBold";
   border:
     1px solid rgba(255,255,255,.08);
 
-  color:
-    rgba(255,255,255,.9);
+  color: var(--color-bg-ivory);
 
   font-size:13px;
   font-weight:700;
@@ -302,7 +297,7 @@ font-family:"Geist-SemiBold";
 }
 
 .floatingCard strong{
-  color:#111;
+  color:var(--color-dark-green);
 
   font-size:15px;
 }

@@ -116,18 +116,7 @@ export default function Footer() {
           position: absolute;
           inset: 0;
 
-          background-image:
-            linear-gradient(
-              rgba(255, 255, 255, 0.015)
-                1px,
-              transparent 1px
-            ),
-            linear-gradient(
-              90deg,
-              rgba(255, 255, 255, 0.015)
-                1px,
-              transparent 1px
-            );
+          
 
           background-size: 42px 42px;
 
@@ -147,7 +136,7 @@ export default function Footer() {
           margin: 0 auto;
 
           padding:
-            clamp(70px, 8vw, 110px)
+            50px
             0
             24px;
         }
@@ -163,7 +152,7 @@ export default function Footer() {
           grid-template-columns:
             repeat(4, 1fr);
 
-          gap: 42px;
+          gap: 60px;
 
 
          
@@ -184,6 +173,7 @@ export default function Footer() {
         }
 
         .footer-column nav {
+        font-family:"Geist-Regular";
           display: flex;
 
           flex-direction: column;

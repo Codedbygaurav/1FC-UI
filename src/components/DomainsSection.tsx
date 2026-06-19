@@ -1429,7 +1429,7 @@ function DomainCardDark({
     <div
       style={{
         background:
-          "linear-gradient(135deg,#041B18 0%,var(--color-dark-green) 100%)",
+          "var(--color-dark-green)",
 
         padding: mobile
           ? "24px"
@@ -1453,7 +1453,7 @@ function DomainCardDark({
           borderRadius: "50%",
 
           background:
-            "radial-gradient(circle, rgba(220,235,99,0.14), transparent 70%)",
+            "radial-gradient(circle, rgba(234,226,106,0.14), transparent 70%)",
         }}
       />
 
