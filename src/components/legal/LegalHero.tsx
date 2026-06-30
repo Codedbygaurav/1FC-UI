@@ -209,26 +209,40 @@ export default function LegalHero() {
 
       
 
-      @media(max-width:991px){
+      @media (max-width:1024px){
 
-        .LegalHero{
-          grid-template-columns:1fr;
-          gap:50px;
-          padding:140px 20px 90px;
-        }
+  .LegalHero{
+    grid-template-columns:1fr;
+    gap:50px;
+    padding:150px 20px 90px;
+    text-align:center;
+  }
 
-        .HeroContent h1{
-          font-size:56px;
-          letter-spacing:-2px;
-        }
+  
 
-        .HeroCardWrap{
-          max-width:520px;
-          margin:auto;
-          width:100%;
-        }
 
-      }
+
+  .ph-hero-pills{
+    justify-content:center;
+    width:auto;
+    gap:8px;
+  }
+
+  .HeroCardWrap{
+    max-width:520px;
+    width:100%;
+    margin:auto;
+  }
+
+  .HeroCard{
+    padding:24px;
+  }
+
+  .BigStat{
+    font-size:64px;
+  }
+
+}
 
       @media(max-width:768px){
 

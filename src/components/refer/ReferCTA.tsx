@@ -320,21 +320,48 @@ font-family:"Geist-SemiBold";
   z-index:999;
 }
 
-@media(max-width:1100px){
+@media (max-width:1024px){
 
   .referCta{
-    grid-template-columns:1fr;
-    padding:48px 30px 0;
+    grid-template-columns:1fr 1fr;
+    border-radius:24px;
+    padding:48px 24px 0;
+    width:95%;
+    text-align:center;
+  }
+
+  .referTitle{
+    font-size:40px;
+  }
+
+  .referDescription{
+    font-size:15px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .referButtons{
+    justify-content:center;
+  }
+
+  
+
+  .referPills{
+    justify-content:center;
   }
 
   .referVisual{
-    min-height:420px;
+    min-height:220px;
   }
 
   .referMascot{
-    height:420px;
+    height:450px;
     right:50%;
     transform:translateX(50%);
+  }
+
+  .floatingCard{
+    display:none;
   }
 
 }

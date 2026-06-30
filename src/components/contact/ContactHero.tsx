@@ -285,7 +285,7 @@ export default function ContactHero() {
 
      /* ---------- Tablet ---------- */
 
-@media(max-width:992px){
+@media(max-width:1024px){
 
   .contactContainerCH{
     grid-template-columns:1fr;
@@ -305,10 +305,12 @@ export default function ContactHero() {
   }
 
   .contactFeaturesCH{
+ 
     justify-content:center;
   }
 
   .contactCardCH{
+  
     padding:26px;
   }
 

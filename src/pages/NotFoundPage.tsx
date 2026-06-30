@@ -182,7 +182,11 @@ letter-spacing:1px;
   background:rgba(255,255,255,.08);
 }
 
-@media(max-width:992px){
+@media (max-width:1024px){
+
+  .NotFound{
+    padding:10px 20px 0;
+  }
 
   .NotFoundContainer{
     grid-template-columns:1fr;
@@ -193,12 +197,20 @@ letter-spacing:1px;
     text-align:center;
   }
 
-  .NotFoundContent p{
+  .hero-subtext{
     margin-inline:auto;
   }
 
-  .NotFoundActions{
-    justify-content:center;
+  .hero-title{
+    font-size:48px;
+  }
+
+
+
+  
+
+  .error-code{
+    font-size:70px;
   }
 
 }
@@ -220,6 +232,8 @@ letter-spacing:1px;
   .NotFoundActions{
     flex-direction:column;
   }
+
+  
 
 }
     `}

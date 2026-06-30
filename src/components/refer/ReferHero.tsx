@@ -298,20 +298,28 @@ export default function ReferHero() {
 
       
 
-      @media(max-width:991px){
+      @media (max-width:1024px){
 
-        .ReferHero{
-          grid-template-columns:1fr;
-          gap:50px;
-          padding:100px 20px;
-        }
+  .ReferHero{
+    grid-template-columns:1fr;
+    padding:150px 20px;
+    text-align:center;
+  }
 
-        .ReferHeroTitle{
-          font-size:56px;
-          letter-spacing:-2px;
-        }
+  
 
-      }
+
+  
+
+  .ReferralCard{
+    padding:24px;
+  }
+
+  .ReferralMainStat{
+    font-size:48px;
+  }
+
+}
 
       @media(max-width:768px){
 
@@ -345,6 +353,7 @@ export default function ReferHero() {
         }
 
         .ReferralCard{
+        
           padding:24px;
         }
 

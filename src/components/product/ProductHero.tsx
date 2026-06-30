@@ -9,8 +9,6 @@ import {
   Sparkles,
   Users,
   LayoutDashboard,
-  Brain,
-  Boxes,
   ShieldCheck,
 } from "lucide-react";
 
@@ -364,6 +362,12 @@ export default function ProductHero() {
 }
 
 @media (max-width: 1100px) {
+
+.ph-hero-mascot{
+display:none;
+}
+
+
 
   .ph-product-hero {
     min-height: auto;

@@ -89,7 +89,7 @@ export default function ContactCTA() {
     var(--color-secondary-green)
   );
   border-radius:36px;
-  padding:56px;
+  padding: 56px;
   position:relative;
   overflow:hidden;
   display:grid;
@@ -216,7 +216,7 @@ font-family:"Geist-Bold";
 
 .contactMascotCT{
   position:absolute;
-  bottom:-170px;
+  bottom:-186px;
   right:-10px;
   height:600px;
   object-fit:contain;
@@ -240,6 +240,7 @@ font-family:"Geist-Bold";
   gap:10px;
 }
 
+
 .cardTwoCT{
   bottom:60px;
   left:0;
@@ -258,40 +259,46 @@ font-family:"Geist-Bold";
   font-size:1.2rem;
 }
 
-/* ---------- Large Tablet ---------- */
 
-@media(max-width:1100px){
 
-  .contactCtaContainerCT{
-    grid-template-columns:1fr;
-    padding:40px 32px;
-    gap:24px;
+/* ---------- Tablet ---------- */
+@media(max-width:1024px){
+
+
+
+.floatingCardCT{
+    display:none;
   }
-    .contactCtaVisualCT{
-  min-height:auto;
-}
-
- 
 
   .contactMascotCT{
+  bottom:-197px;
+  
+}
+    
+}
+
+
+@media(max-width:768px){
+
+.contactMascotCT{
   display:none;
    
   }
 
-  .floatingCardCT{
-    display:none;
-  }
-}
-
-/* ---------- Tablet ---------- */
-
-@media(max-width:768px){
+  
 
   .contactCtaSectionCT{
     padding:0 16px 60px;
   }
 
+ 
+    .contactCtaVisualCT{
+  min-height:auto;
+}
+
   .contactCtaContainerCT{
+  grid-template-columns:1fr;
+  text-align:center;
     padding:28px 22px;
     border-radius:28px;
     gap:20px;

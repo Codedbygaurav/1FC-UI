@@ -414,11 +414,11 @@ export default function ToolsHero() {
           color: #646C69;
         }
 
-  @media (max-width: 1000px) {
+  @media (max-width:1100px) {
 
   .toolsHeroSectionTP {
     min-height: auto;
-    padding: 145px 28px 80px;
+    padding: 150px 28px 80px;
   }
 
   .toolsHeroContainerTP {

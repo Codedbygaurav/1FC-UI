@@ -10,32 +10,7 @@ import {
  
 } from "lucide-react";
 
-const summaryCards = [
-  {
-    number: "01",
-    icon: Database,
-    title: "What we collect",
-    text: "Basic personal details, contact information, and financial preferences shared by you.",
-  },
-  {
-    number: "02",
-    icon: Eye,
-    title: "Why we collect it",
-    text: "To provide financial guidance, improve services, and communicate clearly with you.",
-  },
-  {
-    number: "03",
-    icon: Lock,
-    title: "How we protect it",
-    text: "We follow responsible data handling practices and limit access to your information.",
-  },
-  {
-    number: "04",
-    icon: UserCog,
-    title: "Your control",
-    text: "You may request access, correction, or deletion of your personal information.",
-  },
-];
+
 
 const sections = [
   {
@@ -574,58 +549,43 @@ export default function PrivacyPolicy() {
           white-space: nowrap;
         }
 
-/* ==========================================
-   TABLET (641px - 980px)
-========================================== */
-@media (max-width: 980px) {
 
-  .privacyContainerPVC {
-    padding: 30px 24px;
+@media (max-width: 1024px) {
+
+  .privacyContainerPVC{
+    padding:24px 18px;
+    overflow:hidden;
   }
 
-  .privacyHeroPVC {
-    padding: 110px 0 70px;
+  .privacyHeroPVC{
+    padding:95px 0 56px;
   }
 
   .privacyHeroGridPVC,
   .privacyContentGridPVC,
-  .privacyCtaBoxPVC {
-    grid-template-columns: 1fr;
-    gap: 32px;
+  .privacyCtaBoxPVC{
+    grid-template-columns:1fr;
+    gap:24px;
   }
 
-  .privacyHeroGridPVC {
-    align-items: stretch;
+  /* Remove the left sidebar on tablet & mobile */
+  .PVC-side{
+    display:none;
   }
 
-  .privacySummaryGridPVC {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
+  .privacyHeroContentPVC{
+    max-width:100%;
   }
 
-  .PVC-side {
-    position: relative;
-    top: 0;
+  .privacySummaryGridPVC{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
   }
 
-  .privacySidePVC {
-    min-height: 360px;
-  }
-
-  .privacySideTitlePVC {
-    max-width: none;
-  }
-
-  .privacySideTextPVC {
-    max-width: 460px;
-  }
-
-  .privacyHeroContentPVC {
-    max-width: 100%;
-  }
-
-  .PVC-hero-title {
-    font-size: clamp(52px, 7vw, 64px);
+  .PVC-hero-title{
+    font-size:42px;
+    line-height:.95;
+    margin:14px 0 16px;
   }
 }
 

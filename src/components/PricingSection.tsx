@@ -730,23 +730,7 @@ export default function PricingSection() {
           transform: translateY(0);
         }
 
-   @media (max-width: 1024px) {
-
-  .pricing-inner {
-    grid-template-columns: 1fr !important;
-  }
-
-  .pricing-inner > div:first-child {
-    border-right: none !important;
-    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
-    min-height: auto !important;
-  }
-
-  .pricing-inner > div {
-    padding: 34px !important;
-  }
-}
-
+   
 @media (max-width: 768px) {
 
 #pricing {

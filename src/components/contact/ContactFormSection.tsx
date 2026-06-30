@@ -573,6 +573,7 @@ letter-spacing:1px;
   .contactFormGridCF{
     grid-template-columns:1fr;
     gap:12px;
+    
   }
 
   .contactFormTitleCF{
@@ -662,12 +663,12 @@ letter-spacing:1px;
 @media(max-width:480px){
 
   .contactFormCF{
-    padding:0 12px 32px;
+    padding:0 10px;
   }
 
   .contactFormCardCF,
   .contactInfoPanelCF{
-    padding:16px;
+    padding:16px 10px;
   }
 
   .contactFormTitleCF{

@@ -434,15 +434,13 @@ export default function GoldCalculator() {
   var(--color-dark-green);
 }
 
-      @media(max-width:1100px){
-
-        .CalculatorCard{
-          grid-template-columns:1fr;
-        }
-
-      }
+      
 
       @media(max-width:768px){
+
+       .CalculatorCard{
+          grid-template-columns:1fr;
+        }
 
         .GoldCalculator{
           padding:0 20px 90px;

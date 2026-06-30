@@ -253,13 +253,51 @@ export default function GoldRatesHero() {
         color:rgba(255,255,255,.7);
       }
 
-      @media(max-width:1100px){
+      /* iPad */
+@media (max-width:1024px){
 
-        .GoldHeroContainer{
-          grid-template-columns:1fr;
-        }
+  .GoldHero{
+    padding:150px 40px 80px;
+    min-height:auto;
+  }
 
-      }
+  .GoldHeroContainer{
+    grid-template-columns:1fr;
+    gap:48px;
+  }
+
+  .GoldHeroLeft{
+    max-width:100%;
+    text-align:center;
+  }
+
+  
+
+  
+
+  .hero-actions{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .GoldHeroPills{
+    justify-content:center;
+  }
+
+  .GoldHeroRight{
+    display:flex;
+    justify-content:center;
+  }
+
+  .GoldCard{
+    width:100%;
+    max-width:520px;
+  }
+
+  .GoldRateMain{
+    font-size:52px;
+  }
+}
 
       @media(max-width:768px){
 
