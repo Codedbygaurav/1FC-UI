@@ -368,6 +368,11 @@ font-family:"Geist-SemiBold";
 
 @media(max-width:768px){
 
+.referCta{
+    grid-template-columns: 1fr;
+    
+  }
+
   .referCta{
     border-radius:24px;
     padding:48px 24px 0;
